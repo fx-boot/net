@@ -1,0 +1,751 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-22T19:19:25.126Z",
+  "title": "Design System: LANCHUAN × 東浩",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Obsidian Canvas",
+        "tonalRamp": [
+          "oklch(15% 0.00461 264.47)",
+          "oklch(26% 0.00461 264.47)",
+          "oklch(38% 0.00461 264.47)",
+          "oklch(49% 0.00461 264.47)",
+          "oklch(61% 0.00461 264.47)",
+          "oklch(72% 0.00461 264.47)",
+          "oklch(84% 0.00461 264.47)",
+          "oklch(95% 0.00461 264.47)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Projection Surface",
+        "tonalRamp": [
+          "oklch(15% 0.01055 268.14)",
+          "oklch(26% 0.01055 268.14)",
+          "oklch(38% 0.01055 268.14)",
+          "oklch(49% 0.01055 268.14)",
+          "oklch(61% 0.01055 268.14)",
+          "oklch(72% 0.01055 268.14)",
+          "oklch(84% 0.01055 268.14)",
+          "oklch(95% 0.01055 268.14)"
+        ]
+      },
+      "subtle": {
+        "role": "neutral",
+        "displayName": "Subtle Dark",
+        "tonalRamp": [
+          "oklch(15% 0.01215 270.81)",
+          "oklch(26% 0.01215 270.81)",
+          "oklch(38% 0.01215 270.81)",
+          "oklch(49% 0.01215 270.81)",
+          "oklch(61% 0.01215 270.81)",
+          "oklch(72% 0.01215 270.81)",
+          "oklch(84% 0.01215 270.81)",
+          "oklch(95% 0.01215 270.81)"
+        ]
+      },
+      "platinum": {
+        "role": "neutral",
+        "displayName": "Platinum",
+        "tonalRamp": [
+          "oklch(15% 0.00171 247.84)",
+          "oklch(26% 0.00171 247.84)",
+          "oklch(38% 0.00171 247.84)",
+          "oklch(49% 0.00171 247.84)",
+          "oklch(61% 0.00171 247.84)",
+          "oklch(72% 0.00171 247.84)",
+          "oklch(84% 0.00171 247.84)",
+          "oklch(95% 0.00171 247.84)"
+        ]
+      },
+      "titanium": {
+        "role": "neutral",
+        "displayName": "Titanium",
+        "tonalRamp": [
+          "oklch(15% 0.01576 264.46)",
+          "oklch(26% 0.01576 264.46)",
+          "oklch(38% 0.01576 264.46)",
+          "oklch(49% 0.01576 264.46)",
+          "oklch(61% 0.01576 264.46)",
+          "oklch(72% 0.01576 264.46)",
+          "oklch(84% 0.01576 264.46)",
+          "oklch(95% 0.01576 264.46)"
+        ]
+      },
+      "laser": {
+        "role": "primary",
+        "displayName": "Laser",
+        "tonalRamp": [
+          "oklch(15% 0.23414 34.20)",
+          "oklch(26% 0.23414 34.20)",
+          "oklch(38% 0.23414 34.20)",
+          "oklch(49% 0.23414 34.20)",
+          "oklch(61% 0.23414 34.20)",
+          "oklch(72% 0.23414 34.20)",
+          "oklch(84% 0.23414 34.20)",
+          "oklch(95% 0.23414 34.20)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "tonalRamp": [
+          "oklch(15% 0.00000 89.88 / 0.08)",
+          "oklch(26% 0.00000 89.88 / 0.08)",
+          "oklch(38% 0.00000 89.88 / 0.08)",
+          "oklch(49% 0.00000 89.88 / 0.08)",
+          "oklch(61% 0.00000 89.88 / 0.08)",
+          "oklch(72% 0.00000 89.88 / 0.08)",
+          "oklch(84% 0.00000 89.88 / 0.08)",
+          "oklch(95% 0.00000 89.88 / 0.08)"
+        ]
+      },
+      "projection-edge": {
+        "role": "neutral",
+        "displayName": "Projection Edge",
+        "tonalRamp": [
+          "oklch(15% 0.00171 247.84 / 0.15)",
+          "oklch(26% 0.00171 247.84 / 0.15)",
+          "oklch(38% 0.00171 247.84 / 0.15)",
+          "oklch(49% 0.00171 247.84 / 0.15)",
+          "oklch(61% 0.00171 247.84 / 0.15)",
+          "oklch(72% 0.00171 247.84 / 0.15)",
+          "oklch(84% 0.00171 247.84 / 0.15)",
+          "oklch(95% 0.00171 247.84 / 0.15)"
+        ]
+      },
+      "cyan-light": {
+        "role": "neutral",
+        "displayName": "Cold Cyan Light",
+        "tonalRamp": [
+          "oklch(15% 0.07427 235.81 / 0.1)",
+          "oklch(26% 0.07427 235.81 / 0.1)",
+          "oklch(38% 0.07427 235.81 / 0.1)",
+          "oklch(49% 0.07427 235.81 / 0.1)",
+          "oklch(61% 0.07427 235.81 / 0.1)",
+          "oklch(72% 0.07427 235.81 / 0.1)",
+          "oklch(84% 0.07427 235.81 / 0.1)",
+          "oklch(95% 0.07427 235.81 / 0.1)"
+        ]
+      },
+      "vermilion-light": {
+        "role": "neutral",
+        "displayName": "Vermilion Light",
+        "tonalRamp": [
+          "oklch(15% 0.23414 34.20 / 0.035)",
+          "oklch(26% 0.23414 34.20 / 0.035)",
+          "oklch(38% 0.23414 34.20 / 0.035)",
+          "oklch(49% 0.23414 34.20 / 0.035)",
+          "oklch(61% 0.23414 34.20 / 0.035)",
+          "oklch(72% 0.23414 34.20 / 0.035)",
+          "oklch(84% 0.23414 34.20 / 0.035)",
+          "oklch(95% 0.23414 34.20 / 0.035)"
+        ]
+      },
+      "spill-core": {
+        "role": "material",
+        "displayName": "Anamorphic spill core",
+        "value": "rgba(144, 199, 235, 0.075)",
+        "purpose": "Horizontal optical core only; src/styles/sensory.css .anamorphic-spill i."
+      },
+      "spill-field": {
+        "role": "material",
+        "displayName": "Anamorphic spill field",
+        "value": "rgba(62, 105, 152, 0.055)",
+        "purpose": "Broad low-alpha optical field only; src/styles/sensory.css .anamorphic-spill i."
+      },
+      "transport-bevel-bottom": {
+        "role": "material",
+        "displayName": "Transport lower bevel",
+        "value": "rgba(0, 0, 0, 0.6)",
+        "purpose": "Lower rule on hovered/focused transport inner ink only; src/styles/sensory.css."
+      },
+      "breakdown-caption": {
+        "role": "material",
+        "displayName": "Comparison instruction caption",
+        "value": "#B1B6BF",
+        "purpose": "Comparison instruction caption only; src/styles/breakdown.css .breakdown-caption."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Monolithic studio name",
+        "purpose": "Hero title; the mobile treatment is recorded in DESIGN.md."
+      },
+      "headline": {
+        "displayName": "Serif section headline",
+        "purpose": "Works heading, balanced against the small year label."
+      },
+      "studio-title": {
+        "displayName": "Studio identifier",
+        "purpose": "Instrument Sans LANCHUAN heading inside the director reading track."
+      },
+      "title": {
+        "displayName": "Theatre film title",
+        "purpose": "Current film caption; archive and mobile sizes are described in DESIGN.md."
+      },
+      "monologue": {
+        "displayName": "Director monologue",
+        "purpose": "Serif reading text and its larger balanced lead."
+      },
+      "japanese-reading": {
+        "displayName": "Japanese reading",
+        "purpose": "Shippori Mincho and Japanese fallbacks, palt 1, strict line breaking; the inherited body size changes at the same layout breakpoints."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Default text; detail and technique descriptions use their observed local sizes."
+      },
+      "label": {
+        "displayName": "Operational label",
+        "purpose": "Unfilled category filter buttons."
+      },
+      "readout": {
+        "displayName": "Projection readout",
+        "purpose": "Tiny mono console labels and scale references."
+      },
+      "breakdown-caption": {
+        "displayName": "Comparison instruction",
+        "fontFamily": "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+        "fontSize": "11px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "selector": ".breakdown-caption",
+        "mobile": "10px",
+        "source": "src/styles/breakdown.css",
+        "purpose": "Explicit scoped role; mobile-prefixed roles apply at max-width 700px. Preserve language-specific font substitutions."
+      },
+      "breakdown-error": {
+        "displayName": "Comparison load error",
+        "fontFamily": "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "lineHeight": 1.6,
+        "selector": ".breakdown-unavailable",
+        "source": "src/styles/breakdown.css",
+        "purpose": "Explicit scoped role; mobile-prefixed roles apply at max-width 700px. Preserve language-specific font substitutions."
+      },
+      "breakdown-mobile-heading": {
+        "displayName": "Mobile comparison heading",
+        "fontFamily": "'Bodoni Moda', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif",
+        "fontSize": "26px",
+        "fontWeight": 400,
+        "lineHeight": 1.4,
+        "letterSpacing": "-0.02em",
+        "selector": ".breakdown-heading h3",
+        "japaneseTracking": "0.04em",
+        "source": "src/styles/breakdown.css",
+        "purpose": "Explicit scoped role; mobile-prefixed roles apply at max-width 700px. Preserve language-specific font substitutions."
+      },
+      "breakdown-mobile-study": {
+        "displayName": "Mobile color-study inscription",
+        "fontFamily": "'SFMono-Regular', Consolas, 'Liberation Mono', monospace",
+        "fontSize": "7px",
+        "fontWeight": 400,
+        "lineHeight": 1.7,
+        "letterSpacing": "0.05em",
+        "selector": ".breakdown-study",
+        "source": "src/styles/breakdown.css",
+        "purpose": "Explicit scoped role; mobile-prefixed roles apply at max-width 700px. Preserve language-specific font substitutions."
+      },
+      "breakdown-mobile-localized-study": {
+        "displayName": "Mobile localized study caption",
+        "fontFamily": "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif",
+        "fontSize": "8px",
+        "fontWeight": 400,
+        "lineHeight": 1.7,
+        "letterSpacing": "0.04em",
+        "selector": ".breakdown-study > span:last-child:not(:first-child)",
+        "source": "src/styles/breakdown.css",
+        "purpose": "Explicit scoped role; mobile-prefixed roles apply at max-width 700px. Preserve language-specific font substitutions."
+      },
+      "breakdown-mobile-pass": {
+        "displayName": "Mobile PASS inscription",
+        "fontFamily": "'SFMono-Regular', Consolas, 'Liberation Mono', monospace",
+        "fontSize": "7.5px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.01em",
+        "selector": ".breakdown-pass-labels",
+        "ariaHidden": true,
+        "source": "src/styles/breakdown.css",
+        "purpose": "Explicit scoped role; mobile-prefixed roles apply at max-width 700px. Preserve language-specific font substitutions."
+      },
+      "breakdown-mobile-code": {
+        "displayName": "Mobile LC metadata",
+        "fontFamily": "'SFMono-Regular', Consolas, 'Liberation Mono', monospace",
+        "fontSize": "6px",
+        "fontWeight": 400,
+        "lineHeight": 1.5,
+        "letterSpacing": "0.15em",
+        "selector": ".breakdown-film-code",
+        "ariaHidden": true,
+        "source": "src/styles/breakdown.css",
+        "purpose": "Explicit scoped role; mobile-prefixed roles apply at max-width 700px. Preserve language-specific font substitutions."
+      }
+    },
+    "shadows": [
+      {
+        "name": "projected-film",
+        "value": "0 22px 60px -32px #000",
+        "purpose": "Current theatre image. Source: src/styles/projection.css."
+      },
+      {
+        "name": "spatial-shadow",
+        "value": "radial-gradient(ellipse,rgba(0,0,0,.42),transparent 72%)",
+        "purpose": "Inert desktop lift shadow; this is a background gradient, not a CSS box-shadow. Source: src/styles/cinema.css."
+      },
+      {
+        "name": "reel-legibility",
+        "value": "0 1px 12px #0008",
+        "purpose": "Hero reel text-shadow. Source: src/styles/global.css."
+      },
+      {
+        "name": "logo-response",
+        "value": "drop-shadow(0 0 4px rgba(248,249,250,.2))",
+        "purpose": "Small logo optics response on hover/focus. Source: src/styles/global.css."
+      }
+    ],
+    "motion": [
+      {
+        "name": "film-ease",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Shared film state and text transitions. Source: src/styles/tokens.css."
+      },
+      {
+        "name": "gate-ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Gate transport, image scale and ruler transitions. Source: src/styles/tokens.css."
+      },
+      {
+        "name": "gate-transport",
+        "value": "transform .7s var(--gate-ease), opacity .55s var(--gate-ease)",
+        "purpose": "Film slot transitions. Disabled under reduced motion. Source: src/styles/cinema.css."
+      },
+      {
+        "name": "ruler",
+        "value": "Shared-clock spring: stiffness 190, damping 23, delta cap 50ms, integration substeps <= 1/240s.",
+        "purpose": "Transform-only marker movement after range/reel changes; unsubscribes and removes will-change at rest. Reduced motion jumps directly to target.",
+        "source": "src/hooks/useTransportSpring.ts and src/lib/transportSpring.ts"
+      },
+      {
+        "name": "image-scale",
+        "value": "scale(1.025)",
+        "purpose": "Film image hover/focus response inside the fixed shell; removed for mobile, coarse pointer and reduced motion. Source: src/styles/cinema.css."
+      },
+      {
+        "name": "email-flip",
+        "value": "transform .45s var(--gate-ease), opacity .3s var(--film-ease)",
+        "purpose": "Address-to-confirmation response. Reduced motion removes transforms. Source: src/styles/global.css."
+      },
+      {
+        "name": "side-plane-perspective",
+        "value": "perspective(1400px) translate3d(calc(-50% + var(--slot)*(100% + 3vw)),0,0) scale(var(--slide-scale)) rotateY(var(--slide-angle,0deg))",
+        "purpose": "Left and right inactive planes rotate by 8deg and -8deg; current plane is 0deg. Only applied at min-width 701px, hover:hover, pointer:fine and prefers-reduced-motion:no-preference. Other slot motion retains the existing gate transition.",
+        "source": "src/components/works/CinemaCarousel.tsx and src/styles/projection.css"
+      },
+      {
+        "name": "film-scrub",
+        "value": "opacity .26s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Four sampled source-time stills crossfade within the inert current-film visual. Pointer leave restores the cover. No continuous-video-seeking claim.",
+        "source": "src/hooks/useFilmScrub.ts and src/styles/scrub.css"
+      },
+      {
+        "name": "transport-bevel",
+        "value": "translate3d(0,1px,0) scaleY(.97)",
+        "purpose": "Pressed inner ink only; hover/focus adds fine top and bottom bevel rules. The sensing button never transforms.",
+        "source": "src/styles/sensory.css"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-composition",
+        "value": "700px"
+      },
+      {
+        "name": "menu-navigation",
+        "value": "1000px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "wide-hero",
+        "value": "1600px"
+      }
+    ],
+    "atmosphere": {
+      "grain": {
+        "source": "src/components/effects/FilmGrainCanvas.tsx and src/lib/grainWalk.ts",
+        "retiredSource": "/media/texture/silver-grain.png (deleted; former 192x192 bitmap)",
+        "opacity": 0.032,
+        "mobileOpacity": 0.028,
+        "resolution": "Half viewport width and height: quarter pixel count, 2x CSS enlargement; capped at 960x540.",
+        "cadence": "At most 12fps, quantized by the existing shared frame clock; no catch-up draws, own RAF or interval.",
+        "model": "Original correlated monochrome random walk, not a physical Kodak or other film-emulsion model.",
+        "composite": "One soft-light full-screen canvas, no blend stack. Preserves endpoint highlights; not a luminance-selective mask.",
+        "lifecycle": "Hidden pages and modals pause. Mobile, coarse-pointer and reduced-motion modes generate a still frame at each viewport size. Forced colors hide it.",
+        "performanceBoundary": "No universal GPU percentage, physical 120Hz panel or acoustic claim is established by these settings."
+      },
+      "light": {
+        "value": "radial-gradient(ellipse 75% 60% at 2% 70%,var(--light-cyan),transparent 75%),radial-gradient(ellipse 65% 50% at 100% 100%,var(--light-vermilion),transparent 75%)",
+        "behavior": "Existing ambient radial fields stay static, pointer-events:none, with no Gaussian blur. Separate hero/theatre horizontal spill uses transform-only drift from the shared measure/write clock."
+      },
+      "tonalRamps": "Derived OKLCH swatches for the palette inspector only. These are not additional implementation tokens or approved action colors.",
+      "sectionLights": {
+        "works": {
+          "value": "radial-gradient(ellipse 75% 70% at 15% 65%,rgba(37,88,113,.16),transparent 80%),radial-gradient(ellipse 40% 55% at 100% 60%,rgba(127,34,27,.06),transparent 80%),var(--bg-canvas)",
+          "behavior": "Static localized cyan and vermilion radial fields.",
+          "source": "src/styles/projection.css"
+        },
+        "biography": {
+          "value": "radial-gradient(ellipse 65% 55% at 8% 37%,rgba(65,115,130,.12),transparent 80%),radial-gradient(ellipse 45% 40% at 100% 75%,rgba(127,34,27,.06),transparent 80%),linear-gradient(180deg,var(--bg-canvas),#111419 180px,#111419 78%,var(--bg-canvas))",
+          "behavior": "Static localized cyan and vermilion radial fields over the existing dark tonal field.",
+          "source": "src/styles/projection.css"
+        }
+      },
+      "inactiveFilm": {
+        "imageGrade": "contrast(1.04) saturate(.88) brightness(1.28)",
+        "containerFilter": "none",
+        "edge": "1px solid rgba(248,249,250,.18)",
+        "edgeWash": "linear-gradient(180deg,rgba(10,11,13,.08),transparent 35%,rgba(10,11,13,.18))",
+        "purpose": "Retains the side image's exposure beneath its existing slot opacity without the old parent desaturation or heavy horizontal wash.",
+        "source": "src/styles/projection.css"
+      },
+      "spill": {
+        "source": "src/components/effects/AnamorphicLightSpill.tsx and src/styles/sensory.css",
+        "cyanCore": "radial-gradient(ellipse 64% 2% at 52% 44%,rgba(144,199,235,.075),transparent 85%)",
+        "cyanField": "radial-gradient(ellipse 80% 13% at 48% 44%,rgba(62,105,152,.055),transparent 80%)",
+        "vermilion": "radial-gradient(ellipse 45% 5% at 79% 58%,rgba(255,62,0,.04),transparent 85%)",
+        "motion": "Translate up to 10px from clamped scroll progress; rotate progress*.32deg plus viewport-aspect correction clamped to .08deg.",
+        "fallback": "Static on mobile, coarse pointer and reduced motion; decorative fields hidden under forced colors."
+      }
+    },
+    "layout": {
+      "theatre": {
+        "desktopSlot": "72%",
+        "desktopAspectRatio": "2.39",
+        "mobileSlot": "84%",
+        "mobileAspectRatio": "16/9",
+        "source": "src/styles/cinema.css",
+        "sidePlanes": {
+          "opacity": 0.25,
+          "scale": 0.88,
+          "currentOpacity": 1,
+          "currentScale": 1,
+          "perspective": "1400px",
+          "leftAngle": "8deg",
+          "rightAngle": "-8deg",
+          "currentAngle": "0deg",
+          "mediaQuery": "(min-width:701px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference)",
+          "fallback": "Mobile, coarse-pointer and reduced-motion layouts retain the unrotated slot treatment.",
+          "source": "src/components/works/CinemaCarousel.tsx and src/styles/projection.css"
+        }
+      },
+      "archive": {
+        "columns": [
+          3,
+          2,
+          1
+        ],
+        "desktopGap": "85px 32px",
+        "mobileRowGap": "65px",
+        "source": "src/styles/cinema.css and src/styles/projection.css"
+      },
+      "dossier": {
+        "desktopColumns": "1 / span 4; 6 / span 7",
+        "compactColumns": "1 / span 5; 7 / span 6",
+        "mobilePortraitWidth": "86%",
+        "aperture": "4/5",
+        "source": "src/styles/global.css and src/styles/projection.css",
+        "container": "Independent .biography-spread 12-column grid within outer .biography.section-space block; mobile spread has one column. Sticky travel is bounded above the following comparison gate."
+      },
+      "reviewViewports": [
+        "1440×900",
+        "390×844"
+      ],
+      "breakdown": {
+        "desktopWidth": "calc((100% + 2 * var(--gutter)) * .72)",
+        "aspectRatio": "2.39",
+        "placement": "Following sibling of .biography-spread in the outer About block; centered at 72% of body clientWidth, matching the cinema gate without scrollbar-width drift.",
+        "mobileWidth": "100% of the About content width",
+        "source": "src/styles/breakdown.css"
+      }
+    },
+    "interaction": {
+      "source": "src/styles/cinema.css, src/styles/spatial.css, src/lib/cinemaFrames.ts, src/components/about/CineBreakdown.tsx, src/hooks/useFilmScrub.ts, src/hooks/useTransportSpring.ts",
+      "shell": "Untransformed sensing controls contain inert visual descendants; moving visual subtrees have pointer-events:none.",
+      "driver": "Providers retains exactly one requestAnimationFrame owner, with optional Lenis integration on desktop. Native-scroll mobile and reduced-motion modes retain the same shared cinema clock. All geometry reads precede queued writes; component effects subscribe rather than own a RAF.",
+      "fallbacks": "Mobile, coarse pointer and reduced motion remove pointer lift, magnetic transforms, film-strip scanning and reading dimming. Reduced motion removes carousel transitions and immediately places the ruler. The comparison range remains directly operable; decorative grain becomes still."
+    },
+    "language": {
+      "supported": [
+        "zh",
+        "en",
+        "ko",
+        "ja"
+      ],
+      "japanese": {
+        "fontFeatureSettings": "'palt' 1",
+        "lineBreak": "strict",
+        "wordBreak": "normal",
+        "hangingPunctuation": "allow-end",
+        "leadSize": "1.2em",
+        "leadLineHeight": 1.9,
+        "source": "src/styles/tokens.css, src/styles/spatial.css, src/styles/projection.css"
+      },
+      "korean": {
+        "wordBreak": "keep-all",
+        "source": "src/styles/tokens.css and src/styles/projection.css",
+        "ending": {
+          "scope": "Final sentence of the director monologue only.",
+          "behavior": "Wrap its final two words in a nonbreaking span; dictionary text is unchanged.",
+          "css": "white-space: nowrap",
+          "source": "src/components/about/DirectorStatement.tsx and src/styles/projection.css"
+        }
+      }
+    },
+    "breakdown": {
+      "source": "src/components/about/CineBreakdown.tsx, src/i18n/breakdown.ts and src/styles/breakdown.css",
+      "asset": "/media/stills/refraction-2.jpg (both aligned passes; existing licensed source)",
+      "rawGrade": "contrast(.62) saturate(.42) brightness(1.12)",
+      "finalGrade": "contrast(1.12) saturate(1.08) brightness(.96)",
+      "disclosure": "Visible COLOR STUDY caption and four-language accessible explanation. Simulated same-frame grading, not original Log, greenscreen or a delivered VFX shot.",
+      "divider": "1px rgba(255,62,0,.8); inert translate3d track and 44px touch-capture target.",
+      "control": "Desktop pointer follow; touch divider drag with pointer capture. Pointer-up stores the final clientX before release; pointer-cancel retains the last position. Native keyboard range with Home, End and arrow keys; whole-frame focus outline.",
+      "geometry": "Fixed untransformed viewport; scroll/resize-invalidated rect cache read only in shared measure phase, then clipped-image/divider/range writes. No new RAF, blur or autonomous motion.",
+      "reducedMotion": "Direct manipulation remains available.",
+      "scopedTypography": {
+        "roles": [
+          "breakdown-caption",
+          "breakdown-error",
+          "breakdown-mobile-heading",
+          "breakdown-mobile-study",
+          "breakdown-mobile-localized-study",
+          "breakdown-mobile-pass",
+          "breakdown-mobile-code"
+        ],
+        "source": "src/styles/breakdown.css",
+        "accessibility": "PASS and LC inscriptions are aria-hidden optical metadata; four-language accessible asset explanation and separately associated operating instruction remain independent. The visible COLOR STUDY descriptor is a short caption, not an operational dependency. Load errors are real status messages."
+      }
+    },
+    "filmScrub": {
+      "source": "src/components/works/FilmScrub.tsx, src/hooks/useFilmScrub.ts and upstream/media/scrub-frames.json",
+      "assetCount": 24,
+      "bytes": 1782611,
+      "dimensions": "1280x720",
+      "sampling": "Six existing licensed films, four source-time stills each. Twelve catalogue records share the corresponding six source sets.",
+      "timecode": "Normalized source duration with a 24fps display timebase; source frame rates remain distinct and recorded in the manifest.",
+      "interaction": "Current desktop film only; warm on pointer movement/focus, select one of four frames from horizontal progress, fade by opacity, restore cover on pointer leave. Keyboard-only range operates the same progress.",
+      "fallback": "Inactive/archive/mobile/coarse-pointer/reduced-motion retain cover or preview. Failed stills leave cover visible.",
+      "performance": "Stable trigger geometry, shared read/write phases, dynamically scoped will-change and paused hidden-page subscriptions."
+    },
+    "audio": {
+      "source": "src/lib/cinemaAudio.ts",
+      "optIn": "No AudioContext before explicit sound-button gesture; consent is not persisted; no automatic resume after tab, blur or modal interruption.",
+      "hum": "50Hz sine; digital peak amplitude 10 ** (-36 / 20), not a sound-pressure or perceived-loudness guarantee.",
+      "click": "Original reusable 15ms decaying noise impulse, low-pass 1800Hz, gain .012, 40ms trigger guard.",
+      "lifecycle": "Hidden, blur and film-dialog states silence and suspend the graph. Disposal stops oscillator, disconnects nodes and closes the context.",
+      "provenance": "Native Web Audio synthesis, no sampled third-party track. Existing silent video files remain unchanged.",
+      "control": {
+        "source": "src/components/effects/CinemaSoundControl.tsx and src/styles/sensory.css",
+        "placement": "One global fixed bottom-right sound toggle; right:var(--gutter), bottom:10px, z-index:20; minimum 112x44px. Hero retains only separate video pause/play.",
+        "states": "Localized aria-label and live status; aria-pressed, aria-busy and unavailable/modal disabled states. Consent and lifecycle remain opt-in."
+      }
+    },
+    "materialAllowances": {
+      "scope": "Explicit narrow allowances from actual sensory.css and breakdown.css; no invented tonal ramps, action colors or global body-text replacements.",
+      "colors": {
+        "spill-core": {
+          "displayName": "Anamorphic spill core",
+          "value": "rgba(144, 199, 235, 0.075)",
+          "purpose": "Horizontal optical core only; src/styles/sensory.css .anamorphic-spill i."
+        },
+        "spill-field": {
+          "displayName": "Anamorphic spill field",
+          "value": "rgba(62, 105, 152, 0.055)",
+          "purpose": "Broad low-alpha optical field only; src/styles/sensory.css .anamorphic-spill i."
+        },
+        "transport-bevel-bottom": {
+          "displayName": "Transport lower bevel",
+          "value": "rgba(0, 0, 0, 0.6)",
+          "purpose": "Lower rule on hovered/focused transport inner ink only; src/styles/sensory.css."
+        },
+        "breakdown-caption": {
+          "displayName": "Comparison instruction caption",
+          "value": "#B1B6BF",
+          "purpose": "Comparison instruction caption only; src/styles/breakdown.css .breakdown-caption."
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "name": "Reel Button",
+      "kind": "button",
+      "refersTo": "reel-button",
+      "description": "Unfilled hero reel entry with a play outline, bottom rule and timecode. The preview is a visual specimen; application playback remains in the React component.",
+      "html": "<button class=\"ds-reel\" type=\"button\"><span class=\"ds-reel-ink\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" aria-hidden=\"true\"><path d=\"M7 4L21 12L7 20Z\"/></svg>WATCH REEL</span><span class=\"ds-reel-time\" aria-hidden=\"true\">[ TC 00:01:30:00 ]</span></button>",
+      "css": ".ds-reel{display:inline-flex;align-items:center;gap:32px;min-height:52px;padding:12px 0 13px;border:0;border-bottom:1px solid #f8f9fa70;border-radius:0;background:transparent;color:var(--text-primary,#F8F9FA);font:400 12px/1.6 var(--font-sans,'Instrument Sans',sans-serif);cursor:pointer;text-shadow:0 1px 12px #0008;transition:color .35s var(--film-ease,cubic-bezier(.22,1,.36,1)),opacity .35s var(--film-ease,cubic-bezier(.22,1,.36,1))}.ds-reel-ink{display:inline-flex;align-items:center;gap:22px;pointer-events:none}.ds-reel-time{font:400 9px/1.6 var(--font-mono,Consolas,monospace);letter-spacing:.12em;color:#d3d7dc;white-space:nowrap}.ds-reel:hover,.ds-reel:focus-visible{color:var(--text-primary,#F8F9FA)}.ds-reel:hover .ds-reel-time,.ds-reel:focus-visible .ds-reel-time{color:var(--text-primary,#F8F9FA)}.ds-reel:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}@media(max-width:700px){.ds-reel{font-size:11px;gap:20px}.ds-reel-ink{gap:12px}.ds-reel-time{font-size:8px;letter-spacing:.06em}}"
+    },
+    {
+      "name": "Transport Button",
+      "kind": "button",
+      "refersTo": "transport-button",
+      "description": "Square unfilled film transport with hover bevel and a 1px inner-ink shutter press; fixed hit target, visible focus and disabled states.",
+      "html": "<button class=\"ds-transport\" type=\"button\"><span class=\"ds-transport-ink\"><span class=\"ds-transport-bracket\" aria-hidden=\"true\">[</span> FRAME PREV <span class=\"ds-transport-bracket\" aria-hidden=\"true\">]</span></span></button>",
+      "css": ".ds-transport{min-height:60px;border:0;border-radius:0;padding:0;background:transparent;color:var(--text-primary,#F8F9FA);font:400 10px/normal var(--font-mono,Consolas,monospace);letter-spacing:.12em;cursor:pointer}.ds-transport-bracket{color:#707680}.ds-transport:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}.ds-transport:disabled{opacity:.3;cursor:default}@media(max-width:700px){.ds-transport{min-height:54px;font-size:8px;letter-spacing:.04em}}.ds-transport-ink{display:inline-flex;align-items:center;gap:9px;border-top:1px solid transparent;border-bottom:1px solid transparent;transition:transform .2s var(--gate-ease,cubic-bezier(.16,1,.3,1)),border-color .2s;color:inherit;pointer-events:none}.ds-transport:is(:hover,:focus-visible) .ds-transport-ink{border-top-color:rgba(248,249,250,.15);border-bottom-color:rgba(0,0,0,.6)}.ds-transport:active .ds-transport-ink{transform:translate3d(0,1px,0) scaleY(.97)}@media(prefers-reduced-motion:reduce){.ds-transport-ink{transition:none}}"
+    },
+    {
+      "name": "Category Filter",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Text filter without a pill or card surface. This specimen shows the inactive treatment.",
+      "html": "<button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">COMMERCIAL</button>",
+      "css": ".ds-filter{position:relative;min-height:44px;border:0;border-radius:0;padding:0;background:transparent;color:var(--text-secondary,#9499A3);font:400 10px/1.6 var(--font-sans,'Instrument Sans',sans-serif);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:color .35s var(--film-ease,cubic-bezier(.22,1,.36,1)),opacity .35s var(--film-ease,cubic-bezier(.22,1,.36,1))}.ds-filter:hover{color:var(--text-primary,#F8F9FA)}.ds-filter:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}.ds-filter[aria-pressed='true']{color:var(--text-primary,#F8F9FA)}.ds-filter[aria-pressed='true']::before{content:'';display:inline-block;width:5px;height:5px;margin:0 8px 2px 0;border-radius:50%;background:var(--accent-laser,#FF3E00)}@media(max-width:700px){.ds-filter{font-size:9px}}"
+    },
+    {
+      "name": "Active Category Filter",
+      "kind": "chip",
+      "refersTo": "filter-active",
+      "description": "Platinum text and the small laser signal establish the pressed state.",
+      "html": "<button class=\"ds-filter-active\" type=\"button\" aria-pressed=\"true\">ALL (12)</button>",
+      "css": ".ds-filter-active{position:relative;min-height:44px;border:0;border-radius:0;padding:0;background:transparent;color:var(--text-primary,#F8F9FA);font:400 10px/1.6 var(--font-sans,'Instrument Sans',sans-serif);letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:color .35s var(--film-ease,cubic-bezier(.22,1,.36,1)),opacity .35s var(--film-ease,cubic-bezier(.22,1,.36,1))}.ds-filter-active::before{content:'';display:inline-block;width:5px;height:5px;margin:0 8px 2px 0;border-radius:50%;background:var(--accent-laser,#FF3E00)}.ds-filter-active:hover{color:var(--text-primary,#F8F9FA)}.ds-filter-active:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}@media(max-width:700px){.ds-filter-active{font-size:9px}}"
+    },
+    {
+      "name": "Manual Copy Input",
+      "kind": "input",
+      "refersTo": "manual-copy-input",
+      "description": "The existing read-only email fallback: transparent fill, square shape and a hairline bottom edge. The sample value is illustrative.",
+      "html": "<label class=\"ds-manual-label\">MANUAL COPY<input class=\"ds-manual-input\" value=\"studio@example.com\" readonly aria-label=\"Email address for manual copy\"/></label>",
+      "css": ".ds-manual-label{display:block;color:var(--text-secondary,#9499A3);font:400 12px/1.6 var(--font-sans,'Instrument Sans',sans-serif)}.ds-manual-input{display:block;width:100%;border:0;border-bottom:1px solid var(--border-hairline,rgba(255,255,255,.08));border-radius:0;padding:10px 0;background:transparent;color:var(--text-primary,#F8F9FA);font:inherit}.ds-manual-input:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}"
+    },
+    {
+      "name": "Navigation and Language Buttons",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Small section links and four explicit language buttons. This is the desktop visual pattern; the source component owns mobile menu and underline motion behavior.",
+      "html": "<div class=\"ds-navigation\"><nav class=\"ds-nav-links\" aria-label=\"Portfolio\"><a href=\"#works\">WORKS</a><a href=\"#about\">ABOUT</a><a href=\"#studio\">STUDIO</a><a href=\"#contact\">CONTACT</a></nav><div class=\"ds-languages\" role=\"group\" aria-label=\"Language\"><button type=\"button\" lang=\"zh\" aria-label=\"中文\" aria-pressed=\"true\">ZH</button><span aria-hidden=\"true\">/</span><button type=\"button\" lang=\"en\" aria-label=\"English\" aria-pressed=\"false\">EN</button><span aria-hidden=\"true\">/</span><button type=\"button\" lang=\"ko\" aria-label=\"한국어\" aria-pressed=\"false\">KO</button><span aria-hidden=\"true\">/</span><button type=\"button\" lang=\"ja\" aria-label=\"日本語\" aria-pressed=\"false\">JA</button></div></div>",
+      "css": ".ds-navigation{display:flex;align-items:start;gap:32px;color:var(--text-primary,#F8F9FA);font-family:var(--font-sans,'Instrument Sans',sans-serif)}.ds-nav-links{display:flex;gap:26px}.ds-nav-links a{display:flex;align-items:center;min-height:44px;color:inherit;font-size:10px;line-height:1.6;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;text-decoration:none;transition:color .35s var(--film-ease,cubic-bezier(.22,1,.36,1)),opacity .35s var(--film-ease,cubic-bezier(.22,1,.36,1))}.ds-nav-links a:hover{text-decoration:underline;text-underline-offset:6px}.ds-nav-links a:focus-visible,.ds-languages button:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}.ds-languages{display:flex;align-items:center;white-space:nowrap}.ds-languages button{position:relative;border:0;border-radius:0;padding:0;min-height:44px;background:transparent;color:var(--text-secondary,#9499A3);opacity:.78;font:400 11px/1.6 var(--font-sans,'Instrument Sans',sans-serif);letter-spacing:.15em;cursor:pointer;transition:opacity .2s}.ds-languages button[aria-pressed='true']{color:var(--text-primary,#F8F9FA);opacity:1}.ds-languages button[aria-pressed='true']::after{content:'';position:absolute;left:0;right:0;bottom:8px;height:1px;background:currentColor}.ds-languages button:hover{color:var(--text-primary,#F8F9FA);opacity:1}.ds-languages>span{margin:0 9px;color:var(--text-secondary,#9499A3);opacity:.35;font-size:10px}"
+    },
+    {
+      "name": "Projection Film Frame",
+      "kind": "card",
+      "refersTo": "project-frame",
+      "description": "Current-film gate and caption specimen. The aperture is intentionally empty here; licensed source films belong in the application.",
+      "html": "<button class=\"ds-project\" type=\"button\" aria-label=\"View film\"><span class=\"ds-project-visual\"><span class=\"ds-project-image\"><span class=\"ds-project-gate\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i></span></span><span class=\"ds-project-info\"><span class=\"ds-project-heading\"><span class=\"ds-project-index\">01 /</span><span class=\"ds-project-title\">Film title</span></span><span class=\"ds-project-meta\">FILM — [00:00]</span></span></span></button>",
+      "css": ".ds-project{position:relative;display:block;width:100%;border:0;border-radius:0;padding:0;background:transparent;color:var(--text-primary,#F8F9FA);text-align:left;cursor:pointer;transform:none;perspective:none}.ds-project-visual,.ds-project-visual *{pointer-events:none}.ds-project-visual{display:block}.ds-project-image{position:relative;display:block;aspect-ratio:2.39;overflow:hidden;background:var(--bg-surface,#13151A);box-shadow:0 22px 60px -32px #000;outline:1px solid var(--border-projection,rgba(248,249,250,.15));outline-offset:-1px}.ds-project-image::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,11,13,.06),transparent 55%,rgba(10,11,13,.18));transition:opacity .8s var(--gate-ease,cubic-bezier(.16,1,.3,1))}.ds-project-gate{position:absolute;inset:12px}.ds-project-gate i{position:absolute;width:12px;height:12px;color:rgba(248,249,250,.65)}.ds-project-gate i:nth-child(1){left:0;top:0;border-top:1px solid;border-left:1px solid}.ds-project-gate i:nth-child(2){right:0;top:0;border-top:1px solid;border-right:1px solid}.ds-project-gate i:nth-child(3){left:0;bottom:0;border-bottom:1px solid;border-left:1px solid}.ds-project-gate i:nth-child(4){right:0;bottom:0;border-bottom:1px solid;border-right:1px solid}.ds-project-info{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-top:24px}.ds-project-heading{display:flex;align-items:baseline;gap:17px}.ds-project-index{font:400 10px/1.6 var(--font-mono,Consolas,monospace);color:var(--text-secondary,#9499A3)}.ds-project-title{font:400 clamp(24px,2.5vw,38px)/1.4 var(--font-serif,'Bodoni Moda',serif)}.ds-project-meta{font:400 10px/1.7 var(--font-mono,Consolas,monospace);letter-spacing:.12em;color:#a6adb7;white-space:nowrap}.ds-project:hover .ds-project-image::after,.ds-project:focus-visible .ds-project-image::after{opacity:.18}.ds-project:hover .ds-project-index,.ds-project:hover .ds-project-meta,.ds-project:focus-visible .ds-project-index,.ds-project:focus-visible .ds-project-meta{color:var(--text-primary,#F8F9FA)}.ds-project:focus-visible{outline:1px solid var(--text-primary,#F8F9FA);outline-offset:10px}@media(max-width:700px){.ds-project-image{aspect-ratio:16/9}.ds-project-gate{inset:9px}.ds-project-gate i{width:8px;height:8px}.ds-project-info{align-items:start;flex-direction:column;gap:5px;padding-top:18px}.ds-project-heading{gap:12px}.ds-project-title{font-size:23px}.ds-project-meta{font-size:9px}}@media(prefers-reduced-motion:reduce){.ds-project-image::after{transition:none}}"
+    },
+    {
+      "name": "Director Dossier",
+      "kind": "custom",
+      "refersTo": "dossier",
+      "description": "Typographic portrait reservation with a square negative holder. The image asset and signature are omitted from this specimen.",
+      "html": "<div class=\"ds-dossier\"><span class=\"ds-dossier-rail ds-dossier-left\" aria-hidden=\"true\"></span><div class=\"ds-dossier-aperture\"><span class=\"ds-dossier-readout\" aria-hidden=\"true\">5600K / ISO 800 <span>LC-CAM 01</span></span><div class=\"ds-dossier-type\" aria-hidden=\"true\"><span class=\"ds-dossier-name\" lang=\"zh\">東浩</span><span class=\"ds-dossier-roman\">DONG<br/>HAO.</span></div><span class=\"ds-dossier-index\" aria-hidden=\"true\">LC / D-01</span></div><span class=\"ds-dossier-rail ds-dossier-right\" aria-hidden=\"true\"></span></div>",
+      "css": ".ds-dossier{position:relative;padding:18px;border:1px solid #f8f9fa18;border-radius:0;background:linear-gradient(125deg,#262c32 0%,#15191e 20%,#171c21 70%,#272d34 100%);color:var(--text-primary,#F8F9FA)}.ds-dossier-aperture{position:relative;aspect-ratio:4/5;overflow:hidden;background:#080a0d;outline:1px solid #f8f9fa14;outline-offset:-1px}.ds-dossier-rail{position:absolute;top:18px;bottom:18px;width:4px;background:repeating-linear-gradient(180deg,#07090b 0 9px,transparent 9px 22px)}.ds-dossier-left{left:6px}.ds-dossier-right{right:6px}.ds-dossier-type{position:absolute;inset:0;display:flex;flex-direction:column;align-items:start;justify-content:space-between;padding:65px 30px 52px;color:#e2e7ea}.ds-dossier-name{font:400 80px/1.2 var(--font-serif,'Bodoni Moda',serif);letter-spacing:.06em}.ds-dossier-roman{font:500 clamp(44px,5vw,74px)/.86 var(--font-sans,'Instrument Sans',sans-serif);letter-spacing:-.04em}.ds-dossier-readout{position:absolute;z-index:2;top:18px;left:20px;right:20px;display:flex;justify-content:space-between;gap:10px;color:#a2aab4;font:400 7px/1.8 var(--font-mono,Consolas,monospace);letter-spacing:.09em}.ds-dossier-index{position:absolute;bottom:22px;left:22px;color:#a2aab4;font:400 7px/normal var(--font-mono,Consolas,monospace);letter-spacing:.18em}@media(max-width:700px){.ds-dossier{padding:14px}.ds-dossier-rail{top:14px;bottom:14px;width:3px}.ds-dossier-left{left:4px}.ds-dossier-right{right:4px}.ds-dossier-type{padding:50px 24px 45px}.ds-dossier-name{font-size:66px}.ds-dossier-roman{font-size:49px}.ds-dossier-readout{top:15px;left:17px;right:17px;font-size:6px}}"
+    },
+    {
+      "name": "Technique Matrix Row",
+      "kind": "custom",
+      "refersTo": "capacity-row",
+      "description": "An existing studio discipline, expressed as a semantic definition-list row.",
+      "html": "<dl class=\"ds-capacity\"><div class=\"ds-capacity-row\"><dt><span class=\"ds-capacity-code\" aria-hidden=\"true\">VP</span><span class=\"ds-capacity-name\"><span lang=\"en\">Virtual Production</span><span class=\"ds-capacity-label\">虚拟制片</span></span></dt><dd class=\"ds-capacity-description\">让实拍空间与数字场景，在同一视点相遇。</dd></div></dl>",
+      "css": ".ds-capacity{margin:0;padding:0;color:var(--text-primary,#F8F9FA);font-family:var(--font-sans,'Instrument Sans',sans-serif)}.ds-capacity-row{display:grid;grid-template-columns:32px minmax(0,1fr);gap:7px 18px;border-top:1px solid var(--border-projection,rgba(248,249,250,.15));padding:25px 0}.ds-capacity-row:last-child{border-bottom:1px solid var(--border-hairline,rgba(255,255,255,.08))}.ds-capacity-row dt{display:contents}.ds-capacity-row dd{margin:0}.ds-capacity-code{padding-top:4px;color:var(--text-secondary,#9499A3);font:400 8px/normal var(--font-mono,Consolas,monospace);letter-spacing:.1em}.ds-capacity-name{font:400 clamp(23px,2.2vw,33px)/1.2 var(--font-sans,'Instrument Sans',sans-serif);letter-spacing:-.02em}.ds-capacity-label{display:block;margin-top:7px;color:#c3cad2;font-size:10px;letter-spacing:.04em}.ds-capacity-description{grid-column:2;max-width:50ch;color:var(--text-secondary,#9499A3);font-size:12px;line-height:1.9}@media(max-width:700px){.ds-capacity-row{grid-template-columns:23px minmax(0,1fr);gap:7px 13px;padding:23px 0}.ds-capacity-name{font-size:26px}}"
+    },
+    {
+      "name": "Email Copy Button",
+      "kind": "button",
+      "refersTo": "email-button",
+      "description": "Italic address with a copied-state flip. The specimen is visual only; the real hook owns clipboard, status and manual fallback. The sample address is illustrative.",
+      "html": "<button class=\"ds-email\" type=\"button\" data-copied=\"false\" aria-label=\"Copy email studio@example.com\"><span class=\"ds-email-flip\" aria-hidden=\"true\"><span class=\"ds-email-address\">studio@example.com</span><span class=\"ds-email-confirmation\"><i class=\"ds-copy-dot\"></i>[ COPIED ]</span></span></button>",
+      "css": ".ds-email{border:0;border-radius:0;padding:0;background:transparent;color:var(--text-primary,#F8F9FA);font:italic 400 clamp(24px,2.8vw,42px)/1.5 var(--font-serif,'Bodoni Moda',serif);letter-spacing:-.02em;text-align:left;overflow-wrap:anywhere;perspective:600px;cursor:pointer}.ds-email-flip{display:inline-grid;vertical-align:baseline;pointer-events:none}.ds-email-address,.ds-email-confirmation{grid-area:1/1;backface-visibility:hidden;transform-origin:50% 50%;transition:transform .45s var(--gate-ease,cubic-bezier(.16,1,.3,1)),opacity .3s var(--film-ease,cubic-bezier(.22,1,.36,1))}.ds-email-confirmation{display:flex;align-items:center;gap:10px;color:var(--text-primary,#F8F9FA);font:400 12px/normal var(--font-mono,Consolas,monospace);letter-spacing:.18em;opacity:0;transform:rotateX(90deg)}.ds-copy-dot{display:inline-block;flex-shrink:0;width:5px;height:5px;border-radius:50%;background:var(--accent-laser,#FF3E00)}.ds-email:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:7px}.ds-email:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}.ds-email[data-copied='true'] .ds-email-address{opacity:0;transform:rotateX(-90deg)}.ds-email[data-copied='true'] .ds-email-confirmation{opacity:1;transform:rotateX(0)}@media(max-width:700px){.ds-email{font-size:clamp(25px,7vw,30px)}.ds-email-address,.ds-email-confirmation{transform:none!important}}@media(prefers-reduced-motion:reduce){.ds-email-address,.ds-email-confirmation{transform:none!important;transition:none}}"
+    },
+    {
+      "name": "Cine-Breakdown Gate",
+      "kind": "custom",
+      "refersTo": "breakdown-viewport",
+      "description": "Static specimen of the actual same-frame color study. Runtime pointer/touch/range logic is in CineBreakdown.tsx; sample passes are not a real client VFX delivery. The production gate follows the independently bounded biography-spread; width uses body clientWidth, and touch release retains its final pointer coordinate. Scoped normative metadata is explicitly recorded in extensions.breakdown.scopedTypography; small technical labels are not body-copy tokens.",
+      "html": "<figure class=\"ds-breakdown\"><figcaption>COLOR STUDY</figcaption><div class=\"ds-breakdown-frame\"><img src=\"/media/stills/refraction-2.jpg\" alt=\"Licensed acrylic-refraction frame, presentation grade\"><img class=\"ds-breakdown-raw\" src=\"/media/stills/refraction-2.jpg\" alt=\"\"><span class=\"ds-breakdown-divider\" aria-hidden=\"true\"></span><input type=\"range\" min=\"0\" max=\"100\" value=\"50\" aria-label=\"Adjust color-study divide\"></div></figure>",
+      "css": ".ds-breakdown{margin:100px auto 0;width:calc((100% + 2 * var(--gutter,22px)) * .72);max-width:none;color:var(--text-primary,#F8F9FA)}.ds-breakdown figcaption{margin-bottom:19px;color:var(--text-secondary,#9499A3);font:9px/1.7 var(--font-mono,Consolas,monospace);letter-spacing:.12em}.ds-breakdown-frame{position:relative;aspect-ratio:2.39;overflow:hidden;outline:1px solid rgba(248,249,250,.15);outline-offset:-1px;background:var(--bg-canvas,#0A0B0D)}.ds-breakdown-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:contrast(1.12) saturate(1.08) brightness(.96);pointer-events:none}.ds-breakdown-frame .ds-breakdown-raw{filter:contrast(.62) saturate(.42) brightness(1.12);clip-path:inset(0 50% 0 0)}.ds-breakdown-divider{position:absolute;inset:0 auto 0 50%;width:1px;background:rgba(255,62,0,.8);pointer-events:none}.ds-breakdown-frame input{position:absolute;inset:0;width:100%;height:100%;margin:0;opacity:0}.ds-breakdown-frame:focus-within{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:5px}@media(max-width:700px){.ds-breakdown{width:100%;margin-top:12px}}"
+    },
+    {
+      "name": "Film Strip Aperture",
+      "kind": "custom",
+      "description": "Current-film inert opacity layers; runtime warms four registered source-time JPEGs and updates external timecode. This specimen displays one sampled frame, not continuous video.",
+      "html": "<div class=\"ds-film-strip\"><span class=\"ds-film-strip-frame\"><img src=\"/media/stills/tide-scrub-2.jpg\" alt=\"Sampled licensed source frame\"></span><span class=\"ds-film-strip-code\">[ TC 00:00:05:07 ]</span></div>",
+      "css": ".ds-film-strip{color:var(--text-secondary,#9499A3)}.ds-film-strip-frame{position:relative;display:block;aspect-ratio:2.39;overflow:hidden;transform:translate3d(0,0,0);backface-visibility:hidden;pointer-events:none}.ds-film-strip-frame img{width:100%;height:100%;object-fit:cover;filter:contrast(1.04) saturate(1.02) brightness(1);transform:scale(1.025);transition:opacity .26s cubic-bezier(.16,1,.3,1);pointer-events:none}.ds-film-strip-code{display:block;padding-top:8px;font:9px/1.6 var(--font-mono,Consolas,monospace);letter-spacing:.14em;text-align:right}"
+    },
+    {
+      "name": "Living Grain Surface",
+      "kind": "custom",
+      "description": "Canvas placeholder only: runtime fills it with the original 12fps correlated random walk through the shared driver. Opacity .032 desktop/.028 mobile; half-size capped backing, still under reduced motion. No GPU percentage guaranteed.",
+      "html": "<canvas class=\"ds-living-grain\" width=\"480\" height=\"270\" aria-hidden=\"true\"></canvas>",
+      "css": ".ds-living-grain{display:block;width:100%;aspect-ratio:16/9;pointer-events:none;opacity:.032;mix-blend-mode:soft-light;image-rendering:auto}@media(max-width:700px){.ds-living-grain{opacity:.028}}@media(forced-colors:active){.ds-living-grain{display:none}}"
+    },
+    {
+      "name": "Transport Range",
+      "kind": "input",
+      "description": "Native range over a transform-only precision ruler. Runtime shared-clock spring settles and unsubscribes; this specimen demonstrates visual/focus geometry only.",
+      "html": "<span class=\"ds-transport-ruler\"><i aria-hidden=\"true\"></i><input type=\"range\" min=\"1\" max=\"12\" value=\"6\" aria-label=\"Select film reel\"></span>",
+      "css": ".ds-transport-ruler{position:relative;display:block;height:18px;background:repeating-linear-gradient(90deg,#646c76 0 1px,transparent 1px 8px) left bottom/100% 4px no-repeat,repeating-linear-gradient(90deg,#9098a5 0 1px,transparent 1px 40px) left bottom/100% 8px no-repeat;touch-action:pan-y}.ds-transport-ruler i{position:absolute;left:0;top:0;width:100%;height:20px;transform:translate3d(45.45%,0,0);pointer-events:none}.ds-transport-ruler i:before{content:\"\";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--accent-laser,#FF3E00)}.ds-transport-ruler input{position:absolute;inset:-12px -7px;width:calc(100% + 14px);height:44px;margin:0;opacity:0;cursor:ew-resize;touch-action:pan-y}.ds-transport-ruler:has(input:focus-visible){outline:1px solid var(--text-primary,#F8F9FA);outline-offset:7px}"
+    },
+    {
+      "name": "Global Cinema Sound Control",
+      "kind": "button",
+      "description": "One global fixed bottom-right sound toggle, separate from Hero video pause/play. Static specimen shows OFF; only an explicit runtime gesture creates the audio graph. Localized accessible labels and status remain in CinemaSoundControl.",
+      "html": "<div class=\"ds-cinema-audio\"><button type=\"button\" class=\"ds-cinema-sound\" aria-label=\"Enable cinema atmosphere\" aria-pressed=\"false\"><span class=\"ds-cinema-wave\" aria-hidden=\"true\"><i></i><i></i><i></i><i></i></span>SOUND [ OFF ]</button></div>",
+      "css": ".ds-cinema-audio{display:flex;justify-content:flex-end}.ds-cinema-sound{display:flex;align-items:center;justify-content:flex-end;gap:10px;min-height:44px;min-width:112px;border:0;border-radius:0;background:transparent;padding:0;color:#bac0c7;font:8px var(--font-mono,Consolas,monospace);letter-spacing:.06em;text-shadow:0 1px 3px #000;cursor:pointer}.ds-cinema-wave{display:flex;align-items:center;gap:2px;height:12px}.ds-cinema-wave i{display:block;width:1px;height:2px;background:currentColor}.ds-cinema-sound:focus-visible{outline:2px solid var(--text-primary,#F8F9FA);outline-offset:6px}.ds-cinema-sound:disabled{opacity:.7;cursor:default}"
+    }
+  ],
+  "narrative": {
+    "northStar": "A film title, a projection room, an author's working plate.",
+    "overview": "The portfolio is contemporary, cold and cinematic. Obsidian supports illuminated moving images; monolithic sans type establishes the studio, while restrained serif text gives the director's voice a separate register. Fine optical readouts and frame geometry provide scale without competing with the films.\n\nThe material character comes from a projection gate and a medium-format negative holder. The reserved portrait is an intentional typographic plate until a real portrait is supplied. Surfaces stay open and square, with changes in light and content density carrying the transition from viewing to reading.",
+    "keyCharacteristics": [
+      "Cold obsidian and platinum, with titanium for secondary information.",
+      "A rare laser accent used for active markers and the projection ruler.",
+      "Monolithic title typography beside small technical readouts.",
+      "Square image gates, fine edges and a medium-format dossier.",
+      "Static ambient light, a stepped living-grain canvas and restrained motion inside stable controls.",
+      "Four-language typography with a distinct Japanese reading stack."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Rule",
+        "body": "Keep the laser accent attached to an active state, recording cue or transport position; use platinum for ordinary links and focus.",
+        "section": "colors"
+      },
+      {
+        "name": "The Language Fidelity Rule",
+        "body": "Preserve the language-specific font stack and line-breaking rules when adding text; never route Japanese reading text through Chinese fallback fonts.",
+        "section": "typography"
+      },
+      {
+        "name": "The Fixed Shell Rule",
+        "body": "Pointer sensing stays on an untransformed control shell. Transform the inert visual descendants, not the hit target. Share the existing frame driver rather than adding another animation loop.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** preserve the cold palette and use laser for the existing signal roles.",
+      "**Do** keep the hero name heavy, tightly tracked and clearly separate from the reel entry.",
+      "**Do** preserve the theatre's central image gate and its distinct mobile ratio.",
+      "**Do** place movement inside stable sensing shells and use the existing shared frame driver.",
+      "**Do** keep one stepped grain canvas within the documented opacity and resolution budget, retaining static ambient radials.",
+      "**Do** preserve four-language text, Japanese strict line breaking and Korean word grouping.",
+      "**Do** retain visible focus, touch and keyboard film navigation, reduced motion and dialog focus return.",
+      "**Do** keep the portrait and signature reservation honest until the corresponding real assets exist."
+    ],
+    "donts": [
+      "**Don't** introduce brown ageing effects, sepia paper, VHS-store decoration or plastic card surfaces.",
+      "**Don't** turn the laser accent into a large background or a generic button fill.",
+      "**Don't** add Gaussian blur, full-screen filter animation or stacked blend-mode light layers; the single low-opacity soft-light grain surface is the documented exception.",
+      "**Don't** animate the pointer sensing shell or make moving visual descendants interactive.",
+      "**Don't** replace the language buttons with a native select or give Japanese text Chinese font fallbacks.",
+      "**Don't** fabricate a portrait, signature, client endorsement, festival achievement or hardware-performance claim."
+    ]
+  },
+  "updatedOn": "2026-10-23"
+}
