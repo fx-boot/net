@@ -1,0 +1,154 @@
+{
+  "generated": "2026-10-23",
+  "licenseUrl": "https://mixkit.co/license/#videoFree",
+  "sources": {
+    "refraction": {
+      "local": "public/media/video/refraction-full.mp4",
+      "sourceUrl": "https://mixkit.co/free-stock-video/model-in-western-fashion-seen-through-acrylic-101645/",
+      "durationSeconds": 18.44,
+      "sourceFrameRate": 23.98
+    },
+    "heat": {
+      "local": "public/media/video/heat-full.mp4",
+      "sourceUrl": "https://mixkit.co/free-stock-video/performance-of-a-contemporary-dancer-41409/",
+      "durationSeconds": 19.02,
+      "sourceFrameRate": 23.98
+    },
+    "night": {
+      "local": "public/media/video/night-full.mp4",
+      "sourceUrl": "https://mixkit.co/free-stock-video/city-seen-from-the-heights-at-night-5011/",
+      "durationSeconds": 25.48,
+      "sourceFrameRate": 25
+    }
+  },
+  "outputs": [
+    {
+      "local": "public/media/video/cinema-refraction-loop.mp4",
+      "kind": "motion-loop",
+      "sources": [
+        "refraction"
+      ],
+      "sourceStart": 3,
+      "durationSeconds": 10,
+      "width": 1280,
+      "height": 536,
+      "frameRate": 24,
+      "audio": false,
+      "bytes": 519756,
+      "sha256": "fd9f43e612900404e9b933c5c2f243cc6cd0b429628846cd1fd5ba1075cb8c09",
+      "src": "/media/video/cinema-refraction-loop.mp4"
+    },
+    {
+      "local": "public/media/video/cinema-showreel.mp4",
+      "kind": "hero-edit",
+      "sources": [
+        "refraction",
+        "heat",
+        "night"
+      ],
+      "chapters": [
+        {
+          "source": "refraction",
+          "sourceStart": 3,
+          "start": 0
+        },
+        {
+          "source": "heat",
+          "sourceStart": 5,
+          "start": 4
+        },
+        {
+          "source": "night",
+          "sourceStart": 8,
+          "start": 8
+        }
+      ],
+      "durationSeconds": 12,
+      "width": 1280,
+      "height": 536,
+      "frameRate": 24,
+      "audio": false,
+      "bytes": 998204,
+      "sha256": "4e57d2a70c7a6535b99409400985e069fba86dc114ec61ba0096e2df75f54848",
+      "src": "/media/video/cinema-showreel.mp4"
+    },
+    {
+      "local": "public/media/stills/cinema-refraction-1.jpg",
+      "kind": "source-time-still",
+      "sources": [
+        "refraction"
+      ],
+      "sourceTime": 3,
+      "width": 1280,
+      "height": 536,
+      "bytes": 64673,
+      "sha256": "29b9da7c41b6602466a9b536da66ed08cb0a0491aae631e3e56061edb7f0a6df",
+      "src": "/media/stills/cinema-refraction-1.jpg"
+    },
+    {
+      "local": "public/media/stills/cinema-refraction-2.jpg",
+      "kind": "source-time-still",
+      "sources": [
+        "refraction"
+      ],
+      "sourceTime": 7,
+      "width": 1280,
+      "height": 536,
+      "bytes": 72023,
+      "sha256": "c70af65a189ac67b02d89f1f9ce5f444b3e2dfb984e9a034db2a405844518f50",
+      "src": "/media/stills/cinema-refraction-2.jpg"
+    },
+    {
+      "local": "public/media/stills/cinema-refraction-3.jpg",
+      "kind": "source-time-still",
+      "sources": [
+        "refraction"
+      ],
+      "sourceTime": 11,
+      "width": 1280,
+      "height": 536,
+      "bytes": 77489,
+      "sha256": "36d2cf32774fe6a3c811a7ce10023089babd5e02b53eced5d1baf55b33ec4582",
+      "src": "/media/stills/cinema-refraction-3.jpg"
+    },
+    {
+      "local": "public/media/stills/cinema-refraction-4.jpg",
+      "kind": "source-time-still",
+      "sources": [
+        "refraction"
+      ],
+      "sourceTime": 15,
+      "width": 1280,
+      "height": 536,
+      "bytes": 78473,
+      "sha256": "f8760190146522a08cea350fdc84d02c3fdd5171373d2938b679458ef3050f12",
+      "src": "/media/stills/cinema-refraction-4.jpg"
+    },
+    {
+      "local": "public/media/posters/cinema-refraction.jpg",
+      "kind": "poster",
+      "sources": [
+        "refraction"
+      ],
+      "sourceTime": 7,
+      "width": 1280,
+      "height": 536,
+      "bytes": 72023,
+      "sha256": "c70af65a189ac67b02d89f1f9ce5f444b3e2dfb984e9a034db2a405844518f50",
+      "src": "/media/posters/cinema-refraction.jpg"
+    },
+    {
+      "local": "public/media/posters/cinema-showreel.jpg",
+      "kind": "poster",
+      "sources": [
+        "refraction"
+      ],
+      "sourceTime": 3,
+      "width": 1280,
+      "height": 536,
+      "bytes": 64673,
+      "sha256": "29b9da7c41b6602466a9b536da66ed08cb0a0491aae631e3e56061edb7f0a6df",
+      "src": "/media/posters/cinema-showreel.jpg"
+    }
+  ]
+}

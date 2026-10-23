@@ -1,11 +1,12 @@
-import { createProjectCatalog } from './projectCatalog';
+import { catalogLanguages, createProjectCatalog, expandDemoEntries } from './projectCatalog';
 import { brandCopy, studioBrand } from '../i18n/brand';
-import type { Award, Client, DirectorProfile, MediaAsset, Project, Representative, ReelConfig } from '../types/portfolio';
+import type { Award, Client, DirectorProfile, MediaAsset, Project, ProjectEntry, Representative, ReelConfig } from '../types/portfolio';
+export type { ProjectCredits, ProjectEntry } from '../types/portfolio';
 import { dictionaries, type Language } from '../i18n/dictionaries';
 import { scrubFrameSources } from './scrubFrames';
 
 const stock = {
-  tide: [1932, 'sea-waves-and-big-rocks', '浪花在深色礁石之间散开'],
+  tide: [101645, 'model-in-western-fashion-seen-through-acrylic', '冷暗光线中，人物轮廓穿过朱红色光学折射'],
   night: [5011, 'city-seen-from-the-heights-at-night', '暮蓝夜空下流动的城市灯火'],
   between: [41412, 'artistic-performance-of-a-pair-of-dancers', '黑白画面中两位舞者的身体对话'],
   wild: [44605, 'take-area-over-a-considerable-forest', '晨光中绵延的森林与山脉'],
@@ -15,13 +16,15 @@ const stock = {
 } as const;
 function asset(slug: keyof typeof stock, kind: 'poster' | 'preview' | 'full' | 'still' = 'poster'): MediaAsset {
   const [id, path, alt] = stock[slug];
-  const poster = `/media/posters/${slug}.jpg`;
-  const src = kind === 'poster' ? poster : kind === 'still' ? `/media/stills/${slug}-2.jpg` : `/media/video/${slug}-${kind}.mp4`;
+  const poster = slug === 'tide' ? '/media/posters/cinema-refraction.jpg' : `/media/posters/${slug}.jpg`;
+  const src = slug === 'tide'
+    ? kind === 'poster' ? poster : kind === 'still' ? '/media/stills/cinema-refraction-2.jpg' : kind === 'preview' ? '/media/video/cinema-refraction-loop.mp4' : '/media/video/refraction-full.mp4'
+    : kind === 'poster' ? poster : kind === 'still' ? `/media/stills/${slug}-2.jpg` : `/media/video/${slug}-${kind}.mp4`;
   const videoUrl = id === 101645 ? 'https://assets.mixkit.co/nie07c56ybs0w2m4zhfolf4gcg8u' : `https://assets.mixkit.co/videos/${id}/${id}-1080.mp4`;
   return { isPlaceholder: true, src, remoteSrc: kind === 'preview' || kind === 'full' ? videoUrl : src, poster, fallback: '/media/fallback.svg', sourceUrl: `https://mixkit.co/free-stock-video/${path}-${id}/`, licenseUrl: 'https://mixkit.co/license/#videoFree', author: 'Mixkit contributor · 详见素材原始页', alt };
 }
 const concepts: Array<{ id: keyof typeof stock; title: string; englishTitle: string; category: Project['category']; format: string; year: number; duration: string; description: string; note: string }> = [
-  { id: 'tide', title: '潮汐之后', englishTitle: 'After the Tide', category: 'Narrative', format: '短片概念', year: 2026, duration: '00:16', description: '当海水退去，留下的不是答案，而是另一种等待。', note: '我想把海拍成一种记忆。没有急于抵达的人物，也没有被解释的情绪；潮汐本身就是叙事。这个概念研究关注自然光、停顿与画外空间。' },
+  { id: 'tide', title: '潮汐之后', englishTitle: 'After the Tide', category: 'Narrative', format: '短片概念', year: 2026, duration: '00:18', description: '光线退去，人物在折射的边界重新显影。', note: '把记忆看作一种光学现象。朱红色反光掠过人物，透明介质改变距离；每一次清晰与失焦，都是情绪的潮汐。这个影像研究关注材质、轮廓和暗部的留白。' },
   { id: 'night', title: '夜行者', englishTitle: 'Night Passage', category: 'Commercials', format: '品牌影像概念', year: 2026, duration: '00:25', description: '越过城市的表面，寻找夜色里仍未熄灭的温度。', note: '车灯是一句没有写完的话。以高处的凝视代替快速剪辑，让城市的呼吸成为画面的节拍；冷暖交界处，是这部品牌影像的情感起点。' },
   { id: 'between', title: '无声之间', englishTitle: 'In Between', category: 'Visual Tech', format: '舞蹈影像概念', year: 2025, duration: '00:22', description: '语言停下来，身体继续说话。', note: '身体之间的距离比动作本身更动人。黑白不是怀旧，而是去掉多余的解释，让视线停在呼吸、肌理和一次未完成的靠近上。' },
   { id: 'wild', title: '旷野来信', englishTitle: 'Letters from the Wild', category: 'Narrative', format: '实验短片概念', year: 2025, duration: '00:43', description: '离开熟悉的坐标，让一封没有地址的信抵达。', note: '把镜头交给风，给未知留出时间。俯瞰的视角慢慢消解边界，树木不再是背景，而是一整片正在缓慢书写的生命。' },
@@ -30,7 +33,10 @@ const concepts: Array<{ id: keyof typeof stock; title: string; englishTitle: str
 ];
 const baseProjects: Project[] = concepts.map((p) => ({
   ...p, isPlaceholder: true, cover: asset(p.id), preview: asset(p.id, 'preview'), fullFilm: asset(p.id, 'full'), stills: [asset(p.id), asset(p.id, 'still')],
-  scrub: p.id === 'portrait' ? undefined : {
+  scrub: p.id === 'tide' ? {
+    durationSeconds: 18.44, frameRate: 24, sourceFrameRate: 23.98,
+    frames: [3, 7, 11, 15].map((sourceTime, index) => ({ ...asset('tide', 'still'), src: `/media/stills/cinema-refraction-${index + 1}.jpg`, remoteSrc: `/media/stills/cinema-refraction-${index + 1}.jpg`, sourceTime })),
+  } : p.id === 'portrait' ? undefined : {
     durationSeconds: scrubFrameSources[p.id].durationSeconds,
     frameRate: scrubFrameSources[p.id].frameRate,
     sourceFrameRate: scrubFrameSources[p.id].sourceFrameRate,
@@ -53,16 +59,13 @@ const portraitAsset: MediaAsset = {
   author: 'LANCHUAN · Director asset reservation', alt: brandCopy.zh.portraitAlt,
 };
 export const director: DirectorProfile = { isPlaceholder: true, name: '東浩', englishName: 'Dong Hao', role: 'Founder & Chief Director', statement: '让那些未被说出的，留在画面里。', portrait: portraitAsset };
-export const showreel: MediaAsset = { ...asset('tide', 'full'), src: '/media/video/showreel-silent.mp4', hasAudio: false, alt: '六组授权素材构成的 24 秒演示混剪，无音轨' };
+export const showreel: MediaAsset = { ...asset('refraction', 'full'), src: '/media/video/cinema-showreel.mp4', remoteSrc: '/media/video/cinema-showreel.mp4', poster: '/media/posters/cinema-showreel.jpg', hasAudio: false, alt: '光学折射、聚光舞者与夜间城市组成的 12 秒静音混剪' };
 export const reelConfig: ReelConfig = {
-  frameRate: 24, expectedDuration: 24,
+  frameRate: 24, expectedDuration: 12,
   chapters: [
-    { id: '01', projectId: 'tide', start: 0 },
-    { id: '02', projectId: 'night', start: 4 },
-    { id: '03', projectId: 'between', start: 8 },
-    { id: '04', projectId: 'wild', start: 12 },
-    { id: '05', projectId: 'heat', start: 16 },
-    { id: '06', projectId: 'refraction', start: 20 },
+    { id: '01', projectId: 'refraction', start: 0 },
+    { id: '02', projectId: 'heat', start: 4 },
+    { id: '03', projectId: 'night', start: 8 },
   ],
 };
 export const awards: Award[] = [
@@ -81,7 +84,7 @@ export const socials = [{ label: 'Vimeo', href: 'https://vimeo.com/' }, { label:
 type ProjectText = { title: string; format: string; description: string; note: string; alt: string };
 const translatedProjects: Record<Exclude<Language, 'zh'>, ProjectText[]> = {
   en: [
-    { title: 'After the Tide', format: 'Short film concept', description: 'When the water recedes, what remains is another kind of waiting.', note: 'I wanted the sea to feel like memory. No character rushing to arrive, no emotion explained away. The tide itself carries the story. This concept explores natural light, pauses and the space beyond the frame.', alt: 'White surf spreading between dark coastal rocks' },
+    { title: 'After the Tide', format: 'Short film concept', description: 'As light recedes, a figure emerges again at the edge of refraction.', note: 'Memory becomes an optical phenomenon. Vermilion reflections pass over a figure while translucent material changes our sense of distance. Each shift between clarity and defocus is an emotional tide. This study considers texture, silhouettes and the space held in shadow.', alt: 'A figure crossing vermilion optical reflections in low-key light' },
     { title: 'Night Passage', format: 'Brand film concept', description: 'Beyond the city’s surface, a warmth that refuses to go dark.', note: 'Headlights trace an unfinished sentence. A patient gaze from above replaces rapid cuts, letting the city’s breathing set the rhythm. The meeting of cool and warm light becomes an emotional starting point.', alt: 'City lights moving beneath a deep blue evening sky' },
     { title: 'In Between', format: 'Dance film concept', description: 'When language stops, the body keeps speaking.', note: 'The distance between bodies matters as much as the movement. Black and white strips away explanation, keeping our attention on breath, texture and a gesture that never quite reaches its destination.', alt: 'Two contemporary dancers in a black-and-white close-up' },
     { title: 'Letters from the Wild', format: 'Experimental short concept', description: 'A letter without an address, beyond familiar coordinates.', note: 'Let the wind hold the camera; give the unknown time. From above, the forest gradually dissolves its boundaries. Trees stop being scenery and become a living page, slowly writing itself.', alt: 'An expansive forest and mountains in morning light' },
@@ -89,7 +92,7 @@ const translatedProjects: Record<Exclude<Language, 'zh'>, ProjectText[]> = {
     { title: 'Refraction', format: 'Fashion film concept', description: 'Reality has more than one shape.', note: 'Transparent material is both a window and a barrier. Light repeatedly reshapes the figure, bringing clothing, skin and space into a single texture. A small visual letter to uncertainty.', alt: 'A fashion model seen through a translucent acrylic surface' },
   ],
   ko: [
-    { title: '밀물이 지나간 뒤', format: '단편영화 콘셉트', description: '물이 빠진 자리에 남는 것은 또 다른 기다림입니다.', note: '바다를 기억처럼 담고 싶었습니다. 서둘러 도착하는 인물도, 설명된 감정도 없이 밀물과 썰물 자체가 이야기를 이끕니다. 자연광, 멈춤, 화면 밖의 공간을 탐구하는 콘셉트입니다.', alt: '짙은 해안 바위 사이로 퍼지는 흰 파도' },
+    { title: '밀물이 지나간 뒤', format: '단편영화 콘셉트', description: '빛이 물러나면 굴절의 경계에서 인물이 다시 모습을 드러냅니다.', note: '기억을 하나의 광학 현상으로 바라봅니다. 붉은 반사광이 인물을 스치고 투명한 소재는 거리감을 바꿉니다. 선명함과 흐림 사이의 변화가 감정의 밀물과 썰물을 이룹니다. 질감과 윤곽, 어둠 속 여백을 탐구하는 영상 연구입니다.', alt: '낮은 조도 속 붉은 광학 반사광을 가로지르는 인물' },
     { title: '밤을 지나는 사람', format: '브랜드 필름 콘셉트', description: '도시의 표면 너머, 아직 꺼지지 않은 온도를 찾아서.', note: '차의 불빛은 끝맺지 않은 문장입니다. 빠른 편집 대신 높은 곳에서의 응시로 도시의 호흡을 리듬으로 삼습니다. 차가운 빛과 따뜻한 빛이 만나는 지점이 감정의 출발점입니다.', alt: '짙은 푸른 밤하늘 아래 흐르는 도시의 불빛' },
     { title: '침묵의 사이', format: '댄스 필름 콘셉트', description: '말이 멈추면 몸은 계속 이야기합니다.', note: '동작 자체만큼 몸과 몸 사이의 거리가 중요합니다. 흑백은 향수가 아니라 설명을 덜어내는 방식입니다. 호흡과 질감, 끝내 닿지 않은 몸짓에 시선을 머물게 합니다.', alt: '흑백 화면 속 두 현대무용가의 몸짓' },
     { title: '야생에서 온 편지', format: '실험 단편 콘셉트', description: '익숙한 좌표를 벗어나, 주소 없는 편지가 닿도록.', note: '바람에 카메라를 맡기고 미지의 것에 시간을 줍니다. 위에서 바라보는 시선 속에서 숲의 경계가 서서히 흐려집니다. 나무는 배경을 넘어 스스로 쓰이는 살아 있는 페이지가 됩니다.', alt: '아침 햇살 아래 펼쳐진 숲과 산맥' },
@@ -97,7 +100,7 @@ const translatedProjects: Record<Exclude<Language, 'zh'>, ProjectText[]> = {
     { title: '굴절', format: '패션 필름 콘셉트', description: '현실에는 하나 이상의 형태가 있습니다.', note: '투명한 소재는 창이면서 장벽입니다. 빛의 굴절이 인물의 윤곽을 바꾸고 옷, 피부와 공간을 하나의 질감으로 엮습니다. 불확실성에 보내는 짧은 영상 편지입니다.', alt: '반투명 아크릴을 통해 보이는 패션 모델' },
   ],
   ja: [
-    { title: '潮が引いたあと', format: '短編映画コンセプト', description: '海が退いたあとに残る、もうひとつの待つ時間。', note: '海を、記憶のように撮りたいと思いました。到着を急ぐ人物も、説明される感情もない。潮の満ち引きそのものが物語です。自然光と間、画面の外に広がる空間を探る試みです。', alt: '暗い岩礁のあいだに広がる白い波' },
+    { title: '潮が引いたあと', format: '短編映画コンセプト', description: '光が退くとき、屈折の境界に人の輪郭がふたたび現れる。', note: '記憶をひとつの光学現象として見つめます。朱色の反射光が人物を横切り、透明な素材が距離を変える。鮮明さとぼけの移ろいが、感情の満ち引きとなります。質感と輪郭、暗部の余白を探る映像研究です。', alt: '暗い光のなか、朱色の光学反射を横切る人物' },
     { title: '夜をゆく', format: 'ブランド映像コンセプト', description: '街の表面を越えて、まだ消えない温度を探す。', note: '車の光は、書き終えられない一文です。速い編集の代わりに高所から見つめ、街の呼吸をリズムにします。冷たい光と暖かい光の境界から、感情が始まります。', alt: '深い青の夜空の下で流れる街の灯り' },
     { title: '沈黙のあいだ', format: 'ダンス映像コンセプト', description: '言葉が止まっても、身体は語り続ける。', note: '動きと同じくらい、身体と身体の距離に惹かれます。白黒は懐古ではなく、説明を取り去るための選択。呼吸や質感、届ききらない仕草に視線を留めます。', alt: '白黒の画面で対話する二人のダンサー' },
     { title: '野生からの手紙', format: '実験短編コンセプト', description: '慣れた座標を離れて、宛先のない手紙を届ける。', note: '風にカメラを預け、未知のものに時間を与える。見下ろす視点のなかで森の境界がゆっくり溶けていきます。木々は背景ではなく、自らを書き続ける生きた一頁になります。', alt: '朝の光に包まれる広大な森と山並み' },
@@ -120,14 +123,35 @@ const baseProjectsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as c
   const names = [`${project.category === 'Commercials' ? 'Morrow Studio' : 'Independent Study'} (${fictitious[language]})`, `North Window (${fictitious[language]})`, `${language === 'zh' ? '林屿' : 'Lin Yu'} (${fictitious[language]})`, `Still Room Pictures (${fictitious[language]})`, String(project.year), stockNotice[language]];
   return { ...project, ...text, cover: translateAsset(project.cover, language, text.alt), preview: translateAsset(project.preview, language, text.alt), fullFilm: translateAsset(project.fullFilm, language, text.alt), stills: project.stills.map(media => translateAsset(media, language, text.alt)), scrub: project.scrub ? { ...project.scrub, frames: project.scrub.frames.map(frame => ({ ...translateAsset(frame, language, text.alt), sourceTime: frame.sourceTime })) } : undefined, credits: creditLabels[language].map((role, i) => ({ role, name: names[i], isPlaceholder: true })) };
 })])) as Record<Language, Project[]>;
-export const createDemoCatalog = (count = 12) => createProjectCatalog(baseProjectsByLanguage, count);
-export const projectsByLanguage = createDemoCatalog();
+const demoEntries: ProjectEntry[] = baseProjects.map((project, index) => {
+  const field = (select: (value: Project) => string) => Object.fromEntries(catalogLanguages.map(language => [language, select(baseProjectsByLanguage[language][index])])) as Record<Language, string>;
+  return {
+    id: project.id, title: field(value => value.title),
+    category: project.category === 'Commercials' ? 'commercials' : project.category === 'Narrative' ? 'narrative' : 'visual-tech',
+    year: String(project.year), duration: project.duration, isPlaceholder: true,
+    coverPoster: project.cover.src, motionLoopSrc: project.preview.src, fullFilmSrc: project.fullFilm.src,
+    stills: project.scrub!.frames.map(frame => frame.src),
+    description: field(value => value.description), note: field(value => value.note), format: field(value => value.format), alt: field(value => value.cover.alt),
+    provenance: { sourceUrl: project.cover.sourceUrl, licenseUrl: project.cover.licenseUrl, author: mediaAuthor },
+    remoteSources: { motionLoopSrc: project.preview.remoteSrc, fullFilmSrc: project.fullFilm.remoteSrc }, fullFilmHasAudio: false,
+    credits: {
+      client: field(value => value.credits[0].name), agency: field(value => value.credits[1].name),
+      dop: field(value => value.credits[2].name), production: field(value => value.credits[3].name),
+      additional: [{ label: field(value => value.credits[5].role), value: field(value => value.credits[5].name) }],
+    },
+    scrub: { durationSeconds: project.scrub!.durationSeconds, frameRate: project.scrub!.frameRate, sourceFrameRate: project.scrub!.sourceFrameRate, frameTimes: project.scrub!.frames.map(frame => frame.sourceTime) },
+  };
+});
+/** BRAND HANDOFF: replace this list with production ProjectEntry records. */
+export const projectEntries: ProjectEntry[] = expandDemoEntries(demoEntries, 12);
+export const createDemoCatalog = (count = 12) => createProjectCatalog(expandDemoEntries(demoEntries, count));
+export const projectsByLanguage = createProjectCatalog(projectEntries);
 export const projects = projectsByLanguage.zh;
 const portraitAlt: Record<Language, string> = { zh: brandCopy.zh.portraitAlt, en: brandCopy.en.portraitAlt, ko: brandCopy.ko.portraitAlt, ja: brandCopy.ja.portraitAlt };
 export const directorsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, { ...director, name: brandCopy[language].directorName, role: dictionaries[language].directorRole, statement: dictionaries[language].heroStatement, portrait: { ...director.portrait, alt: portraitAlt[language] } }])) as Record<Language, DirectorProfile>;
 const awardHonors: Record<Language, string[]> = { zh: ['Film Craft · 入围版式示例', '短片 · 展映版式示例', '青年电影展 · 入围版式示例'], en: ['Film Craft · Shortlist layout example', 'Short film · Screening layout example', 'Youth film festival · Selection layout example'], ko: ['필름 크래프트 · 후보 레이아웃 예시', '단편 · 상영 레이아웃 예시', '청년영화제 · 선정 레이아웃 예시'], ja: ['フィルムクラフト · 候補表示の見本', '短編 · 上映表示の見本', '青年映画祭 · 選出表示の見本'] };
 const festivalNames: Record<Language, string[]> = { zh: ['戛纳狮', '圣丹斯', 'FIRST 青年电影展'], en: ['Cannes Lions', 'Sundance', 'FIRST'], ko: ['칸 라이언즈', '선댄스', 'FIRST 청년영화제'], ja: ['カンヌライオンズ', 'サンダンス', 'FIRST 青年映画祭'] };
-export const awardsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, awards.map((award, index) => ({ ...award, festival: festivalNames[language][index], honor: awardHonors[language][index], film: projectsByLanguage[language][[1, 0, 3][index]].title }))])) as Record<Language, Award[]>;
+export const awardsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, awards.map((award, index) => ({ ...award, festival: festivalNames[language][index], honor: awardHonors[language][index], film: baseProjectsByLanguage[language][[1, 0, 3][index]].title }))])) as Record<Language, Award[]>;
 export const representativesByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => {
   const copy = brandCopy[language];
   return [language, [

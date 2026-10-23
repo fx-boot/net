@@ -1,4 +1,4 @@
-import { useEffect, useRef, type ReactNode } from 'react';
+import { useEffect, useLayoutEffect, useRef, type ReactNode } from 'react';
 import Lenis from 'lenis';
 import 'lenis/dist/lenis.css';
 import { useDesktopPointer, useReducedMotion } from '../hooks/useMotionEnvironment';
@@ -6,6 +6,7 @@ import { useSpatialRig } from '../hooks/useSpatialRig';
 import { renderCinemaFrame } from '../lib/cinemaFrames';
 import { registerFrameDriver, startFrameDiagnostics } from '../lib/frameDiagnostics';
 import { cinemaAudio } from '../lib/cinemaAudio';
+import { previewPlayback } from '../lib/previewPlayback';
 
 export function Providers({ children, modalOpen }: { children: ReactNode; modalOpen: boolean }) {
   const reduced = useReducedMotion();
@@ -13,6 +14,7 @@ export function Providers({ children, modalOpen }: { children: ReactNode; modalO
   useSpatialRig(modalOpen);
   useEffect(()=>cinemaAudio.mount(),[]);
   useEffect(()=>{cinemaAudio.setBlocked(modalOpen);},[modalOpen]);
+  useLayoutEffect(()=>{previewPlayback.setBlocked(modalOpen);return()=>previewPlayback.setBlocked(false);},[modalOpen]);
   const lenis = useRef<Lenis | null>(null);
   useEffect(() => {
     const instance = !reduced && desktop ? new Lenis({

@@ -1,4 +1,40 @@
+import type { Language } from '../i18n/dictionaries';
+
 export type Category = 'Commercials' | 'Narrative' | 'Visual Tech';
+export type ProjectCategory = 'commercials' | 'narrative' | 'visual-tech';
+export type LocalizedProjectText = Record<Language, string>;
+export type ProjectCreditValue = string | LocalizedProjectText;
+/** Brand-owned credits; labels are localized by the catalog adapter. */
+export interface ProjectCredits {
+  client: ProjectCreditValue;
+  agency: ProjectCreditValue;
+  dop: ProjectCreditValue;
+  production: ProjectCreditValue;
+  additional?: Array<{ label: LocalizedProjectText; value: ProjectCreditValue }>;
+}
+/** One editable source record drives all four localized renderer records. */
+export interface ProjectEntry {
+  id: string;
+  title: Record<Language, string>;
+  category: ProjectCategory;
+  year: string;
+  duration: string;
+  coverPoster: string;
+  motionLoopSrc: string;
+  fullFilmSrc: string;
+  stills: string[];
+  credits: ProjectCredits;
+  isPlaceholder: boolean;
+  description?: Partial<LocalizedProjectText>;
+  note?: Partial<LocalizedProjectText>;
+  format?: Partial<LocalizedProjectText>;
+  alt?: Partial<LocalizedProjectText>;
+  provenance?: { sourceUrl: string; licenseUrl: string; author: ProjectCreditValue };
+  remoteSources?: { motionLoopSrc?: string; fullFilmSrc?: string };
+  fullFilmHasAudio?: boolean;
+  scrub?: { durationSeconds: number; frameRate: number; sourceFrameRate: number; frameTimes: number[] };
+  sourceProjectId?: string;
+}
 export type Filter = 'All' | Category;
 export type WorkView = 'carousel' | 'archive';
 export interface ReelChapter { id: string; projectId: string; start: number; poster?: string }

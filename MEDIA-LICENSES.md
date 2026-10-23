@@ -8,7 +8,7 @@ Each source page below returned `data-license="videoFree"`. Source HTML snapshot
 
 | Local prefix / demo use | Official source | Verified direct MP4 |
 | --- | --- | --- |
-| tide / 潮汐之后 | [Sea waves and big rocks](https://mixkit.co/free-stock-video/sea-waves-and-big-rocks-1932/) | https://assets.mixkit.co/videos/1932/1932-1080.mp4 |
+| tide / retired sea study, retained source archive | [Sea waves and big rocks](https://mixkit.co/free-stock-video/sea-waves-and-big-rocks-1932/) | https://assets.mixkit.co/videos/1932/1932-1080.mp4 |
 | night / 夜行者 | [City seen from the heights at night](https://mixkit.co/free-stock-video/city-seen-from-the-heights-at-night-5011/) | https://assets.mixkit.co/videos/5011/5011-1080.mp4 |
 | between / 无声之间 | [Artistic performance of a pair of dancers](https://mixkit.co/free-stock-video/artistic-performance-of-a-pair-of-dancers-41412/) | https://assets.mixkit.co/videos/41412/41412-1080.mp4 |
 | wild / 旷野来信 | [Take area over a considerable forest](https://mixkit.co/free-stock-video/take-area-over-a-considerable-forest-44605/) | https://assets.mixkit.co/videos/44605/44605-1080.mp4 |
@@ -18,7 +18,7 @@ Each source page below returned `data-license="videoFree"`. Source HTML snapshot
 
 All seven MP4 sources were downloaded and decoded with FFmpeg; the source probe output, byte counts and original SHA-256 hashes are in `upstream/media/manifest.json`. Original downloads are archived in ignored `.tools/media-originals/`. The manifest’s `local` identifies the publication target; its top-level `bytes`/`sha256` describe the original download, while `published` describes the recompressed file. Full-duration publication copies retain 1920×1080 and use H.264 CRF25 / faststart. Previews are seven-second 1280×720 crops. Posters and stills are JPEG frames at 2s and 5s.
 
-`showreel-silent.mp4` is a 24-second local edit: four seconds from each of the six project previews, in table order. **It has no audio track.** An earlier embedded synthesized tonal bed was removed after user feedback about humming. That historical soundtrack remains absent from the media. The 2026-10-23 optional Web Audio atmosphere described below is a separate, explicitly requested interface feature; it never autoplays. Native player audio support remains available for replacement films; set `hasAudio: true` when adding a real soundtrack. No third-party music is included.
+The retained historical `showreel-silent.mp4` is a 24-second local edit: four seconds from each of the original six project previews, in table order. The active 2026-10-23 replacement edit is documented below. **Both have no audio track.** An earlier embedded synthesized tonal bed was removed after user feedback about humming. That historical soundtrack remains absent from the media. The 2026-10-23 optional Web Audio atmosphere described below is a separate, explicitly requested interface feature; it never autoplays. Native player audio support remains available for replacement films; set `hasAudio: true` when adding a real soundtrack. No third-party music is included.
 
 The original `fallback.svg` provides a neutral film-frame image if a local JPEG cannot load. All page imagery and fonts are served from this project; remote sources are recorded for replacement and provenance, so normal browsing does not require external media servers. External source URLs were available when fetched; hosting may change later.
 
@@ -69,4 +69,39 @@ The new comparison reuses the registered `public/media/stills/refraction-2.jpg` 
 ## Optional synthesized room audio — 2026-10-23
 
 `src/lib/cinemaAudio.ts` generates an opt-in 50Hz sine and a short mechanical click through the Web Audio API. It contains no sampled third-party recording or music track and creates no AudioContext before an explicit visitor sound-button gesture. Consent is never persisted. The sine's -36dBFS figure describes its **digital peak amplitude**, `10 ** (-36 / 20)`, not speaker sound pressure, measured room volume or a perceived-loudness guarantee. The click is an original 15ms decaying pseudorandom noise impulse passed through an 1800Hz low-pass filter, not a recording of a proprietary camera shutter. Hidden pages, focus loss and film dialogs silence the graph; returning does not automatically restart audio. The silent MP4s are unchanged.
+
+## Active projection replacement — 2026-10-23
+
+The active Hero and first catalogue entry no longer use the daylight rocks/sea clip. Eight new derivatives, **1,947,314 bytes total**, are generated only from the existing licensed refraction, heat and night masters. The original source files and historical six-source reel are retained for traceability. No new shoot, authored CGI delivery or new stock acquisition is implied.
+
+| Publication | Exact source treatment |
+| --- | --- |
+| `public/media/video/cinema-showreel.mp4` | Twelve-second silent edit: refraction source 3–7s, spotlit contemporary dancer source 5–9s, then city-night source 8–12s. Each chapter is normalized to 96 frames, 24fps, with a short final-frame hold when required, producing exactly 288 output frames. |
+| `public/media/video/cinema-refraction-loop.mp4` | Ten-second silent excerpt from the acrylic/refraction source, source time 3–13s, 240 output frames. |
+| `public/media/posters/cinema-showreel.jpg` | True refraction-source frame at 3s, matching the new Hero's opening. |
+| `public/media/posters/cinema-refraction.jpg` | True refraction-source frame at 7s. |
+| `public/media/stills/cinema-refraction-{1,2,3,4}.jpg` | True refraction-source frames at 3s, 7s, 11s and 15s. |
+
+All derivatives use a 1280×536 centre-cropped aperture (approximately 2.39:1), without generated imagery, optical-flow synthesis or an added soundtrack. MP4s are H.264/yuv420p CRF25 with faststart, 24fps. The first entry's complete-film link reuses the licensed 18.44-second `refraction-full.mp4` master at its recorded 23.98fps source rate. The loop and reel use ordinary edit boundaries; no claim of a mathematically seamless loop is made.
+
+`scripts/prepare-cinema-motion.mjs` reproduces these derivatives from local masters. `upstream/media/cinema-motion.json` records source pages, exact sample times, dimensions, output bytes and SHA-256; the eight records are also registered in `published-assets.json`. The [acrylic source page](https://mixkit.co/free-stock-video/model-in-western-fashion-seen-through-acrylic-101645/) explicitly offers commercial/personal use under the [Mixkit Stock Video Free License](https://mixkit.co/license/#videoFree), rechecked 2026-10-23. Dancer and city sources retain their already verified Video Free licences above. All catalogue placeholders remain `isPlaceholder: true`; none of this stock is attributed as a real Dong Hao directing credit.
+
+## Korean typography localization — 2026-10-23
+
+Noto Serif KR Regular 400 is self-hosted as the complete 124 WOFF2 Unicode
+partitions from the [official Fontsource repository](https://github.com/fontsource/font-files/tree/86edcf1aab7fd27e8960ea3555aab50e3480a098/fonts/google/noto-serif-kr),
+commit `86edcf1aab7fd27e8960ea3555aab50e3480a098`, delivered through its immutable
+jsDelivr mirror. Font binaries and their original Unicode ranges are unmodified;
+the stylesheet only rewrites URLs to local files and omits the obsolete WOFF
+alternative. The 124 binaries total **3,280,928 bytes**. Browsers request only
+ranges needed by Korean text; other languages do not use this family.
+
+The font uses SIL Open Font License 1.1. The complete original notice is retained
+in `public/fonts/Noto-Serif-KR-OFL.txt`, retrieved from the [Google Fonts source](https://github.com/google/fonts/blob/main/ofl/notoserifkr/OFL.txt).
+Immutable source URLs, byte counts and SHA-256 hashes are recorded in
+`upstream/fonts/typography-manifest.json`; `scripts/prepare-korean-font.mjs`
+reproduces the local delivery. No large variable TTF is shipped. This supersedes
+the historical system-only Korean serif fallback described earlier. Chinese
+fonts and locale sans faces remain platform fallbacks; existing local Japanese
+Shippori Mincho and Latin fonts retain their original licenses.
 

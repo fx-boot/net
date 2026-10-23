@@ -29,17 +29,13 @@
  --film-ease: cubic-bezier(0.22, 1, 0.36, 1);
  --gate-ease: cubic-bezier(0.16, 1, 0.3, 1);
  --text-reading-dim: var(--text-secondary);
- --font-sans: 'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
- --font-serif: 'Bodoni Moda', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
- --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+ /* Locale stacks are selected together in typography.css, never mixed here. */
+ --font-sans: 'Instrument Sans', 'Inter', 'Helvetica Neue', sans-serif;
+ --font-serif: 'Bodoni Moda', 'Didot', 'Playfair Display', serif;
+ --font-mono: var(--font-sans);
+ --font-brand: 'Instrument Sans', 'Inter', 'Helvetica Neue', sans-serif;
+ --font-editorial-latin: 'Bodoni Moda', 'Didot', 'Playfair Display', serif;
  --gutter: clamp(22px, 4.2vw, 88px);
  --section-gap: clamp(100px, 12vw, 190px); color-scheme: dark;
 }
-html:lang(ko) { --font-sans: 'Instrument Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; --font-serif: 'Bodoni Moda', 'Noto Serif CJK KR', 'Source Han Serif K', 'Batang', serif; }
 @font-face { font-family: 'Shippori Mincho'; src: url('/fonts/shippori-mincho-regular.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
-html[lang='ja'], [lang='ja'] {
- --font-sans: 'Instrument Sans', 'Hiragino Sans', 'Yu Gothic', 'YuGothic', 'Noto Sans JP', sans-serif;
- --font-serif: 'Bodoni Moda', 'Shippori Mincho', 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', 'HiraMinProN-W3', 'Noto Serif JP', serif;
- font-feature-settings: 'palt' 1;
- line-break: strict;
-}

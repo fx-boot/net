@@ -166,10 +166,6 @@ h1,h2,h3 { text-wrap: balance; }
 .footer-name { font-weight: 500; font-size: clamp(70px,12.2vw,190px); margin-top: 65px; margin-bottom: 45px; letter-spacing: -.04em; }
 .footer-director { font-weight: 400; }
 .footer-bottom { font-size: 8px; letter-spacing: .12em; }
-html[lang='ko'] :is(.monologue,.studio-ethos,.capacity-name,.representation h3,.project-title) { word-break: keep-all; }
-html[lang='ja'] :is(.monologue,.studio-ethos,.detail-note > p) { line-height: 2.05; letter-spacing: .05em; }
-html[lang='ja'] .monologue-lead { font-size: 1.2em; line-height: 1.9; }
-html[lang='ja'] :is(.project-title,.statement-title,.dossier-negative-name,.director-card h3,.studio-capacity h2 > span:not(.optical-text)) { font-family: var(--font-serif); font-feature-settings: 'palt' 1; }
 
 @media(min-width:1600px) { .hero-reel { bottom: 360px; } }
 @media(min-width:701px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {

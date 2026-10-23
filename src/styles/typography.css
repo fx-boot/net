@@ -1,0 +1,81 @@
+@import './fonts-korean.css';
+
+/* Font roles follow the document language. CJK stacks never borrow a different
+   locale's glyphs; fixed Latin brand lettering has a separate, explicit role. */
+html[lang='zh'] {
+ --font-serif: 'Songti SC', 'Source Han Serif CN', 'Noto Serif SC', 'STSong', serif;
+ --font-sans: 'PingFang SC', 'Source Han Sans CN', 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+ --reading-leading: 1.9;
+}
+html[lang='en'] {
+ --font-serif: 'Bodoni Moda', 'Didot', 'Playfair Display', serif;
+ --font-sans: 'Instrument Sans', 'Inter', 'Helvetica Neue', sans-serif;
+ --reading-leading: 1.9;
+}
+html[lang='ko'] {
+ --font-serif: 'Noto Serif KR', 'KoPub Batang', 'Nanum Myeongjo', 'Batang', serif;
+ --font-sans: 'Pretendard', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+ --reading-leading: 1.85;
+ word-break: keep-all;
+ overflow-wrap: normal;
+}
+html[lang='ja'] {
+ --font-serif: 'Shippori Mincho', 'Yu Mincho', 'Hiragino Mincho ProN', 'Noto Serif JP', serif;
+ --font-sans: 'Hiragino Sans', 'Yu Gothic', 'Noto Sans JP', sans-serif;
+ --reading-leading: 2.05;
+ font-feature-settings: 'palt' 1;
+ line-break: strict;
+ word-break: normal;
+}
+
+body { font-family: var(--font-sans); font-kerning: normal; }
+:is(h1,h2,h3,p,button,input,a) { font-synthesis: none; }
+:is(.section-heading h2,.project-title,.monologue,.studio-ethos,.detail-note > p,.award-film,.director-card h3,.recognition h2,.contact h2,.representation h3,.project-detail-heading h2,.stills-gallery h3,.source-list h3,.breakdown-heading h3,.capacity-description,.studio-focus,.project-detail-heading p,.representation > p,.source-list p,.manual-copy p) {
+ font-family: var(--font-serif);
+}
+:is(.monologue,.studio-ethos,.detail-note > p) {
+ line-height: var(--reading-leading);
+ text-wrap: pretty;
+}
+.monologue { max-inline-size: 65ch; }
+:is(.project-meta,.reel-length,.console-readout,.film-counter,.film-scrub-readout,.camera-readout,.studio-specs,.breakdown-pass-labels,.breakdown-film-code) {
+ font-family: var(--font-sans);
+ font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* Lettering is a fixed part of the studio identity, rather than a locale
+   fallback. The email itself is Latin; its confirmation remains localized. */
+:is(.hero-name,.dossier-negative-roman,.director-roman,.footer-name > span:first-child,.studio-capacity h2 > .optical-text) {
+ font-family: var(--font-brand);
+}
+.statement-title,.email-address { font-family: var(--font-editorial-latin); }
+.email-address { font-style: italic; }
+.email-button { font-style: normal; }
+.email-confirmation { font-family: var(--font-sans); }
+.language-picker button[lang] { font-family: var(--font-brand); }
+
+html[lang='en'] :is(.navigation nav a,.filter-tabs button,.view-switcher button,.project-meta,.hero-presents,.hero-optics,.reel-length,.console-readout,.film-counter,.film-scrub-readout,.camera-readout,.director-position,.director-caption-index,.capacity-registration,.capacity-code,.studio-specs,.representation-region,.breakdown-pass-labels,.breakdown-film-code,.breakdown-study,.footer-bottom) {
+ letter-spacing: .18em;
+}
+
+html[lang='ko'] body { line-height: 1.85; }
+html[lang='ko'] :is(.monologue,.monologue-lead,.studio-ethos,.studio-focus,.studio-legal,.capacity-description,.detail-note > p,.project-detail-heading p,.representation > p,.representation h3,.project-title,.director-alias,.capacity-label,.award-honor,.award-film,.section-heading h2,.contact h2) {
+ word-break: keep-all;
+ overflow-wrap: normal;
+ line-height: 1.85;
+}
+html[lang='ko'] :is(.monologue,.studio-ethos,.detail-note > p,.representation h3,.project-title) { letter-spacing: 0; }
+
+html[lang='ja'] body { font-feature-settings: 'palt' 1; }
+html[lang='ja'] :is(.monologue,.monologue-lead,.studio-ethos,.detail-note > p) {
+ line-height: 2.05;
+ letter-spacing: .05em;
+ line-break: strict;
+ hanging-punctuation: allow-end;
+}
+html[lang='ja'] .monologue-lead { font-size: 1.2em; }
+html[lang='ja'] :is(.project-title,.dossier-negative-name,.director-card h3,.studio-capacity h2 > span:not(.optical-text),.breakdown-heading h3) {
+ font-feature-settings: 'palt' 1;
+}
+html[lang='ja'] .breakdown-heading h3 { letter-spacing: .04em; }
+html:is([lang='zh'],[lang='ja']) :is(.project-title,.representation h3) { line-break: strict; }

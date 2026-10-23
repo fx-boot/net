@@ -323,5 +323,670 @@
     "local": "public/media/stills/refraction-scrub-4.jpg",
     "bytes": 80130,
     "sha256": "347cad58fc4aefdd2daf3748f745b0161642059f4d391ada106d01841dd93642"
+  },
+  {
+    "local": "public/media/video/cinema-refraction-loop.mp4",
+    "bytes": 519756,
+    "sha256": "fd9f43e612900404e9b933c5c2f243cc6cd0b429628846cd1fd5ba1075cb8c09"
+  },
+  {
+    "local": "public/media/video/cinema-showreel.mp4",
+    "bytes": 998204,
+    "sha256": "4e57d2a70c7a6535b99409400985e069fba86dc114ec61ba0096e2df75f54848"
+  },
+  {
+    "local": "public/media/stills/cinema-refraction-1.jpg",
+    "bytes": 64673,
+    "sha256": "29b9da7c41b6602466a9b536da66ed08cb0a0491aae631e3e56061edb7f0a6df"
+  },
+  {
+    "local": "public/media/stills/cinema-refraction-2.jpg",
+    "bytes": 72023,
+    "sha256": "c70af65a189ac67b02d89f1f9ce5f444b3e2dfb984e9a034db2a405844518f50"
+  },
+  {
+    "local": "public/media/stills/cinema-refraction-3.jpg",
+    "bytes": 77489,
+    "sha256": "36d2cf32774fe6a3c811a7ce10023089babd5e02b53eced5d1baf55b33ec4582"
+  },
+  {
+    "local": "public/media/stills/cinema-refraction-4.jpg",
+    "bytes": 78473,
+    "sha256": "f8760190146522a08cea350fdc84d02c3fdd5171373d2938b679458ef3050f12"
+  },
+  {
+    "local": "public/media/posters/cinema-refraction.jpg",
+    "bytes": 72023,
+    "sha256": "c70af65a189ac67b02d89f1f9ce5f444b3e2dfb984e9a034db2a405844518f50"
+  },
+  {
+    "local": "public/media/posters/cinema-showreel.jpg",
+    "bytes": 64673,
+    "sha256": "29b9da7c41b6602466a9b536da66ed08cb0a0491aae631e3e56061edb7f0a6df"
+  },
+  {
+    "local": "public/fonts/Noto-Serif-KR-OFL.txt",
+    "bytes": 4350,
+    "sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-0-400-normal.woff2",
+    "bytes": 24544,
+    "sha256": "d9e616cbc91b5eeda08563fad46eadf6f565440a6f484eaffeb594956d29b6cb"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-1-400-normal.woff2",
+    "bytes": 39332,
+    "sha256": "2f38cf77e74d253be772be87781ad40163c490d2f75346c2e63815e5fee688b5"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-10-400-normal.woff2",
+    "bytes": 25252,
+    "sha256": "61ac78f1ec4263323228792a00122825242dcd51d84c6ce78e280d70fef7a60c"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-100-400-normal.woff2",
+    "bytes": 24180,
+    "sha256": "cc35debc1ee546bcae56475f6e41982e1a81faff35af7fa180048efbc199ca91"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-101-400-normal.woff2",
+    "bytes": 23180,
+    "sha256": "913b08c2931b15a46ddbc2687ac06470e292ec72e2b877ad8ff5cc0e255dfab4"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-102-400-normal.woff2",
+    "bytes": 24912,
+    "sha256": "6f292736893308d25a9a83f77a640017b23d86b0f8cfb234a4e04591988c4733"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-103-400-normal.woff2",
+    "bytes": 24220,
+    "sha256": "7b0eda2a076a04b16853c624491db694ae9bf7ced1fa5e3e393416db7ade7abd"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-104-400-normal.woff2",
+    "bytes": 27044,
+    "sha256": "6f201e90a2f331a2e81621d10bfc483921a2ffc81156fa203b16f247e65e99cf"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-105-400-normal.woff2",
+    "bytes": 24940,
+    "sha256": "a96c6e8dbf64f11ac3a050e575250f9a4459ff2f4ad30e38e9ea7b97486a4882"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-106-400-normal.woff2",
+    "bytes": 25240,
+    "sha256": "86199c3180842eb960901bc98886152f654e3e8d15a532c50647873659103bd8"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-107-400-normal.woff2",
+    "bytes": 22836,
+    "sha256": "558ed327ec041d6e690622f29668f83b03a0a901b93e9a6e14ff54eebda87f80"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-108-400-normal.woff2",
+    "bytes": 24272,
+    "sha256": "4fe78c346a6ce6a1f9c21941ef287c39784f951521cfc24fac77e2cf223e327c"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-109-400-normal.woff2",
+    "bytes": 22216,
+    "sha256": "1e3a7429cf32a37dc958332466bded5361e1967d87c76af72c0b79e857d7b9b9"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-11-400-normal.woff2",
+    "bytes": 22812,
+    "sha256": "965833ea9e83790d0473d22d4f3fa924e00d1b2ce00b38beaa249848ce7983a4"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-110-400-normal.woff2",
+    "bytes": 22896,
+    "sha256": "6bc92e19582dbc32fd129dfbc56e4420fdd9d4088185a0c50a73d95215e08243"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-111-400-normal.woff2",
+    "bytes": 22540,
+    "sha256": "70e8551ff1c47eb589792c198b857a9dc9e63572ee0e4ef9eace1cf4cec9aba1"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-112-400-normal.woff2",
+    "bytes": 21836,
+    "sha256": "66fd33f284b382b7a8bf20cbecc71443ded0daf1c06c5cadfd841ee9d2a344c2"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-113-400-normal.woff2",
+    "bytes": 21976,
+    "sha256": "7ac6e516fe9a54e7ff518d437570719c76335b36663b67202cfe8a8bc7e1e5d6"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-114-400-normal.woff2",
+    "bytes": 21356,
+    "sha256": "e0212a681527fa8b4e81bf85ba0692ce41cff6fb4c4ea0e44c8eb3b2b9f745d5"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-115-400-normal.woff2",
+    "bytes": 20416,
+    "sha256": "38b8657a8969bae67d53974da25ac2cf396ed9a5411e0ee557f82ad3b6cf55e4"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-116-400-normal.woff2",
+    "bytes": 20664,
+    "sha256": "993b74e084825cf773f600237a8ad60dc6958c28688d94d71da6f46f37b271eb"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-117-400-normal.woff2",
+    "bytes": 19076,
+    "sha256": "17137eb6b1962c238ea8fad0f32f298ed0184c704678973b2b70f4edd88d29da"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-118-400-normal.woff2",
+    "bytes": 16284,
+    "sha256": "985fedf66aebdd285cfb321a2edf2b728c8a1f7ffb2f987269108140de120d02"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-119-400-normal.woff2",
+    "bytes": 13296,
+    "sha256": "4bf769a89c6900dad9b2a16178e824a2a6169fe391567fae99a7abaccb79d8fc"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-12-400-normal.woff2",
+    "bytes": 24560,
+    "sha256": "2d1ea67b8c8bd1ac9c38573fb2edc83d9232d29c9f21661f20b8f4f469e76edb"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-13-400-normal.woff2",
+    "bytes": 25164,
+    "sha256": "031d441161426ae3a21a2b3d47f25c1d06324b3fbbd770b11a280532a3699bec"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-14-400-normal.woff2",
+    "bytes": 24656,
+    "sha256": "cb55b03962e036ea6e5c2434ac79eb9c29fdbf71db4ed6424c32ae4a17b36d86"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-15-400-normal.woff2",
+    "bytes": 23680,
+    "sha256": "a9c2319dbe173cc823c27dc01fee47e127fa138b33ad88f028aa000bd4dcb277"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-16-400-normal.woff2",
+    "bytes": 27400,
+    "sha256": "479e9f3126733d664c387e081c817c2c1c53f3fdbd7f1b09e1d4b7e0e3cecd24"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-17-400-normal.woff2",
+    "bytes": 28064,
+    "sha256": "ff78392108fba7d74a503842e676405faf90944e392bb3a908d4e21a55b977e7"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-18-400-normal.woff2",
+    "bytes": 23952,
+    "sha256": "64f0aded94f8a7574f9be50f6996b6268e9d683e59a5f77a4b4017124588bfa1"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-19-400-normal.woff2",
+    "bytes": 27356,
+    "sha256": "714edb801028c78e07b6f7adc4cb98b8a9da8faac52869251d9287fc0cec8892"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-2-400-normal.woff2",
+    "bytes": 31716,
+    "sha256": "12061ac2dfbdb05d5b9eb923d7141cf5da08d7ac4402b723b06e676a2be54192"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-20-400-normal.woff2",
+    "bytes": 28520,
+    "sha256": "cdfe6fc4ebe331b78ff9e9b601cb67a2c799825aac00fbc9b072fca14cb2d394"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-21-400-normal.woff2",
+    "bytes": 25564,
+    "sha256": "7e44cb13ad887da425092b1a08822a155d5e50525c9cf24a5bef161baafb116e"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-22-400-normal.woff2",
+    "bytes": 24624,
+    "sha256": "d8712ed75db3e9cfca7aee304366a38d71ce7a71e8dccd8a29b6d4ff844e6d6e"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-23-400-normal.woff2",
+    "bytes": 24996,
+    "sha256": "164bf73760e0ac48e3a6847db46da0dc9b60c48361cd951f21a84fde8b09049d"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-24-400-normal.woff2",
+    "bytes": 27892,
+    "sha256": "bd6e621ba463f33298324a6f675388835c69486a4b9b5c7eed824a28acb127a4"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-25-400-normal.woff2",
+    "bytes": 21508,
+    "sha256": "be4b9705e98af7c035c754d5ec5f4275517ffbac1d96358d23421e6511812732"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-26-400-normal.woff2",
+    "bytes": 23788,
+    "sha256": "dffbf452ff0e200b567749ca7466b3bdda7b601e266f87dff14f0c1e234dc72e"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-27-400-normal.woff2",
+    "bytes": 25980,
+    "sha256": "305eb1bb54ea2435778fc87b1ee5a4706e8ba01a8e9d0647e66de7004786e826"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-28-400-normal.woff2",
+    "bytes": 22820,
+    "sha256": "c4e461d124633078526705c64796ad99d7b095e60390dced599f6044bec49a49"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-29-400-normal.woff2",
+    "bytes": 25332,
+    "sha256": "fe0578de67592262c840f34029e9ac227797ed750eb2903508479fa322ce5ec2"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-3-400-normal.woff2",
+    "bytes": 27244,
+    "sha256": "be32a4ada0b259d12048ae7984ea11363abd129194d96c5f8892e8ba55f67280"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-30-400-normal.woff2",
+    "bytes": 26032,
+    "sha256": "4202a71af46ba279bdbda9cf93fc4493fbe0f7fda9156145603f62aa985345e4"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-31-400-normal.woff2",
+    "bytes": 23612,
+    "sha256": "4a4fcd9375bc67f42c49c5d4ee3b21fb8f72ea11d8bd56ada65b26976ead000b"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-32-400-normal.woff2",
+    "bytes": 26772,
+    "sha256": "fa284993aab79d4473761df8204854ac44b9ad45d45594ab0e7a5d1884789fb1"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-33-400-normal.woff2",
+    "bytes": 25948,
+    "sha256": "4f14b7532f2092fe186ae85d4b4e0494542bf3d0753a26f8ed0415bc69abab4b"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-34-400-normal.woff2",
+    "bytes": 23520,
+    "sha256": "c39463a4965bfd3be5bd8a099477ba3c67b3bb9e01ac912d75a50b50f1daa39a"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-35-400-normal.woff2",
+    "bytes": 26316,
+    "sha256": "461adaba5b7def97edf362c54d1e3e32f53f98913049ebb7eddd9ddc9af39413"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-36-400-normal.woff2",
+    "bytes": 27064,
+    "sha256": "9a972aaab26ba1e6569c43cd7ed93536373ed9e05e12f3874be9e09773f4f40b"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-37-400-normal.woff2",
+    "bytes": 28204,
+    "sha256": "1422789fda9b71ae82624195a45fda292bf99f910af6c7982660d5285f2fba62"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-38-400-normal.woff2",
+    "bytes": 21688,
+    "sha256": "886430d1c42fd86ceff55f292ce305fa5a6a3f8071b6bd88f1bd0f957d75d889"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-39-400-normal.woff2",
+    "bytes": 27012,
+    "sha256": "98da1d4a9178bb12b897dd79f4a5bcc52acbb96856173fcee7c430d41800042b"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-4-400-normal.woff2",
+    "bytes": 28072,
+    "sha256": "76eba90d7ceee9e6c424116cb24e25ca5339e2c06c6818f1396bf2ac3adcaef9"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-40-400-normal.woff2",
+    "bytes": 26920,
+    "sha256": "41b76124cfe6eb08d5edb754473c33e93a58da44c0cc0133ce3c8444741dfb8f"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-41-400-normal.woff2",
+    "bytes": 20968,
+    "sha256": "ff34edad46fefbafcb2e7160391ebeeff3eb9e80e5b97cf6527e2cac7ef81593"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-42-400-normal.woff2",
+    "bytes": 26884,
+    "sha256": "8269da1df735ff5283df1f370190397f07b676e200a3c206b9e1a1ab14b36832"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-43-400-normal.woff2",
+    "bytes": 28116,
+    "sha256": "e978746588f870b072f77bd742b3a45b3c3b219e0565c80eff07353da03d1f01"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-44-400-normal.woff2",
+    "bytes": 24396,
+    "sha256": "b644c141d79289b10a4408885973f2347f34ec33d024b504d0495b7f4ba6ff6f"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-45-400-normal.woff2",
+    "bytes": 24836,
+    "sha256": "9c666a81fec599237e8ae826c7d8422463cf95a45b451425d5df6980568008da"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-46-400-normal.woff2",
+    "bytes": 27772,
+    "sha256": "e523f68477be4cf6501ea9e79263ee84c663e7d5058829382c40190c6b17c4ff"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-47-400-normal.woff2",
+    "bytes": 27384,
+    "sha256": "9cc6a350d3c5b9c8ec30f1beb4dbe79378376e4c2a842b38db886d2d0597ea99"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-48-400-normal.woff2",
+    "bytes": 23548,
+    "sha256": "05ce40699c22e77c6ede2f16ee4238c63615645ffe56c5df78f04f3be616a305"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-49-400-normal.woff2",
+    "bytes": 25948,
+    "sha256": "45d881a3f94625b77b82fb501b7da622c2c097d284d56d0e4a1a6c15b87f16b7"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-5-400-normal.woff2",
+    "bytes": 25248,
+    "sha256": "19ec40ce6aa4d749bb73510c1dbb4c35009cd3126644f20886bbf7e256ac059a"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-50-400-normal.woff2",
+    "bytes": 25868,
+    "sha256": "6b133cb8b7cc113b1b05674a749487512a9f90529a938c6ccf81cc17444411ce"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-51-400-normal.woff2",
+    "bytes": 22020,
+    "sha256": "202dca4432ad97e99e6b4f5431bc36b0419ca5540ea3b9db88c827194d15c21f"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-52-400-normal.woff2",
+    "bytes": 25328,
+    "sha256": "e78182f79023bdc8a5f45630e1bf03a09e8ff4d5e374a3ca1b6a9428e5fc3cc6"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-53-400-normal.woff2",
+    "bytes": 25740,
+    "sha256": "c2bf60317f64e7b9677b33fb70dbd209a914c61ee3010b572ea3768793e382a5"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-54-400-normal.woff2",
+    "bytes": 24348,
+    "sha256": "1c6e880617c2be03d2bf297c96c0e29e033e6764076469cf7381de49624083ef"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-55-400-normal.woff2",
+    "bytes": 24008,
+    "sha256": "5764ff6a2c7bd6420e2270ef4c8f9fb7d0487035dff426baeb6139f8cab65727"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-56-400-normal.woff2",
+    "bytes": 23796,
+    "sha256": "9955528e06286056264f4f5e007e6bc547b1bf4e36b68b6b8e9cc928bfd41eab"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-57-400-normal.woff2",
+    "bytes": 23768,
+    "sha256": "7c0c92b9a74ff614de9b49ed01ef2288b4c8d37103c27c68fc30df5d8b619e09"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-58-400-normal.woff2",
+    "bytes": 23176,
+    "sha256": "2919033035d590fb20500d077500cd914e3c9b68b1f8ba1f9b6f7a5af4284ae2"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-59-400-normal.woff2",
+    "bytes": 26424,
+    "sha256": "33e29c90c33802260ae25db813963bb63e4ccabfd944755c37dd6210c9a363e5"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-6-400-normal.woff2",
+    "bytes": 26232,
+    "sha256": "000d9f18c8405a898fc0b9a452b7868df25764c3310d254f573e510d973448a0"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-60-400-normal.woff2",
+    "bytes": 27424,
+    "sha256": "e8bed47f4184c13bfc865c411c53314da245d86612e84308d2096c6a52ebb33e"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-61-400-normal.woff2",
+    "bytes": 22540,
+    "sha256": "bd3aa0984573b16d6a25564a4552e410dda6ecac996c68e23020093d34158f8a"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-62-400-normal.woff2",
+    "bytes": 25620,
+    "sha256": "616a5bcdb0fec0c30ae6f9df5e98ca48cf7b4f1232502fc703e34b44c3c69fc9"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-63-400-normal.woff2",
+    "bytes": 25032,
+    "sha256": "7cfbdb5ad4ccf87eb213856681564abbd8d211d65ecc82e2813ff629a9214890"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-64-400-normal.woff2",
+    "bytes": 19868,
+    "sha256": "5cacca5ead216f293369ba359d01e0129a31235651d9f9a625bfca61d6b3c7e3"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-65-400-normal.woff2",
+    "bytes": 48628,
+    "sha256": "4c1815c3eb0f1837e21fa581f7240d9a2d2db3fc49b080a7725cdfeb63e37331"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-66-400-normal.woff2",
+    "bytes": 40744,
+    "sha256": "2536173e73d577c9894715690a3f83db4014ee5c3b903f951a8fb7c8a00342cc"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-67-400-normal.woff2",
+    "bytes": 35752,
+    "sha256": "e8691e44015bf2e86f11d915ff780b826271d2bf27822e8cc1f9a67ec83f868f"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-68-400-normal.woff2",
+    "bytes": 35768,
+    "sha256": "c2f8dcd130b1db52452489cd2c5961aa4b53f1af994aeb5925f2f32610c9cf19"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-69-400-normal.woff2",
+    "bytes": 36776,
+    "sha256": "bdab15a414b1efe49170b9e8ab69226ac204d250adca67f9a491b4cdc0f03148"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-7-400-normal.woff2",
+    "bytes": 27372,
+    "sha256": "f4913606a3e9eebb4da16213e9e4916024d8116e6d79a81d3e1ddbf15f32ce68"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-70-400-normal.woff2",
+    "bytes": 37816,
+    "sha256": "10a1bcea967231a1fae43016bfe6dcc9c2a01d5c7ed0493b2271a9ec2468e2fe"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-71-400-normal.woff2",
+    "bytes": 40832,
+    "sha256": "032fcad66780faf9c6012626565c7ca5e278ecc48c7f4bee88ad629602cd5540"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-72-400-normal.woff2",
+    "bytes": 33084,
+    "sha256": "06efbe748c5fa19b8d8bb845acdff4f3ba9500eb9b0dc7f5963fec3d46275539"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-73-400-normal.woff2",
+    "bytes": 35240,
+    "sha256": "8708be7a88f4371c06baa339a0f9935b700427b32f0f1273882dda1daeefc39c"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-74-400-normal.woff2",
+    "bytes": 41768,
+    "sha256": "41de5b86d3969b0c4c2c13c893f724d8d0720eacc48463cbf45947cc2cd150df"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-75-400-normal.woff2",
+    "bytes": 38952,
+    "sha256": "166b4d26a93354e8a681bd8c43b139d4b8d397d10d691bf86ac53f311a61e16c"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-76-400-normal.woff2",
+    "bytes": 35360,
+    "sha256": "7942f8e797c04a69edc1bf8d447e1da04411bb286ef726fa2788b02af23a9efa"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-77-400-normal.woff2",
+    "bytes": 36472,
+    "sha256": "f6ad892538f16bd49a7a258f770ddace775c41903064c2431b5d4322122be088"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-78-400-normal.woff2",
+    "bytes": 34100,
+    "sha256": "33defcf6616488cfb981c3220a3ac69867a4fdace693a10f700fa0fcd34d64f5"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-79-400-normal.woff2",
+    "bytes": 45064,
+    "sha256": "de2f45c335fcbee66035fef48053ed8ed7d75d407368241f058d9ef678edc22b"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-8-400-normal.woff2",
+    "bytes": 22836,
+    "sha256": "8bc3dc2f9ac15cdf36852ec39525a115ffa00ab6445e2ad85708d4631ded04b1"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-80-400-normal.woff2",
+    "bytes": 40020,
+    "sha256": "132807b0b958e731fa4b705da776093d8953e69fe2a9d6590e4f8452a550cd0c"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-81-400-normal.woff2",
+    "bytes": 34316,
+    "sha256": "913ac344b5758e746caeb7335956be94aa2072fe0c811adfc57a1c0d694fc2e3"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-82-400-normal.woff2",
+    "bytes": 36128,
+    "sha256": "c4e1810f885a7a939a50c6220b6c1768f3ccc053e99a561f2fb46d53e8381025"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-83-400-normal.woff2",
+    "bytes": 29264,
+    "sha256": "7cbf3409b4eb4720af7e04df79b5007d0a167bab0bd26f21d273f4b3d844806d"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-84-400-normal.woff2",
+    "bytes": 38024,
+    "sha256": "c33ee93c68437bc4548277524be0be4cc08497777045b36ac622285c187a14cc"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-85-400-normal.woff2",
+    "bytes": 35460,
+    "sha256": "e38c9a162768263cfd71dc298fda96921320da24d9270fff8451f1e555ad707c"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-86-400-normal.woff2",
+    "bytes": 34204,
+    "sha256": "d384f3a2f51b17a5298222fbe31d7428ab567f5fd16e2662ce66bad97961134e"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-87-400-normal.woff2",
+    "bytes": 32608,
+    "sha256": "ae2b3ef73e797d1f152b503bf71fb68071ba4dacac28f0fb550be49a79af79ca"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-88-400-normal.woff2",
+    "bytes": 33804,
+    "sha256": "10e4538b4337884f043dbd1861a21f59ffad3de67584d83860ed59707e6128d8"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-89-400-normal.woff2",
+    "bytes": 32992,
+    "sha256": "73cab47aad0fc567130ced9190e95741db240caaede95c5f8c8308fbeaa83647"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-9-400-normal.woff2",
+    "bytes": 26592,
+    "sha256": "1727742249b37dfd09cdaf4a9f481141a9a73d2a39f390d23bb6d672e146220a"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-90-400-normal.woff2",
+    "bytes": 30768,
+    "sha256": "dfc52b68c2c2fd84f111eb40bdbcc666025fd3663fe63fda2065cca89f1be039"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-91-400-normal.woff2",
+    "bytes": 30844,
+    "sha256": "904dcc07cb144b9a3e4ee39344b40e7254c17aa28549c998e888623c68acf7cc"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-92-400-normal.woff2",
+    "bytes": 30380,
+    "sha256": "f29ac88df178c99fa9a885396619677c580482ed994ca6b650004a06b7480216"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-93-400-normal.woff2",
+    "bytes": 22144,
+    "sha256": "58274f4cc1d94d7410c76b7ed9786fed0aac28d8af27427c6cca59dbbf9b55e8"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-94-400-normal.woff2",
+    "bytes": 17716,
+    "sha256": "47274d0b9e3701edaface367af2f417014f866e62e2107911efc81429794a2f5"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-95-400-normal.woff2",
+    "bytes": 38536,
+    "sha256": "e26d43d2ac2834e6b5858b94019f57d54557950eb9cb9eda619be49bf5ebf179"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-96-400-normal.woff2",
+    "bytes": 13836,
+    "sha256": "4ac720dadb4663e23bbdbb8516cc256a1970fa7430b4dad6ea1fde91f52a80d4"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-97-400-normal.woff2",
+    "bytes": 9796,
+    "sha256": "e0178acb85713ab8d975e0f0f852bec39457b865ab86dd5c40db2c038f0d6591"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-98-400-normal.woff2",
+    "bytes": 7768,
+    "sha256": "e7ec0a5f4e09a5f738845925cfd15b9c74a209cef9a42d638c9ce0979c5d939c"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-99-400-normal.woff2",
+    "bytes": 12396,
+    "sha256": "98e05f8445f78cd46d6c61713b0beb33a25e004f15770495d5d1cce50ded5942"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-cyrillic-400-normal.woff2",
+    "bytes": 8052,
+    "sha256": "93d3f1fa75849430b5d3d5798516658d5160886c65a30d75c7e7c3ca7d5e3966"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-latin-400-normal.woff2",
+    "bytes": 19356,
+    "sha256": "b02203d9be35c7fa0457605f78cc0ff861b8330429beffdffa170c68ca702447"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-latin-ext-400-normal.woff2",
+    "bytes": 5772,
+    "sha256": "106b1991df8ae8af2b2e7bba616eb395722f9e56e7b704d74feb88f28966d4ca"
+  },
+  {
+    "local": "public/fonts/noto-serif-kr/noto-serif-kr-vietnamese-400-normal.woff2",
+    "bytes": 6000,
+    "sha256": "8510a51d0f08800b31894730448c2e86eac3a13e70669a18ddb62b943a25026c"
   }
 ]

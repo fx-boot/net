@@ -11,7 +11,9 @@
     "typecheck": "tsc -b",
     "verify:sensory": "node scripts/verify-sensory.mjs",
     "verify:audio": "node scripts/verify-audio.mjs",
-    "verify:assets": "node scripts/verify-assets.mjs"
+    "verify:assets": "node scripts/verify-assets.mjs",
+    "verify:catalog": "node scripts/verify-project-catalog.mjs",
+    "verify:preview": "node scripts/verify-preview.mjs"
   },
   "dependencies": {
     "animejs": "^4.5.0",

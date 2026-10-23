@@ -28,7 +28,6 @@
 .breakdown-caption { display: flex; justify-content: space-between; align-items: baseline; gap: 22px; margin-top: 19px; color: #b1b6bf; font-size: 11px; }
 .breakdown-percentage { color: var(--text-secondary); font: 9px/1.5 var(--font-mono); letter-spacing: .12em; white-space: nowrap; }
 .breakdown-unavailable { position: absolute; inset: 0; display: grid; place-items: center; background: var(--bg-surface); padding: 25px; color: var(--text-primary); font-size: 13px; text-align: center; }
-html[lang='ja'] .breakdown-heading h3 { font-family: var(--font-serif); font-feature-settings: 'palt' 1; letter-spacing: .04em; }
 @media (max-width: 700px) {
  .biography-spread { grid-template-columns:minmax(0,1fr); gap:60px; }
  .cine-breakdown { width: 100%; margin-top: 12px; }

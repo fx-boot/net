@@ -46,3 +46,7 @@ Thumbs.db
 # Source URLs, licences, hashes and the licensed public media remain versioned.
 upstream/media/*-source.html
 .impeccable/questions/
+
+# Full workstation plugin/skill inventories contain local installation paths.
+# Public summaries are versioned; machine inventories stay local.
+docs/environment-*.json

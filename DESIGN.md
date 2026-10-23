@@ -18,92 +18,92 @@ colors:
   breakdown-caption: "#B1B6BF"
 typography:
   display:
-    fontFamily: "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    fontFamily: "var(--font-brand)"
     fontSize: "clamp(5rem, 15vw, 16rem)"
     fontWeight: 600
     lineHeight: 0.79
     letterSpacing: "-0.04em"
   headline:
-    fontFamily: "'Bodoni Moda', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif"
+    fontFamily: "var(--font-serif)"
     fontSize: "clamp(70px, 7.7vw, 120px)"
     fontWeight: 400
     lineHeight: 0.98
     letterSpacing: "-0.04em"
   studio-title:
-    fontFamily: "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    fontFamily: "var(--font-sans)"
     fontSize: "clamp(40px, 5.4vw, 78px)"
     fontWeight: 500
     lineHeight: 1.1
     letterSpacing: "-0.04em"
   title:
-    fontFamily: "'Bodoni Moda', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif"
+    fontFamily: "var(--font-serif)"
     fontSize: "clamp(24px, 2.5vw, 38px)"
     fontWeight: 400
     lineHeight: 1.4
   monologue:
-    fontFamily: "'Bodoni Moda', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif"
+    fontFamily: "var(--font-serif)"
     fontSize: "clamp(23px, 2.05vw, 31px)"
     fontWeight: 400
     lineHeight: 1.95
   japanese-reading:
-    fontFamily: "'Bodoni Moda', 'Shippori Mincho', 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', 'HiraMinProN-W3', 'Noto Serif JP', serif"
+    fontFamily: "'Shippori Mincho', 'Yu Mincho', 'Hiragino Mincho ProN', 'Noto Serif JP', serif"
     fontSize: "clamp(23px, 2.05vw, 31px)"
     fontWeight: 400
     lineHeight: 2.05
     letterSpacing: "0.05em"
   body:
-    fontFamily: "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    fontFamily: "var(--font-sans)"
     fontSize: "15px"
     fontWeight: 400
     lineHeight: 1.6
   label:
-    fontFamily: "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    fontFamily: "var(--font-sans)"
     fontSize: "10px"
     fontWeight: 400
     lineHeight: 1.6
     letterSpacing: "0.1em"
   readout:
-    fontFamily: "'SFMono-Regular', Consolas, 'Liberation Mono', monospace"
+    fontFamily: "var(--font-sans)"
     fontSize: "9px"
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: "0.15em"
   breakdown-caption:
-    fontFamily: "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    fontFamily: "var(--font-sans)"
     fontSize: "11px"
     fontWeight: 400
     lineHeight: 1.6
   breakdown-error:
-    fontFamily: "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    fontFamily: "var(--font-sans)"
     fontSize: "13px"
     fontWeight: 400
     lineHeight: 1.6
   breakdown-mobile-heading:
-    fontFamily: "'Bodoni Moda', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif"
+    fontFamily: "var(--font-serif)"
     fontSize: "26px"
     fontWeight: 400
     lineHeight: 1.4
     letterSpacing: "-0.02em"
   breakdown-mobile-study:
-    fontFamily: "'SFMono-Regular', Consolas, 'Liberation Mono', monospace"
+    fontFamily: "var(--font-sans)"
     fontSize: "7px"
     fontWeight: 400
     lineHeight: 1.7
     letterSpacing: "0.05em"
   breakdown-mobile-localized-study:
-    fontFamily: "'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif"
+    fontFamily: "var(--font-sans)"
     fontSize: "8px"
     fontWeight: 400
     lineHeight: 1.7
     letterSpacing: "0.04em"
   breakdown-mobile-pass:
-    fontFamily: "'SFMono-Regular', Consolas, 'Liberation Mono', monospace"
+    fontFamily: "var(--font-sans)"
     fontSize: "7.5px"
     fontWeight: 400
     lineHeight: 1.5
     letterSpacing: "0.01em"
   breakdown-mobile-code:
-    fontFamily: "'SFMono-Regular', Consolas, 'Liberation Mono', monospace"
+    fontFamily: "var(--font-sans)"
     fontSize: "6px"
     fontWeight: 400
     lineHeight: 1.5

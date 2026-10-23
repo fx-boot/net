@@ -2,7 +2,7 @@ import { useId, useRef } from 'react';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { filterKeys } from '../../i18n/filterLabels';
 import type { Project, ProjectOrigin } from '../../types/portfolio';
-import { PreviewVideo } from '../media/PreviewVideo';
+import { PreviewPresence } from '../media/PreviewVideo';
 import { MediaImage } from '../ui/MediaImage';
 import { useDesktopPointer, useReducedMotion } from '../../hooks/useMotionEnvironment';
 import { useOpticalReveal } from '../../hooks/useOpticalReveal';
@@ -11,9 +11,10 @@ import { recordBoundary } from '../../lib/frameDiagnostics';
 import { FilmScrub } from './FilmScrub';
 import { useFilmScrub } from '../../hooks/useFilmScrub';
 import { scrubCopy } from '../../i18n/scrub';
+import { filmTimecode } from '../../lib/filmTimecode';
 import '../../styles/scrub.css';
-interface Props {project:Project;frameIndex:number;active:boolean;disabled:boolean;scrub?:boolean;onActive:(id:string|null)=>void;onOpen:(project:Project,origin?:ProjectOrigin)=>void}
-export function ProjectCard({project,active,disabled,onActive,onOpen,frameIndex,scrub=false}:Props){
+interface Props {project:Project;frameIndex:number;active:boolean;disabled:boolean;scrub?:boolean;previewPaused?:boolean;onActive:(id:string|null)=>void;onOpen:(project:Project,origin?:ProjectOrigin)=>void}
+export function ProjectCard({project,active,disabled,onActive,onOpen,frameIndex,scrub=false,previewPaused=false}:Props){
  const {t,language}=useLanguage(),reduced=useReducedMotion(),desktop=useDesktopPointer();
  const root=useRef<HTMLElement>(null),visual=useRef<HTMLSpanElement>(null),trigger=useRef<HTMLButtonElement>(null),image=useRef<HTMLSpanElement>(null);
  const scrubEnabled=scrub&&desktop&&!reduced&&!disabled&&!!project.scrub;
@@ -33,7 +34,7 @@ export function ProjectCard({project,active,disabled,onActive,onOpen,frameIndex,
     onOpen(project,event.detail>0&&!reduced&&element&&rect?{element,poster,rect:{left:rect.left,top:rect.top,width:rect.width,height:rect.height}}:undefined);
    }}>
    <span ref={visual} className="card-visual"><span className="optical-sharp"><span className="spatial-shadow" aria-hidden="true"/><span className="spatial-surface">
-    <span ref={image} className="project-image"><MediaImage src={project.cover.src} alt={project.cover.alt} loading="lazy" width={1920} height={1080}/>{scrubEnabled&&project.scrub?<FilmScrub data={project.scrub} state={scrubState}/>:desktop&&active&&!reduced&&!disabled&&<PreviewVideo media={project.preview}/>}<span className="projection-gate" aria-hidden="true"><i/><i/><i/><i/></span></span>
+    <span ref={image} className="project-image"><MediaImage src={project.cover.src} alt={project.cover.alt} loading="lazy" width={1920} height={1080}/><PreviewPresence visible={!disabled&&!reduced&&(scrub||desktop&&active)} media={project.preview} enabled={!previewPaused} onTime={time=>{if(timecodeRef.current&&!trigger.current?.dataset.scrubbing)timecodeRef.current.textContent=`[ TC ${filmTimecode(time,project.scrub?.frameRate??24)} ]`;}}/>{scrubEnabled&&project.scrub&&<FilmScrub data={project.scrub} state={scrubState}/>}<span className="projection-gate" aria-hidden="true"><i/><i/><i/><i/></span></span>
     <span className="project-info"><span className="project-heading"><span className="project-index">{String(frameIndex).padStart(2,'0')} /</span><span className="project-title">{project.title}</span></span><span className="project-meta">{t(filterKeys[project.category])} — {project.year} <span>[{project.duration}]</span></span></span>
     {scrubEnabled&&<span className="film-scrub-readout" aria-hidden="true"><span ref={timecodeRef}>[ TC 00:00:00:00 ]</span></span>}
    </span></span></span>

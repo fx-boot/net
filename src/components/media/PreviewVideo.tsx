@@ -1,27 +1,28 @@
 import { useEffect, useRef, useState } from 'react';
 import type { MediaAsset } from '../../types/portfolio';
-import { usePageVisible, useReducedMotion } from '../../hooks/useMotionEnvironment';
-import { useInView } from '../../hooks/useInView';
+import { usePreviewPlayback } from '../../hooks/usePreviewPlayback';
+import { useReducedMotion } from '../../hooks/useMotionEnvironment';
+import '../../styles/preview.css';
 
-export function PreviewVideo({ media }: { media: MediaAsset }) {
+interface PreviewProps { media: MediaAsset; enabled?: boolean; priority?: number; onTime?: (time: number) => void; exiting?: boolean }
+export function PreviewVideo({ media, enabled = true, priority = 20, onTime, exiting = false }: PreviewProps) {
   const ref = useRef<HTMLVideoElement>(null);
   const [ready, setReady] = useState(false);
-  const [failed, setFailed] = useState(false);
-  const visible = usePageVisible();
   const reduced = useReducedMotion();
-  const inView = useInView(ref);
+  const playback = usePreviewPlayback(ref, media.src, enabled && !exiting, priority, false, !reduced);
+  return <video ref={ref} data-preview="work" className={`preview-video ${ready && !playback.failed ? 'is-ready' : ''} ${exiting?'is-exiting':''}`} muted loop playsInline preload="none" aria-hidden="true" onPlaying={event => {event.currentTarget.dataset.previewState='playing';setReady(true);}} onEmptied={() => setReady(false)} onTimeUpdate={event=>onTime?.(event.currentTarget.currentTime)} onError={playback.onError}/>;
+}
+
+/** Retain only the paused outgoing frame while a CSS opacity transition ends. */
+export function PreviewPresence({ visible, ...props }: PreviewProps & { visible: boolean }) {
+  const [retained, setRetained] = useState(visible);
+  const reduced = useReducedMotion();
+  // Adjust presence before commit; no geometry reads or new animation driver.
+  if (visible && !retained) setRetained(true);
   useEffect(() => {
-    const video = ref.current;
-    if (video) video.src = media.src;
-    return () => { video?.pause(); video?.removeAttribute('src'); video?.load(); };
-  }, [media.src]);
-  useEffect(() => {
-    const video = ref.current;
-    if (!video) return;
-    let alive = true;
-    if (visible && inView && !reduced && !failed) void video.play().catch(() => { if (alive) setFailed(true); });
-    else video.pause();
-    return () => { alive = false; video.pause(); };
-  }, [visible, reduced, inView, failed]);
-  return <video ref={ref} className={`preview-video ${ready && !failed ? 'is-ready' : ''}`} src={media.src} muted loop playsInline preload="auto" aria-hidden="true" onCanPlay={() => setReady(true)} onError={() => setFailed(true)} />;
+    if (visible || !retained) return;
+    const timer = setTimeout(() => setRetained(false), reduced ? 0 : 350);
+    return () => clearTimeout(timer);
+  }, [visible, retained, reduced]);
+  return retained && !(reduced && !visible) ? <PreviewVideo key={`${props.media.src}:${props.enabled!==false}`} {...props} exiting={!visible}/> : null;
 }
