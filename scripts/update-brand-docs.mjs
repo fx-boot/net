@@ -37,7 +37,7 @@ $env:PATH='C:\\Users\\Administrator\\.cache\\codex-runtimes\\codex-primary-runti
 
 日文独白采用本地 Shippori Mincho + Yu Mincho 等日本明朝体回退，palt、2.05 行高、.05em 字距；无显式中文字体回退。Latin 为本地 Instrument Sans / Bodoni Moda。字体与许可、哈希记录见 MEDIA-LICENSES.md。
 
-公司/导演身份在 src/i18n/brand.ts。真实肖像放到 public/media/director/donghao-portrait.jpg 后重启 Vite；未提供时使用原创抽象取景画幅，不冒用他人肖像。签名仍是预留位。
+公司/导演身份在 src/i18n/brand.ts。真实肖像放到 public/media/director/azuma-hiroshi-portrait.jpg 后重启 Vite；未提供时使用原创抽象取景画幅，不冒用他人肖像。签名仍是预留位。
 
 商务邮箱暂为 studio@example.com 和 atelier@example.com。替换真实影片、Credits、荣誉与邮箱后，同步更新数据占位状态和许可记录。既有六部影片为 Mixkit 授权演示素材。
 

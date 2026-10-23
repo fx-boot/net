@@ -45,7 +45,7 @@ body { font-family: var(--font-sans); font-kerning: normal; }
 
 /* Lettering is a fixed part of the studio identity, rather than a locale
    fallback. The email itself is Latin; its confirmation remains localized. */
-:is(.hero-name,.dossier-negative-roman,.director-roman,.footer-name > span:first-child,.studio-capacity h2 > .optical-text) {
+:is(.hero-name,.dossier-negative-roman,.director-roman,.footer-name > span,.studio-capacity h2 > .optical-text) {
  font-family: var(--font-brand);
 }
 .statement-title,.email-address { font-family: var(--font-editorial-latin); }

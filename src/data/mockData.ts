@@ -59,7 +59,7 @@ const portraitAsset: MediaAsset = {
   sourceUrl: '/media/director/README.md', licenseUrl: '/media/director/README.md',
   author: 'LANCHUAN · Director asset reservation', alt: brandCopy.zh.portraitAlt,
 };
-export const director: DirectorProfile = { isPlaceholder: true, name: '東浩', englishName: 'Dong Hao', role: 'Founder & Chief Director', statement: '让那些未被说出的，留在画面里。', portrait: portraitAsset };
+export const director: DirectorProfile = { isPlaceholder: true, name: brandCopy.zh.directorName, englishName: studioBrand.directorDisplayName, role: 'Founder & Chief Director', statement: '让那些未被说出的，留在画面里。', portrait: portraitAsset };
 export const showreel: MediaAsset = { ...asset('refraction', 'full'), src: '/media/video/cinema-showreel.mp4', remoteSrc: '/media/video/cinema-showreel.mp4', poster: '/media/posters/cinema-showreel.jpg', hasAudio: false, alt: '光学折射、聚光舞者与夜间城市组成的 12 秒静音混剪' };
 export const reelConfig: ReelConfig = {
   frameRate: 24, expectedDuration: 12,

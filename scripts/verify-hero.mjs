@@ -15,7 +15,19 @@ assert.equal(manifest.schemaVersion, 1);
 assert.deepEqual(manifest.sources.map(entry => entry.language), languages, 'Exactly four regional Hero records in the agreed order');
 assert.equal(manifest.baselinePublishedAssetsCount, 198);
 assert.equal(manifest.baselinePublishedRecordsSha256, baselineRecordsSha);
-assert.equal(sha(JSON.stringify(published.slice(0, 198))), baselineRecordsSha, 'All 198 pre-existing asset records remain unmodified and in order');
+// Keep the original media baseline verifiable while permitting the two
+// explicitly recorded, authored brand-label corrections (never video assets).
+const brandRevision = await readJson('upstream/media/brand-identity-updates.json');
+assert.deepEqual(brandRevision.updates.map(change => change.before.local), ['public/media/director/README.md', 'public/media/fallback.svg']);
+for (const { before, after } of brandRevision.updates) {
+  assert.equal(before.local, after.local);
+  assert.deepEqual(published.find(asset => asset.local === after.local), after);
+  const bytes = await fs.readFile(after.local);
+  assert.equal(bytes.length, after.bytes);
+  assert.equal(sha(bytes), after.sha256);
+}
+const originalBaseline = published.slice(0, 198).map(asset => brandRevision.updates.find(change => change.after.local === asset.local)?.before ?? asset);
+assert.equal(sha(JSON.stringify(originalBaseline)), baselineRecordsSha, 'Original 198-asset baseline must be recoverable; only the two recorded brand-label edits are allowed');
 assert.equal(sha(await fs.readFile('docs/01-research-architecture.md')), '9006d3a3eee685c2815be9feb61c46894491e2601b8317f31c9e4f82684a3642', 'Protected Step 1 document changed');
 assert.ok(published.every(asset => asset.local.startsWith('public/')), 'Ignored source masters must never enter the published registry');
 assert.equal(new Set(published.map(asset => asset.local)).size, published.length, 'Published paths must be unique');

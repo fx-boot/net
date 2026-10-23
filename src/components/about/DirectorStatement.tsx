@@ -35,5 +35,5 @@ export function DirectorStatement() {
  };
  const root = useRef<HTMLParagraphElement>(null);
  useScrollScene(root, focusReading, resetReading, language);
- return <div className="director-statement"><h2 id="about-heading" className="statement-caption"><span>{brandCopy[language].voice}</span><span className="statement-title"><OpticalText text="DONG HAO"/></span><span>{atelierCopy[language].directorDiscipline}</span></h2><p ref={root} className="monologue">{sentences.map((sentence,index) => <span className={`reading-sentence ${index === 0 ? 'monologue-lead' : 'monologue-body'}`} key={`${language}-${index}`}>{renderSentence(sentence,index)}</span>)}</p></div>;
+ return <div className="director-statement"><h2 id="about-heading" className="statement-caption"><span>{brandCopy[language].voice}</span><span className="statement-title"><OpticalText text="AZUMA HIROSHI"/></span><span>{atelierCopy[language].directorDiscipline}</span></h2><p ref={root} className="monologue">{sentences.map((sentence,index) => <span className={`reading-sentence ${index === 0 ? 'monologue-lead' : 'monologue-body'}`} key={`${language}-${index}`}>{renderSentence(sentence,index)}</span>)}</p></div>;
 }

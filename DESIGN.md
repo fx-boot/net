@@ -384,7 +384,7 @@ content spacing, never the fixed trigger, 72% aperture or 2.39:1 film ratio.
 `typography.css` remains the sole owner of all four isolated glyph stacks.
 
 Chinese and English show LANCHUAN as the hero wordmark and lead with studio
-capacity; Japanese and Korean lead with DONG HAO and the director's voice.
+capacity; Japanese and Korean lead with AZUMA HIROSHI and the director's voice.
 These are editorial priorities, not visitor-location detection or claims
 about every reader in a country. All work and both contact channels remain
 available in every edition.
@@ -410,3 +410,17 @@ available in every edition.
 - **Don't** animate the pointer sensing shell or make moving visual descendants interactive.
 - **Don't** replace the language buttons with a native select or give Japanese text Chinese font fallbacks.
 - **Don't** fabricate a portrait, signature, client endorsement, festival achievement or hardware-performance claim.
+
+### Official director lettering — 2026-10-23
+
+The international director identity is AZUMA HIROSHI (Azuma Hiroshi in prose).
+The author-led JA/KO Hero keeps one line with Instrument Sans, weight 600,
+tracking -0.04em and `--type-director-monolith: clamp(2rem, 11.1vw, 15rem)`.
+The ZH/EN factory-led Hero retains LANCHUAN. All four identity lines use the
+brand-approved `A FILM BY AZUMA HIROSHI`.
+The dossier's AZUMA / HIROSHI watermark is an intentional two-line lockup
+(`clamp(36px, 4vw, 64px)`; 49px at the existing mobile breakpoint), while the
+caption remains a compact single-line Roman name beside 東浩. The footer
+uses two rows: LANCHUAN above, `/ AZUMA HIROSHI` right aligned below at
+`clamp(1.5rem, 4.9vw, 5.8rem)` / 6.4vw on mobile. Existing cinematic microtype
+and the isolated ZH/EN/JA/KO reading stacks retain their approved roles.

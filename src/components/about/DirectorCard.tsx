@@ -23,16 +23,16 @@ export function DirectorCard() {
       <figure className="portrait-frame director-portrait" data-portrait-source={studioBrand.portrait} data-negative-plate={isNegativePlate}>
         <img src={isNegativePlate ? '/media/director/negative-holder.svg' : director.portrait.src} alt={isNegativePlate ? atelier.plateLabel : copy.portraitAlt} onError={() => setPortraitFailed(true)} loading="lazy" width={1600} height={2000}/>
         <figcaption className="camera-readout"><span><ScrambleLabel text="5600K / ISO 800"/></span><span><ScrambleLabel text="LC-CAM 01"/></span></figcaption>
-        {isNegativePlate && <div className="dossier-negative-type" aria-hidden="true"><span className="dossier-negative-coordinate">LC / ATELIER</span><span className="dossier-negative-name" lang={language === 'ja' ? 'ja' : 'zh'}>東浩</span><span className="dossier-negative-roman">DONG<br/>HAO.</span></div>}
+        {isNegativePlate && <div className="dossier-negative-type" aria-hidden="true"><span className="dossier-negative-coordinate" lang="en">ATELIER {studioBrand.director}</span><span className="dossier-negative-name" lang={language === 'ja' ? 'ja' : 'zh'}>東浩</span><span className="dossier-negative-roman" lang="en">AZUMA<br/>HIROSHI</span></div>}
         <span className="frame-corner corner-tl" aria-hidden="true"/><span className="frame-corner corner-tr" aria-hidden="true"/>
         <span className="frame-corner corner-bl" aria-hidden="true"/><span className="frame-corner corner-br" aria-hidden="true"/>
-        <span className="dossier-index" aria-hidden="true">LC / D-01</span>
+        <span className="dossier-index" aria-hidden="true">LC / AH-01</span>
       </figure>
-      <div className="dossier-edge dossier-edge-right" aria-hidden="true"><span>DH — NEG. 001 / 2026</span><i/><i/><i/><i/><i/><i/></div>
+      <div className="dossier-edge dossier-edge-right" aria-hidden="true"><span>AH — NEG. 001 / 2026</span><i/><i/><i/><i/><i/><i/></div>
     </div>
     <div className="director-card-caption">
-      <div className="director-caption-index"><span>{atelier.dossierTitle}</span><span>LC—DH / 001</span></div>
-      <h3><span lang={language === 'ja' ? 'ja' : 'zh'}>東浩</span><span className="director-roman" lang="en">/ DONG HAO</span></h3>
+      <div className="director-caption-index"><span>{atelier.dossierTitle}</span><span>LC—AH / 001</span></div>
+      <h3><span lang={language === 'ja' ? 'ja' : 'zh'}>東浩</span><span className="director-roman" lang="en">/ {studioBrand.director}</span></h3>
       {(language === 'ko' || language === 'ja') && <p className="director-alias">{copy.directorAlias}</p>}
       <p className="director-position"><span>FOUNDER &amp; CHIEF DIRECTOR</span>{language !== 'en' && <span>{copy.founderRole}</span>}</p>
       <Signature />

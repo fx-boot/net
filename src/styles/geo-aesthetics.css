@@ -6,6 +6,7 @@
 @property --geo-spill-edge { syntax: '<color>'; inherits: true; initial-value: rgba(255,62,0,.04); }
 
 .hero[data-brand-focus='studio'] .hero-name { font-size: clamp(4.5rem,13.5vw,14.5rem); }
+.hero[data-brand-focus='director'] .hero-name { font-size: var(--type-director-monolith); letter-spacing: -.04em; }
 .hero-regional-message {
  position: absolute;
  top: 224px;

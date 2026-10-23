@@ -58,7 +58,7 @@ export function Hero({ onReel, blocked, entered }: { onReel: () => void; blocked
   </div>
   <div className="hero-shade" />
   <AnamorphicLightSpill variant="hero" />
-  <p className="hero-identity"><span lang="en">{geo.heroIdentity[0]}</span><span>{geo.heroIdentity[1]}</span></p>
+  <p className="hero-identity" lang="en"><span>{geo.heroIdentity[0]}</span><span>{geo.heroIdentity[1]}</span></p>
   <p className="hero-regional-message">{geo.heroNarrative}</p>
   <p className="hero-optics" aria-hidden="true">{geo.heroCue[0]}<br/>{geo.heroCue[1]}</p>
   <span className="hero-gate hero-gate-left" aria-hidden="true"/><span className="hero-gate hero-gate-right" aria-hidden="true"/>

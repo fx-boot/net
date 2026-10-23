@@ -4,8 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 import { existsSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 
-const directorPortrait = existsSync(fileURLToPath(new URL('./public/media/director/donghao-portrait.jpg', import.meta.url)))
-  ? '/media/director/donghao-portrait.jpg'
+const directorPortrait = existsSync(fileURLToPath(new URL('./public/media/director/azuma-hiroshi-portrait.jpg', import.meta.url)))
+  ? '/media/director/azuma-hiroshi-portrait.jpg'
   : '/media/director/darkroom-placeholder.svg'
 
 // https://vite.dev/config/

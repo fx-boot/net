@@ -22,6 +22,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     document.documentElement.lang = language;
     document.title = `LANCHUAN · ${brandCopy[language].directorName} — ${dictionaries[language].directorRole}`;
+    document.querySelector('meta[name="description"]')?.setAttribute('content', brandCopy[language].metaDescription);
     try { localStorage.setItem('lanchuan-language', language); localStorage.removeItem('mo-chen-language'); } catch { /* Preference remains usable for this session when storage is blocked. */ }
     const changed = lastLanguage.current !== language;
     lastLanguage.current = language;

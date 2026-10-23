@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-23",
+  "purpose": "User-authorized director identity correction to AZUMA HIROSHI; authored fallback lettering and portrait handoff notes only. Licensed media bytes are unchanged.",
+  "updates": [
+    {
+      "before": {
+        "local": "public/media/director/README.md",
+        "bytes": 756,
+        "sha256": "058c00ef3d0ba751c21da82d363614b543affe1eda12696d0a32b5c55a80fa23"
+      },
+      "after": {
+        "local": "public/media/director/README.md",
+        "bytes": 772,
+        "sha256": "9d82feae8184604fc306dba271dfaf7877c69cb2f8337f7516070e97d6d5c8a2"
+      }
+    },
+    {
+      "before": {
+        "local": "public/media/fallback.svg",
+        "bytes": 609,
+        "sha256": "b5ee4dc7a4110beb88b13ec73f3603066b333346f8dc4a14e46351a16b8b8c3f"
+      },
+      "after": {
+        "local": "public/media/fallback.svg",
+        "bytes": 614,
+        "sha256": "fec6353e63f2038862f9757871cbd44396ac0707264b704b94254ff3778b0d4b"
+      }
+    }
+  ]
+}

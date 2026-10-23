@@ -105,7 +105,7 @@ h1,h2,h3 { text-wrap: balance; }
 .dossier-edge > span { position: absolute; top: 45px; left: -2px; writing-mode: vertical-rl; font: 5px/1 var(--font-mono); letter-spacing: .14em; color: #b2bac3; white-space: nowrap; }
 .dossier-negative-type { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: start; justify-content: space-between; padding: 65px 30px 52px; color: #e2e7ea; }
 .dossier-negative-name { font: 80px/1.2 var(--font-serif); letter-spacing: .06em; }
-.dossier-negative-roman { font: 500 clamp(44px,5vw,74px)/.86 var(--font-sans); letter-spacing: -.04em; }
+.dossier-negative-roman { font: 500 clamp(36px,4vw,64px)/.94 var(--font-sans); letter-spacing: -.04em; }
 .dossier-negative-coordinate { position: absolute; top: 53%; right: 30px; font: 7px/1.8 var(--font-mono); letter-spacing: .2em; color: #9ea9b3; }
 .camera-readout { top: 18px; left: 20px; right: 20px; font-size: 7px; letter-spacing: .09em; color: #a2aab4; }
 .dossier-index { color: #a2aab4; font-size: 7px; }
@@ -162,8 +162,8 @@ h1,h2,h3 { text-wrap: balance; }
 .email-button { font-size: clamp(24px,2.8vw,42px); }
 .footer { background: radial-gradient(ellipse 90% 100% at 65% 100%,var(--geo-contact-light),transparent 90%),var(--bg-canvas); }
 .footer-top { padding-top: 20px; }
-.footer-name { font-weight: 500; font-size: clamp(70px,12.2vw,190px); margin-top: 65px; margin-bottom: 45px; letter-spacing: -.04em; }
-.footer-director { font-weight: 400; }
+.footer-name { display: grid; grid-template-columns: minmax(0,1fr); font-weight: 500; font-size: clamp(70px,12.2vw,190px); margin-top: 65px; margin-bottom: 45px; letter-spacing: -.04em; }
+.footer-director { justify-self: end; font-size: clamp(1.5rem,4.9vw,5.8rem); font-weight: 400; letter-spacing: -.04em; }
 .footer-bottom { font-size: 8px; letter-spacing: .12em; }
 
 @media(min-width:1600px) { .hero-reel { bottom: 360px; } }
@@ -276,7 +276,7 @@ h1,h2,h3 { text-wrap: balance; }
  .representation-region { font-size: 9px; margin-bottom: 21px; }
  .email-button { font-size: clamp(25px,7vw,30px); }
  .footer-name { font-size: 13.5vw; flex-wrap: wrap; margin-top: 43px; margin-bottom: 34px; }
- .footer-director { font-size: .6em; }
+ .footer-director { font-size: 6.4vw; }
  .footer-bottom { font-size: 7px; letter-spacing: .1em; gap: 15px; }
 }
 @media(prefers-reduced-motion:reduce) { .counter-ruler i { transition: none; } }

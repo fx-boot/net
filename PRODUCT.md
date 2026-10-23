@@ -6,13 +6,13 @@
 web
 
 ## Users
-Brand clients, advertising agencies and film producers commissioning commercial moving images; festival programmers, curators and screenplay collaborators exploring Dong Hao's directing practice.
+Brand clients, advertising agencies and film producers commissioning commercial moving images; festival programmers, curators and screenplay collaborators exploring Azuma Hiroshi's directing practice.
 
 ## Product Purpose
 A dual studio and director portfolio: discover films, watch a full reel, read the creator's statement, understand the studio's creative disciplines, and reach the appropriate production or representation channel.
 
 ## Positioning
-重庆澜川科技有限公司 (LANCHUAN) and founding director 東浩 (DONG HAO) share one site with distinct studio and creator identities.
+重庆澜川科技有限公司 (LANCHUAN) and founding director 東浩 (AZUMA HIROSHI) share one site with distinct studio and creator identities.
 
 ## Capabilities and Constraints
 Existing React/Vite application. Preserve local licensed videos and fonts, four-language context dictionaries (zh/en/ko/ja), 12-item expandable catalogue, carousel and archive, native accessible project dialogs, focus restoration, reduced-motion behavior, stable pointer sensing shells and a single animation frame driver. Original docs/01-research-architecture.md is protected.
