@@ -41,3 +41,7 @@ Thumbs.db
 !.env.example
 *.pem
 *.key
+
+# Raw third-party page snapshots can contain ephemeral client tokens.
+# Source URLs, licences, hashes and the licensed public media remain versioned.
+upstream/media/*-source.html
