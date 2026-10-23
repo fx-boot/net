@@ -1,7 +1,7 @@
 import { catalogLanguages, createProjectCatalog, expandDemoEntries } from './projectCatalog';
 import { brandCopy, studioBrand } from '../i18n/brand';
-import type { Award, Client, DirectorProfile, MediaAsset, Project, ProjectEntry, Representative, ReelConfig } from '../types/portfolio';
-export type { ProjectCredits, ProjectEntry } from '../types/portfolio';
+import type { Award, Client, DirectorProfile, MediaAsset, Project, ProjectEntry, RegionalWeight, Representative, ReelConfig } from '../types/portfolio';
+export type { ProjectCredits, ProjectEntry, RegionalWeight } from '../types/portfolio';
 import { dictionaries, type Language } from '../i18n/dictionaries';
 import { scrubFrameSources } from './scrubFrames';
 
@@ -23,13 +23,13 @@ function asset(slug: keyof typeof stock, kind: 'poster' | 'preview' | 'full' | '
   const videoUrl = id === 101645 ? 'https://assets.mixkit.co/nie07c56ybs0w2m4zhfolf4gcg8u' : `https://assets.mixkit.co/videos/${id}/${id}-1080.mp4`;
   return { isPlaceholder: true, src, remoteSrc: kind === 'preview' || kind === 'full' ? videoUrl : src, poster, fallback: '/media/fallback.svg', sourceUrl: `https://mixkit.co/free-stock-video/${path}-${id}/`, licenseUrl: 'https://mixkit.co/license/#videoFree', author: 'Mixkit contributor · 详见素材原始页', alt };
 }
-const concepts: Array<{ id: keyof typeof stock; title: string; englishTitle: string; category: Project['category']; format: string; year: number; duration: string; description: string; note: string }> = [
-  { id: 'tide', title: '潮汐之后', englishTitle: 'After the Tide', category: 'Narrative', format: '短片概念', year: 2026, duration: '00:18', description: '光线退去，人物在折射的边界重新显影。', note: '把记忆看作一种光学现象。朱红色反光掠过人物，透明介质改变距离；每一次清晰与失焦，都是情绪的潮汐。这个影像研究关注材质、轮廓和暗部的留白。' },
-  { id: 'night', title: '夜行者', englishTitle: 'Night Passage', category: 'Commercials', format: '品牌影像概念', year: 2026, duration: '00:25', description: '越过城市的表面，寻找夜色里仍未熄灭的温度。', note: '车灯是一句没有写完的话。以高处的凝视代替快速剪辑，让城市的呼吸成为画面的节拍；冷暖交界处，是这部品牌影像的情感起点。' },
-  { id: 'between', title: '无声之间', englishTitle: 'In Between', category: 'Visual Tech', format: '舞蹈影像概念', year: 2025, duration: '00:22', description: '语言停下来，身体继续说话。', note: '身体之间的距离比动作本身更动人。黑白不是怀旧，而是去掉多余的解释，让视线停在呼吸、肌理和一次未完成的靠近上。' },
-  { id: 'wild', title: '旷野来信', englishTitle: 'Letters from the Wild', category: 'Narrative', format: '实验短片概念', year: 2025, duration: '00:43', description: '离开熟悉的坐标，让一封没有地址的信抵达。', note: '把镜头交给风，给未知留出时间。俯瞰的视角慢慢消解边界，树木不再是背景，而是一整片正在缓慢书写的生命。' },
-  { id: 'heat', title: '余温', englishTitle: 'Residual Heat', category: 'Visual Tech', format: '音乐短片概念', year: 2025, duration: '00:19', description: '光离开之后，动作还留在空气里。', note: '让一个动作走到尽头，再多停留一秒。聚光灯将身体从黑暗中剥离，影子则保留它的另一半。这个片段研究克制与释放之间的临界点。' },
-  { id: 'refraction', title: '折光', englishTitle: 'Refraction', category: 'Commercials', format: '时装影像概念', year: 2024, duration: '00:18', description: '真实不止一种形状。', note: '透明材质既是窗口也是阻隔。人物在光的折射中不断改变轮廓，服装、皮肤和空间成为同一种质地。这是一封写给不确定性的影像短笺。' },
+const concepts: Array<{ id: keyof typeof stock; title: string; englishTitle: string; category: Project['category']; regionalWeight: RegionalWeight; format: string; year: number; duration: string; description: string; note: string }> = [
+  { id: 'tide', title: '潮汐之后', englishTitle: 'After the Tide', regionalWeight: { zh: 90, en: 80, ja: 70, ko: 75 }, category: 'Narrative', format: '短片概念', year: 2026, duration: '00:18', description: '光线退去，人物在折射的边界重新显影。', note: '把记忆看作一种光学现象。朱红色反光掠过人物，透明介质改变距离；每一次清晰与失焦，都是情绪的潮汐。这个影像研究关注材质、轮廓和暗部的留白。' },
+  { id: 'night', title: '夜行者', englishTitle: 'Night Passage', regionalWeight: { zh: 100, en: 90, ja: 40, ko: 70 }, category: 'Commercials', format: '品牌影像概念', year: 2026, duration: '00:25', description: '越过城市的表面，寻找夜色里仍未熄灭的温度。', note: '车灯是一句没有写完的话。以高处的凝视代替快速剪辑，让城市的呼吸成为画面的节拍；冷暖交界处，是这部品牌影像的情感起点。' },
+  { id: 'between', title: '无声之间', englishTitle: 'In Between', regionalWeight: { zh: 60, en: 75, ja: 100, ko: 80 }, category: 'Visual Tech', format: '舞蹈影像概念', year: 2025, duration: '00:22', description: '语言停下来，身体继续说话。', note: '身体之间的距离比动作本身更动人。黑白不是怀旧，而是去掉多余的解释，让视线停在呼吸、肌理和一次未完成的靠近上。' },
+  { id: 'wild', title: '旷野来信', englishTitle: 'Letters from the Wild', regionalWeight: { zh: 55, en: 60, ja: 90, ko: 60 }, category: 'Narrative', format: '实验短片概念', year: 2025, duration: '00:43', description: '离开熟悉的坐标，让一封没有地址的信抵达。', note: '把镜头交给风，给未知留出时间。俯瞰的视角慢慢消解边界，树木不再是背景，而是一整片正在缓慢书写的生命。' },
+  { id: 'heat', title: '余温', englishTitle: 'Residual Heat', regionalWeight: { zh: 65, en: 95, ja: 65, ko: 100 }, category: 'Visual Tech', format: '音乐短片概念', year: 2025, duration: '00:19', description: '光离开之后，动作还留在空气里。', note: '让一个动作走到尽头，再多停留一秒。聚光灯将身体从黑暗中剥离，影子则保留它的另一半。这个片段研究克制与释放之间的临界点。' },
+  { id: 'refraction', title: '折光', englishTitle: 'Refraction', regionalWeight: { zh: 80, en: 100, ja: 60, ko: 90 }, category: 'Commercials', format: '时装影像概念', year: 2024, duration: '00:18', description: '真实不止一种形状。', note: '透明材质既是窗口也是阻隔。人物在光的折射中不断改变轮廓，服装、皮肤和空间成为同一种质地。这是一封写给不确定性的影像短笺。' },
 ];
 const baseProjects: Project[] = concepts.map((p) => ({
   ...p, isPlaceholder: true, cover: asset(p.id), preview: asset(p.id, 'preview'), fullFilm: asset(p.id, 'full'), stills: [asset(p.id), asset(p.id, 'still')],
@@ -126,7 +126,7 @@ const baseProjectsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as c
 const demoEntries: ProjectEntry[] = baseProjects.map((project, index) => {
   const field = (select: (value: Project) => string) => Object.fromEntries(catalogLanguages.map(language => [language, select(baseProjectsByLanguage[language][index])])) as Record<Language, string>;
   return {
-    id: project.id, title: field(value => value.title),
+    id: project.id, title: field(value => value.title), regionalWeight: { ...concepts[index].regionalWeight },
     category: project.category === 'Commercials' ? 'commercials' : project.category === 'Narrative' ? 'narrative' : 'visual-tech',
     year: String(project.year), duration: project.duration, isPlaceholder: true,
     coverPoster: project.cover.src, motionLoopSrc: project.preview.src, fullFilmSrc: project.fullFilm.src,

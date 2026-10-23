@@ -1,6 +1,6 @@
 # 正式影片与资产替换
 
-`src/data/mockData.ts` 导出的 `projectEntries` 是页面实际使用的影片列表。`projectsByLanguage` 只由这个列表经 `createProjectCatalog()` 生成；切换语言不会改变影片 ID 或资源地址。输入接口在 `src/types/portfolio.ts`，并从 `src/data/projectCatalog.ts` 与 `mockData.ts` 重新导出。
+`src/data/mockData.ts` 导出的 `projectEntries` 是页面实际使用的影片列表。`projectsByLanguage` 只由这个列表经 `createProjectCatalog()` 生成；四语按地域权重独立编排展映顺序，影片 ID 与资源地址保持稳定。输入接口在 `src/types/portfolio.ts`，并从 `src/data/projectCatalog.ts` 与 `mockData.ts` 重新导出。
 
 当前 `expandDemoEntries(demoEntries, 12)` 仅生成演示片单。上线正式作品时，把 `projectEntries` 的赋值替换为自己的记录数组，不需要修改轮播、筛选或弹窗组件。列表长度即真实影片数量，可为 1、12、20 或 50；不要用演示扩充函数复制正式作品。示例中的路径是交接规范，需先放入自己的真实文件：
 
@@ -9,6 +9,7 @@ export const projectEntries: ProjectEntry[] = [{
   id: 'brand-film-2027',
   title: { zh: '新作', en: 'New Film', ko: '새로운 영화', ja: '新作' },
   category: 'commercials',
+  regionalWeight: { zh: 100, en: 90, ja: 40, ko: 80 },
   year: '2027',
   duration: '01:30',
   coverPoster: '/media/projects/brand-film-2027/poster.jpg',
@@ -45,7 +46,24 @@ export const projectEntries: ProjectEntry[] = [{
 - 标题必须包含 `zh/en/ko/ja`。`description`、`note`、`format`、`alt` 可填四语字段，缺少当前语言时优先使用英文，再降级为空或影片名。Credits 的值可用统一人名字符串，也可用完整四语对象。
 - 输入记录显式保留 `isPlaceholder`：现有演示素材为 `true`，已获品牌许可的正式成片由维护者明确改为 `false`。适配器会原样传递到资源及主创，不会伪造拍摄归属或授权。版权来源应补录 `MEDIA-LICENSES.md`。
 
-Hero 独立于片单：修改同文件的 `showreel`（视频 `src`、`poster`、授权出处）及 `reelConfig`（真实时长、帧率、各章节起点）。本轮 Hero 为 12 秒三段剪辑，资源出处与生成参数见 `upstream/media/cinema-motion.json`；首部作品采用红色光学折射素材，原海边资源只留作历史文件，不进入活动片单。
+Hero 独立于片单：修改同文件的 `showreel`（视频 `src`、`poster`、授权出处）及 `reelConfig`（真实时长、帧率、各章节起点）。本轮 Hero 为 12 秒三段剪辑，资源出处与生成参数见 `upstream/media/cinema-motion.json`；《潮汐之后》采用红色光学折射素材，原海边资源只留作历史文件，不进入活动片单。
+
+## 四语地域展映顺序
+
+每条影片可配置 `regionalWeight: { zh, en, ja, ko }`。数值越大，在该语言的轮播及档案网格中越靠前；允许小数、零与负数。四项必须一起填写且均为有限数值。为兼容已有成片，可以省略整个字段，此时四语都按 `0` 处理；不能只填部分语言。
+
+`createProjectCatalog()` 在初始化时按各语言权重降序排序，权重相同时保留 `projectEntries` 的原始输入顺序。排序只读取权重，不根据片名、分类或 ID 猜测优先级；不改写输入数组、资源路径或稳定 ID。`catalogOrder` 为各语言当前编排的 `1…N` 序号，不能作为影片身份键。弹窗、素材关联与后续数据库接入应使用 `id`。
+
+当前演示权重以 6 部主要作品为编辑对象：
+
+| 语言 | 第一部 | 第二部 | 第三部 |
+| --- | --- | --- | --- |
+| ZH | 夜行者 | 潮汐之后 | 折光 |
+| EN | Refraction | Residual Heat | Night Passage |
+| JA | 沈黙のあいだ | 野生からの手紙 | 潮が引いたあと |
+| KO | 남은 온기 | 굴절 | 침묵의 사이 |
+
+这些只是现有授权素材的展映编排，不代表真实客户项目或已完成的 CGI 制作。更换正式成片后，仅编辑各条记录的权重即可调整地域首映，不需要修改轮播组件。扩充到 50 部仍使用相同接口。演示工厂新生成的研究副本权重统一为 `0`，避免复制主要作品的置顶优先级；正式作品不会被该工厂自动扩充。
 
 ## 交接验证
 
@@ -55,6 +73,6 @@ npm run typecheck
 npm run build
 ```
 
-数据校验拒绝重复 ID、缺少四语标题、非法分类/年份/时长、非 HTTPS/根相对资源地址、不完整关键帧和错误时间序列。浏览器仍需确认文件可播放、海报可访问及移动端表现。新增或改写发布资源后，相应更新 `upstream/media/published-assets.json` 的 SHA-256，再运行 `npm run verify:assets`。
+数据校验拒绝重复 ID、不完整或非有限地域权重、缺少四语标题、非法分类/年份/时长、非 HTTPS/根相对资源地址、不完整关键帧和错误时间序列。目录测试覆盖地域首映顺序、同权重稳定性、未配置权重的兼容、输入不变性及 `0/1/12/20/50` 部影片扩容。浏览器仍需确认文件可播放、海报可访问及移动端表现。新增或改写发布资源后，相应更新 `upstream/media/published-assets.json` 的 SHA-256，再运行 `npm run verify:assets`。
 
 奖项、客户与联系资料各自独立维护，替换片单不会擅自把演示奖项转成新成片的获奖履历。

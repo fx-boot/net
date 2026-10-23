@@ -16,8 +16,8 @@ h1,h2,h3 { text-wrap: balance; }
 .navigation nav a { letter-spacing: .12em; }
 .language-picker button { opacity: .78; }
 .hero { background: var(--bg-canvas); }
-.hero-shade { background: radial-gradient(ellipse at 50% 40%,transparent 20%,rgba(10,11,13,.35) 100%),linear-gradient(180deg,rgba(10,11,13,.8) 0%,rgba(10,11,13,.5) 18%,transparent 44%,rgba(10,11,13,.25) 67%,rgba(10,11,13,.83) 91%,var(--bg-canvas) 100%); }
-.hero-shade::after { background: radial-gradient(ellipse at 68% 34%,rgba(210,231,239,.035),transparent 60%); }
+.hero-shade { background: radial-gradient(ellipse at 50% 40%,transparent 20%,rgba(var(--geo-canvas-rgb),.35) 100%),linear-gradient(180deg,rgba(var(--geo-canvas-rgb),.8) 0%,rgba(var(--geo-canvas-rgb),.5) 18%,transparent 44%,rgba(var(--geo-canvas-rgb),.25) 67%,rgba(var(--geo-canvas-rgb),.83) 91%,var(--bg-canvas) 100%); }
+.hero-shade::after { background: radial-gradient(ellipse at 68% 34%,var(--geo-screen-light),transparent 60%); }
 .hero-presents { top: 140px; display: flex; flex-direction: column; gap: 5px; font-size: 9px; line-height: 1.65; letter-spacing: .25em; }
 .hero-presents > span:last-child { color: #c5c9cf; font-size: 8px; letter-spacing: .18em; }
 .hero-optics { position: absolute; right: var(--gutter); top: 140px; font: 9px/1.9 var(--font-mono); letter-spacing: .25em; color: var(--text-primary); text-align: right; }
@@ -41,7 +41,7 @@ h1,h2,h3 { text-wrap: balance; }
 .hero-notice { top: 194px; }
 
 /* The projection room: a single illuminated frame, dark wings, a working transport. */
-.works.section-space { position: relative; padding-top: 110px; padding-bottom: 145px; background: radial-gradient(ellipse 75% 70% at 15% 65%,rgba(37,88,113,.16),transparent 80%),radial-gradient(ellipse 40% 55% at 100% 60%,rgba(127,34,27,.06),transparent 80%),var(--bg-canvas); }
+.works.section-space { position: relative; padding-top: var(--geo-works-top); padding-bottom: var(--geo-works-bottom); background: radial-gradient(ellipse 75% 70% at 15% 65%,var(--geo-key-light),transparent 80%),radial-gradient(ellipse 40% 55% at 100% 60%,var(--geo-counter-light),transparent 80%),var(--bg-canvas); }
 .works .section-heading { align-items: end; margin-bottom: 40px; }
 .works .section-heading h2 { font-size: clamp(70px,7.7vw,120px); font-weight: 400; line-height: .98; letter-spacing: -.04em; }
 .collection-years { padding-bottom: 8px; font-size: 9px; letter-spacing: .22em; }
@@ -55,7 +55,7 @@ h1,h2,h3 { text-wrap: balance; }
 .view-switcher button[aria-pressed='true'] svg { opacity: 1; color: var(--text-primary); }
 .view-translation { display: none; }
 .cinema-stage { height: calc(30.13vw + 142px); }
-.cinema-stage::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 45% 70% at 50% 28%,rgba(176,212,227,.055),transparent 100%); }
+.cinema-stage::before { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 45% 70% at 50% 28%,var(--geo-screen-light),transparent 100%); }
 .cinema-slot { top: 47px; }
 .cinema-slot:not(.is-current)::after { content: ''; position: absolute; inset: 0 0 65px; background: linear-gradient(180deg,rgba(10,11,13,.08),transparent 35%,rgba(10,11,13,.18)); pointer-events: none; }
 .cinema-slot:not(.is-current) .project-image { filter: none; outline: 1px solid rgba(248,249,250,.18); outline-offset: -1px; }
@@ -93,7 +93,7 @@ h1,h2,h3 { text-wrap: balance; }
 .works-grid .project-title { font-size: 23px; }
 
 /* The dossier: typography is the portrait until its owner supplies the negative. */
-.biography { position: relative; padding-top: 110px; padding-bottom: 135px; gap: 3.6vw; background: radial-gradient(ellipse 65% 55% at 8% 37%,rgba(65,115,130,.12),transparent 80%),radial-gradient(ellipse 45% 40% at 100% 75%,rgba(127,34,27,.06),transparent 80%),linear-gradient(180deg,var(--bg-canvas),#111419 180px,#111419 78%,var(--bg-canvas)); }
+.biography { position: relative; padding-top: var(--geo-about-top); padding-bottom: var(--geo-about-bottom); gap: 3.6vw; background: radial-gradient(ellipse 65% 55% at 8% 37%,var(--geo-dossier-light),transparent 80%),radial-gradient(ellipse 45% 40% at 100% 75%,var(--geo-counter-light),transparent 80%),linear-gradient(180deg,var(--bg-canvas),var(--geo-chapter) 180px,var(--geo-chapter) 78%,var(--bg-canvas)); }
 .portrait-column { grid-column: 1 / span 4; top: 50px; }
 .director-track { grid-column: 6 / span 7; padding-bottom: 0; }
 .dossier-shell { position: relative; padding: 18px; background: linear-gradient(125deg,#262c32 0%,#15191e 20%,#171c21 70%,#272d34 100%); border: 1px solid #f8f9fa18; }
@@ -123,7 +123,7 @@ h1,h2,h3 { text-wrap: balance; }
 .monologue-lead { display: block; margin-bottom: 25px; font-size: 1.35em; line-height: 1.65; text-wrap: balance; }
 .monologue-body { display: inline; }
 .reading-ending { white-space: nowrap; }
-.studio-capacity { margin-top: 100px; padding-top: 32px; }
+.studio-capacity { margin-top: var(--geo-statement-gap); padding-top: 32px; }
 .studio-capacity .studio-caption { font-size: 9px; }
 .studio-capacity h2 { margin-top: 26px; font-size: clamp(40px,5.4vw,78px); font-weight: 500; letter-spacing: -.04em; }
 .studio-capacity h2 > span:not(.optical-text) { font-size: 17px; margin-top: 12px; letter-spacing: .06em; }
@@ -151,8 +151,8 @@ h1,h2,h3 { text-wrap: balance; }
 .recognition h2 { font: 22px/1.5 var(--font-serif); color: var(--text-primary); margin-bottom: 35px; }
 .awards-table td,.awards-table th { padding-top: 30px; padding-bottom: 30px; }
 .awards-table th { font-size: clamp(27px,2.9vw,44px); letter-spacing: -.04em; }
-.award-row:is(:hover,:focus-visible) { background: rgba(128,179,199,.035); }
-.contact { padding-top: 110px; padding-bottom: 125px; background: radial-gradient(ellipse 100% 80% at 100% 100%,rgba(65,103,121,.085),transparent 80%),var(--bg-canvas); }
+.award-row:is(:hover,:focus-visible) { background: var(--geo-hover-wash); }
+.contact { padding-top: var(--geo-contact-top); padding-bottom: var(--geo-contact-bottom); background: radial-gradient(ellipse 100% 80% at 100% 100%,var(--geo-contact-light),transparent 80%),var(--bg-canvas); }
 .contact h2 { font-size: clamp(70px,10vw,144px); margin-bottom: 75px; line-height: 1; letter-spacing: -.04em; }
 .representation-grid { gap: 8vw; }
 .representation { padding-top: 24px; }
@@ -161,7 +161,7 @@ h1,h2,h3 { text-wrap: balance; }
 .representation > p { font-size: 11px; line-height: 1.95; }
 .email-copy { margin-top: 30px; }
 .email-button { font-size: clamp(24px,2.8vw,42px); }
-.footer { background: radial-gradient(ellipse 90% 100% at 65% 100%,rgba(68,106,121,.07),transparent 90%),var(--bg-canvas); }
+.footer { background: radial-gradient(ellipse 90% 100% at 65% 100%,var(--geo-contact-light),transparent 90%),var(--bg-canvas); }
 .footer-top { padding-top: 20px; }
 .footer-name { font-weight: 500; font-size: clamp(70px,12.2vw,190px); margin-top: 65px; margin-bottom: 45px; letter-spacing: -.04em; }
 .footer-director { font-weight: 400; }

@@ -3,6 +3,7 @@ import type { Language } from '../i18n/dictionaries';
 export type Category = 'Commercials' | 'Narrative' | 'Visual Tech';
 export type ProjectCategory = 'commercials' | 'narrative' | 'visual-tech';
 export type LocalizedProjectText = Record<Language, string>;
+export type RegionalWeight = Record<Language, number>;
 export type ProjectCreditValue = string | LocalizedProjectText;
 /** Brand-owned credits; labels are localized by the catalog adapter. */
 export interface ProjectCredits {
@@ -24,6 +25,8 @@ export interface ProjectEntry {
   fullFilmSrc: string;
   stills: string[];
   credits: ProjectCredits;
+  /** Higher weights screen first in that language. Omit the entire record for neutral (0) priority. */
+  regionalWeight?: RegionalWeight;
   isPlaceholder: boolean;
   description?: Partial<LocalizedProjectText>;
   note?: Partial<LocalizedProjectText>;
@@ -65,6 +68,7 @@ export interface Project extends ContentRecord {
   id: string;
   sourceProjectId?: string;
   catalogOrder?: number;
+  regionalWeight?: RegionalWeight;
   title: string;
   englishTitle: string;
   category: Category;

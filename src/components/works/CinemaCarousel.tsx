@@ -11,12 +11,11 @@ import { useTransportSpring } from '../../hooks/useTransportSpring';
 import { transportCopy } from '../../i18n/transport';
 import { cinemaAudio } from '../../lib/cinemaAudio';
 import { AnamorphicLightSpill } from '../effects/AnamorphicLightSpill';
-interface Props {projects:Project[];active:string|null;disabled:boolean;onActive:(id:string|null)=>void;onOpen:(project:Project,origin?:ProjectOrigin)=>void}
-export function CinemaCarousel({projects,active,disabled,onActive,onOpen}:Props){
+interface Props {projects:Project[];active:string|null;disabled:boolean;previewPaused:boolean;onPreviewPauseChange:(paused:boolean)=>void;onActive:(id:string|null)=>void;onOpen:(project:Project,origin?:ProjectOrigin)=>void}
+export function CinemaCarousel({projects,active,disabled,previewPaused,onPreviewPauseChange,onActive,onOpen}:Props){
  const {language}=useLanguage(),copy=cinemaCopy[language];
  const [currentId,setCurrentId]=useState(projects[0]?.id??'');
  const [position,setPosition]=useState(0);
- const [previewPaused,setPreviewPaused]=useState(false);
  const reduced=useReducedMotion(),[moving,setMoving]=useState(false),timer=useRef<ReturnType<typeof setTimeout>|null>(null);
  useEffect(()=>()=>{if(timer.current)clearTimeout(timer.current);},[]);
  const index=Math.max(0,projects.findIndex(film=>film.id===currentId));
@@ -59,7 +58,7 @@ export function CinemaCarousel({projects,active,disabled,onActive,onOpen}:Props)
    <div className="projection-console"><div className="console-readout" aria-hidden="true"><span>FRAME {String(reelConfig.frameRate).padStart(3,'0')}</span><span className="console-reel">REEL <b key={current.id}>{String(index+1).padStart(2,'0')}</b> / {String(projects.length).padStart(2,'0')}</span><span>2.39:1</span></div><div className="film-counter"><span key={current.id} className="counter-current" aria-hidden="true">{String(index+1).padStart(2,'0')}</span><span ref={ruler} className="counter-ruler" style={{'--progress':projects.length>1?index/(projects.length-1):0} as CSSProperties}><i/><input className="transport-range" type="range" min={0} max={Math.max(0,projects.length-1)} step={1} value={index} disabled={disabled||projects.length<2} aria-label={transportCopy[language].seek} aria-valuetext={`${index+1} / ${projects.length} · ${current.title}`} aria-describedby="transport-instructions" onChange={event=>step(Number(event.currentTarget.value)-index)}/></span><span aria-hidden="true">{String(projects.length).padStart(2,'0')}</span></div><span className="sr-only" id="transport-instructions">{transportCopy[language].hint}</span></div>
    <button data-magnetic type="button" onClick={()=>step(1)} disabled={disabled||projects.length<2} aria-label={copy.next}><span className="magnetic-ink"><span className="transport-bracket">[</span><span><span className="transport-frame">FRAME </span>NEXT</span><svg width="8" height="10" viewBox="0 0 8 10" fill="currentColor" aria-hidden="true"><path d="M1 0L8 5L1 10Z"/></svg><span className="transport-bracket">]</span></span></button>
   </div>
-  {!reduced&&<button type="button" className="preview-playback-control" aria-pressed={previewPaused} disabled={disabled} onClick={()=>setPreviewPaused(value=>!value)}>[ {previewPaused?previewCopy[language].play:previewCopy[language].pause} ]</button>}
+  {!reduced&&<button type="button" className="preview-playback-control" aria-pressed={previewPaused} disabled={disabled} onClick={()=>onPreviewPauseChange(!previewPaused)}>[ {previewPaused?previewCopy[language].play:previewCopy[language].pause} ]</button>}
   <p className="sr-only" role="status" aria-live="polite">{current.title}, {index+1} / {projects.length}</p>
  </div>;
 }

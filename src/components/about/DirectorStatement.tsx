@@ -6,6 +6,7 @@ import { useScrollScene } from '../../hooks/useScrollScene';
 import { recordGeometryRead, type CinemaFrame } from '../../lib/cinemaFrames';
 import { brandCopy } from '../../i18n/brand';
 import { atelierCopy } from '../../i18n/atelier';
+import { geoCopy } from '../../i18n/geo';
 
 function focusReading(node: HTMLParagraphElement, frame: CinemaFrame) {
  const center = frame.height * 0.5;
@@ -24,7 +25,8 @@ function resetReading(node: HTMLParagraphElement) {
 export function DirectorStatement() {
  const { language } = useLanguage();
  const statement = editorial[language].monologue;
- const sentences = statement.match(/[^。.!?]+[。.!?]?\s*/gu) ?? [statement];
+ const originalSentences = statement.match(/[^。.!?]+[。.!?]?\s*/gu) ?? [statement];
+ const sentences = [geoCopy[language].directorOpening, ...originalSentences.slice(1)];
  const renderSentence = (sentence: string, index: number) => {
   if (language !== 'ko' || index !== sentences.length - 1) return sentence;
   const ending = sentence.trimEnd().split(/\s+/u).slice(-2).join(' ');

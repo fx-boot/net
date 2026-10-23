@@ -7,7 +7,9 @@ export function ScrambleLabel({ text, trigger = false }: { text: string; trigger
  const desktop = useDesktopPointer(), reduced = useReducedMotion();
  useEffect(() => {
   const node = root.current, output = ink.current;
-  if (!node || !output || !desktop || reduced || !/^[\x20-\x7e]+$/.test(text)) return;
+  if (!node || !output) return;
+  output.textContent = text;
+  if (!desktop || reduced || !/^[\x20-\x7e]+$/.test(text)) return;
   let start = -1, lastStep = -1, active = false;
   const charset = '0135789/<>_';
   const unsubscribe = subscribeCinemaFrame(({ time }) => {
@@ -22,7 +24,7 @@ export function ScrambleLabel({ text, trigger = false }: { text: string; trigger
   });
   const observer = new IntersectionObserver(([entry]) => { if (entry.isIntersecting) { active = true; observer.disconnect(); } });
   observer.observe(node);
-  return () => { observer.disconnect(); unsubscribe(); output.textContent = text; };
+  return () => { observer.disconnect(); unsubscribe(); };
  }, [text, trigger, desktop, reduced]);
  return <span className="scramble-label" ref={root}><span className="scramble-measure" aria-hidden="true">{text}</span><span className="scramble-ink" ref={ink} aria-hidden="true">{text}</span><span className="sr-only">{text}</span></span>;
 }

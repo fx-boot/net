@@ -9,8 +9,8 @@
 .anamorphic-spill { position:absolute; inset:0; overflow:hidden; pointer-events:none; transform:translate3d(var(--spill-drift,0px),0,0) rotate(var(--spill-angle,0deg)); backface-visibility:hidden; }
 .anamorphic-spill-hero { z-index:-1; }
 .anamorphic-spill-theatre { z-index:0; }
-.anamorphic-spill i { position:absolute; inset:0 -10%; background:radial-gradient(ellipse 64% 2% at 52% 44%,rgba(144,199,235,.075),transparent 85%),radial-gradient(ellipse 80% 13% at 48% 44%,rgba(62,105,152,.055),transparent 80%); }
-.anamorphic-spill i+i { background:radial-gradient(ellipse 45% 5% at 79% 58%,rgba(255,62,0,.04),transparent 85%); }
+.anamorphic-spill i { position:absolute; inset:0 -10%; background:radial-gradient(ellipse 64% 2% at 52% 44%,var(--geo-spill-core),transparent 85%),radial-gradient(ellipse 80% 13% at 48% 44%,var(--geo-spill-field),transparent 80%); }
+.anamorphic-spill i+i { background:radial-gradient(ellipse 45% 5% at 79% 58%,var(--geo-spill-edge),transparent 85%); }
 .anamorphic-spill-hero i { opacity:.8; }
 .counter-ruler { touch-action:pan-y; }
 .counter-ruler i { transform:translate3d(calc(var(--transport-position,var(--progress))*100%),0,0); transition:none; pointer-events:none; }

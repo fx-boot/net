@@ -1,6 +1,6 @@
 import type { Language } from '../i18n/dictionaries';
-import type { Category, Credit, MediaAsset, Project, ProjectCreditValue, ProjectEntry } from '../types/portfolio';
-export type { ProjectCredits, ProjectEntry } from '../types/portfolio';
+import type { Category, Credit, MediaAsset, Project, ProjectCreditValue, ProjectEntry, RegionalWeight } from '../types/portfolio';
+export type { ProjectCredits, ProjectEntry, RegionalWeight } from '../types/portfolio';
 export type LocalizedCatalog = Record<Language, Project[]>;
 export const catalogLanguages: readonly Language[] = ['zh', 'en', 'ko', 'ja'];
 const categories: Record<ProjectEntry['category'], Category> = {
@@ -24,6 +24,7 @@ const record = (value: unknown): value is Record<string, unknown> => typeof valu
 const nonempty = (value: unknown): value is string => typeof value === 'string' && value.trim().length > 0;
 const completeText = (value: unknown) => record(value) && catalogLanguages.every(language => nonempty(value[language]));
 const validCredit = (value: unknown) => nonempty(value) || completeText(value);
+const validRegionalWeight = (value: unknown): value is RegionalWeight => record(value) && Object.keys(value).length === catalogLanguages.length && catalogLanguages.every(language => typeof value[language] === 'number' && Number.isFinite(value[language]));
 const mediaPath = (value: unknown) => {
   if (typeof value !== 'string' || /[\s\\]/.test(value)) return false;
   if (value.startsWith('/') && !value.startsWith('//')) return true;
@@ -46,6 +47,7 @@ export function validateProjectEntries(entries: readonly ProjectEntry[]): void {
   for (const entry of entries) {
     if (entry === null || typeof entry !== 'object' || Array.isArray(entry) || typeof entry.id !== 'string' || !/^[a-z\d][a-z\d-]*$/i.test(entry.id) || ids.has(entry.id)) throw new TypeError(`Invalid or duplicate project ID: ${entry?.id}`);
     ids.add(entry.id);
+    if (entry.regionalWeight !== undefined && !validRegionalWeight(entry.regionalWeight)) throw new TypeError(`Regional weights require four finite numbers for ${entry.id}`);
     if (!Object.hasOwn(categories, entry.category)) throw new TypeError(`Unknown category for ${entry.id}`);
     if (typeof entry.year !== 'string' || !/^\d{4}$/.test(entry.year) || Number(entry.year) === 0 || durationInSeconds(entry.duration) <= 0) throw new TypeError(`Invalid year or duration for ${entry.id}`);
     if (typeof entry.isPlaceholder !== 'boolean') throw new TypeError(`Missing rights status for ${entry.id}`);
@@ -65,10 +67,17 @@ export function validateProjectEntries(entries: readonly ProjectEntry[]): void {
   }
 }
 
-/** Input assets stay shared; copy is resolved per language without changing IDs. */
+/** A stable, non-mutating regional screening order; ties keep the editor's input order. */
+export function curateProjectEntries(entries: readonly ProjectEntry[], language: Language): ProjectEntry[] {
+  return entries.map((entry, inputOrder) => ({ entry, inputOrder, weight: entry.regionalWeight?.[language] ?? 0 }))
+    .sort((left, right) => left.weight === right.weight ? left.inputOrder - right.inputOrder : left.weight > right.weight ? -1 : 1)
+    .map(({ entry }) => entry);
+}
+
+/** Assets and IDs remain stable; each language gets its own screening order and copy. */
 export function createProjectCatalog(entries: readonly ProjectEntry[]): LocalizedCatalog {
   validateProjectEntries(entries);
-  return Object.fromEntries(catalogLanguages.map(language => [language, entries.map((entry, index): Project => {
+  return Object.fromEntries(catalogLanguages.map(language => [language, curateProjectEntries(entries, language).map((entry, index): Project => {
     const alt = text(entry.alt, language, entry.title[language]);
     const asset = (src: string, remoteSrc = src, hasAudio?: boolean): MediaAsset => ({
       isPlaceholder: entry.isPlaceholder, src, remoteSrc, hasAudio, poster: entry.coverPoster,
@@ -83,6 +92,7 @@ export function createProjectCatalog(entries: readonly ProjectEntry[]): Localize
     for (const additional of entry.credits.additional ?? []) credits.push({ role: additional.label[language], name: localized(additional.value, language), isPlaceholder: entry.isPlaceholder });
     return {
       isPlaceholder: entry.isPlaceholder, id: entry.id, sourceProjectId: entry.sourceProjectId ?? entry.id,
+      regionalWeight: entry.regionalWeight ? { ...entry.regionalWeight } : undefined,
       catalogOrder: index + 1, title: entry.title[language], englishTitle: entry.title.en,
       category: categories[entry.category], format: text(entry.format, language), year: Number(entry.year), duration: entry.duration,
       description: text(entry.description, language), note: text(entry.note, language),
@@ -117,6 +127,8 @@ export function expandDemoEntries(seeds: readonly ProjectEntry[], count = 12): P
     }
     return {
       ...source, id,
+      // New demo studies stay neutral; never duplicate a source film's regional premiere.
+      regionalWeight: edition ? { zh: 0, en: 0, ko: 0, ja: 0 } : source.regionalWeight,
       sourceProjectId: source.sourceProjectId ?? source.id, title, stills: [...source.stills],
       credits: { ...source.credits, additional: source.credits.additional?.map(credit => ({ ...credit })) },
       scrub: source.scrub ? { ...source.scrub, frameTimes: [...source.scrub.frameTimes] } : undefined,

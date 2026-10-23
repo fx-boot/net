@@ -1,6 +1,6 @@
 ---
 name: "LANCHUAN × 東浩"
-description: "A cold cinematic portfolio shaped by title cards, a projection theatre and a director's working plate."
+description: "A cinematic portfolio with regional editorial editions, a projection theatre and a director's working plate."
 colors:
   canvas: "#0A0B0D"
   surface: "#13151A"
@@ -366,11 +366,34 @@ The native full-screen dialog has an almost opaque obsidian atmosphere, a sticky
 
 Source: [src/styles/global.css](src/styles/global.css), [src/styles/cinema.css](src/styles/cinema.css), [src/styles/projection.css](src/styles/projection.css), [src/components](src/components), [src/i18n/LanguageSwitcher.tsx](src/i18n/LanguageSwitcher.tsx).
 
+## Regional editorial editions
+
+`html[lang]` remaps the same semantic light and surface roles in `tokens.css`.
+Chinese uses an obsidian city-blue field and `#D9381E` signals; English holds
+platinum, neutral titanium and `#FF3E00` laser accents. Japanese uses ink blue
+with an amber light capped at `rgba(197,160,89,.08)`, wider gutters and longer
+chapter pauses. Korean raises surface luminance, pairs restrained cyan/violet
+light and tightens vertical pacing while retaining 1.85 leading and keep-all.
+
+The ambient layer, theatre surround, About chapter, Contact and anamorphic
+spill consume these tokens. Four registered color properties settle for
+(450ms) on a locale change; there is no autonomous background animation,
+blur, new RAF or extra media decoder. Reduced motion applies themes directly.
+`geo-aesthetics.css` adjusts reading measure, section pauses and studio-first
+content spacing, never the fixed trigger, 72% aperture or 2.39:1 film ratio.
+`typography.css` remains the sole owner of all four isolated glyph stacks.
+
+Chinese and English show LANCHUAN as the hero wordmark and lead with studio
+capacity; Japanese and Korean lead with DONG HAO and the director's voice.
+These are editorial priorities, not visitor-location detection or claims
+about every reader in a country. All work and both contact channels remain
+available in every edition.
+
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** preserve the cold palette and use laser for the existing signal roles.
+- **Do** preserve each edition's semantic palette and reserve its accent for existing signal roles.
 - **Do** keep the hero name heavy, tightly tracked and clearly separate from the reel entry.
 - **Do** preserve the theatre's central image gate and its distinct mobile ratio.
 - **Do** place movement inside stable sensing shells and use the existing shared frame driver.

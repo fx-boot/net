@@ -39,7 +39,9 @@ try {
     for (const language of ['zh', 'en', 'ko', 'ja']) {
       assert.equal(catalog[language].length, count);
       assert.equal(new Set(catalog[language].map(film => film.id)).size, count);
-      assert.deepEqual(catalog[language].map(film=>film.id),catalog.zh.map(film=>film.id));
+      assert.deepEqual(catalog[language].map(film=>film.id).sort(),catalog.zh.map(film=>film.id).sort(), 'Language curation must retain exactly the same film IDs');
+      assert.deepEqual(catalog[language].map(film=>film.catalogOrder), Array.from({length:count},(_,index)=>index+1));
+      assert.ok(catalog[language].every((film,index,films)=>!index||(films[index-1].regionalWeight?.[language]??0)>=(film.regionalWeight?.[language]??0)), 'Regional priorities must descend');
     }
     for (const index of [0,count-1]) {
       const window = carouselWindow(count,index);

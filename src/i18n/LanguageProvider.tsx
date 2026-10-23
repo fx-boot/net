@@ -1,12 +1,19 @@
 import { brandCopy } from './brand';
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
 import { animate, createScope, createTimeline } from 'animejs';
 import { dictionaries, type Dictionary, type Language } from './dictionaries';
 import { useDesktopPointer, useReducedMotion } from '../hooks/useMotionEnvironment';
 const languages = ['zh', 'en', 'ko', 'ja'];
 import { LanguageContext as Context } from './LanguageContext';
+import { selectLanguage, type LanguageSelection } from './languageSelection';
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, updateLanguage] = useState<Language>(() => { try { const stored = localStorage.getItem('lanchuan-language') || localStorage.getItem('mo-chen-language'); return languages.includes(stored || '') ? stored as Language : 'zh'; } catch { return 'zh'; } });
+  const [selection, updateSelection] = useState<LanguageSelection>(() => {
+    let language: Language = 'zh';
+    try { const stored = localStorage.getItem('lanchuan-language') || localStorage.getItem('mo-chen-language'); if(languages.includes(stored || ''))language=stored as Language; } catch { /* Use the document default when storage is unavailable. */ }
+    return { language, revision: 0 };
+  });
+  const { language, revision: languageRevision } = selection;
+  const setLanguage = useCallback((next: Language) => updateSelection(current => selectLanguage(current, next)), []);
   const root = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
   const desktop = useDesktopPointer();
@@ -28,6 +35,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     });
     return () => scope.revert();
   }, [language, reduced, desktop]);
-  const value = useMemo(() => ({ language, setLanguage: updateLanguage, t: (key: keyof Dictionary) => dictionaries[language][key] }), [language]);
+  const value = useMemo(() => ({ language, languageRevision, setLanguage, t: (key: keyof Dictionary) => dictionaries[language][key] }), [language, languageRevision, setLanguage]);
   return <Context.Provider value={value}><div ref={root}>{children}<div className="language-shutter" aria-hidden="true" /></div></Context.Provider>;
 }

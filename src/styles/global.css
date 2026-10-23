@@ -6,6 +6,11 @@
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
 body { margin: 0; background: var(--bg-gallery); color: var(--text-parchment); font-family: var(--font-sans); font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+/* Region changes settle through surface and text paint only. No layout or
+   filter transition can alter the carousel's static pointer contract. */
+@media(prefers-reduced-motion:no-preference) {
+ body { transition: background-color .4s var(--film-ease),color .4s var(--film-ease); }
+}
 body, #root { min-width: 320px; }
 h1,h2,h3,p,figure { margin: 0; } h1,h2,h3 { font-weight: 400; }
 button,input { font: inherit; } button,a { -webkit-tap-highlight-color: transparent; }

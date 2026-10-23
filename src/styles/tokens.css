@@ -12,6 +12,25 @@
  --border-projection: rgba(248, 249, 250, 0.15);
  --light-cyan: rgba(72, 125, 156, 0.10);
  --light-vermilion: rgba(255, 62, 0, 0.035);
+ --geo-canvas-rgb: 10, 11, 13;
+ --geo-chapter: #111419;
+ --geo-key-light: rgba(37, 88, 113, 0.16);
+ --geo-counter-light: rgba(127, 34, 27, 0.06);
+ --geo-dossier-light: rgba(65, 115, 130, 0.12);
+ --geo-screen-light: rgba(176, 212, 227, 0.055);
+ --geo-contact-light: rgba(65, 103, 121, 0.085);
+ --geo-spill-core: rgba(144, 199, 235, 0.075);
+ --geo-spill-field: rgba(62, 105, 152, 0.055);
+ --geo-spill-edge: rgba(255, 62, 0, 0.04);
+ --geo-hover-wash: rgba(128, 179, 199, 0.035);
+ --geo-works-top: 110px;
+ --geo-works-bottom: 145px;
+ --geo-about-top: 110px;
+ --geo-about-bottom: 135px;
+ --geo-contact-top: 110px;
+ --geo-contact-bottom: 125px;
+ --geo-reading-measure: 65ch;
+ --geo-statement-gap: 100px;
  --type-monolith: clamp(5rem, 15vw, 16rem);
  /* Compatibility aliases keep the existing component and dictionary contracts. */
  --bg-obsidian: var(--bg-canvas);
@@ -37,5 +56,112 @@
  --font-editorial-latin: 'Bodoni Moda', 'Didot', 'Playfair Display', serif;
  --gutter: clamp(22px, 4.2vw, 88px);
  --section-gap: clamp(100px, 12vw, 190px); color-scheme: dark;
+}
+/* Regional art direction remaps semantic roles; language-specific glyph stacks
+   remain isolated in typography.css. No media geometry or hit target changes. */
+html[lang='zh'] {
+ --bg-canvas: #090C11;
+ --bg-surface: #121720;
+ --bg-subtle: #141B25;
+ --text-primary: #F5F7FA;
+ --text-secondary: #A1A9B6;
+ --accent-laser: #D9381E;
+ --geo-canvas-rgb: 9, 12, 17;
+ --geo-chapter: #111923;
+ --light-cyan: rgba(44, 100, 156, 0.14);
+ --light-vermilion: rgba(217, 56, 30, 0.055);
+ --geo-key-light: rgba(40, 94, 160, 0.19);
+ --geo-counter-light: rgba(217, 56, 30, 0.065);
+ --geo-dossier-light: rgba(40, 91, 143, 0.16);
+ --geo-screen-light: rgba(111, 167, 215, 0.075);
+ --geo-contact-light: rgba(46, 104, 164, 0.12);
+ --geo-spill-core: rgba(131, 190, 237, 0.08);
+ --geo-spill-field: rgba(42, 100, 164, 0.075);
+ --geo-spill-edge: rgba(217, 56, 30, 0.055);
+ --geo-hover-wash: rgba(93, 150, 196, 0.05);
+ --geo-reading-measure: 31em;
+}
+html[lang='en'] {
+ --bg-canvas: #0A0B0D;
+ --bg-surface: #13151A;
+ --bg-subtle: #181A20;
+ --text-primary: #F8F9FA;
+ --text-secondary: #A0A5AF;
+ --accent-laser: #FF3E00;
+ --light-cyan: rgba(174, 189, 210, 0.09);
+ --light-vermilion: rgba(255, 62, 0, 0.045);
+ --geo-key-light: rgba(174, 189, 210, 0.10);
+ --geo-counter-light: rgba(255, 62, 0, 0.055);
+ --geo-dossier-light: rgba(155, 174, 198, 0.10);
+ --geo-screen-light: rgba(218, 231, 247, 0.065);
+ --geo-contact-light: rgba(174, 189, 210, 0.08);
+ --geo-spill-core: rgba(223, 235, 250, 0.075);
+ --geo-spill-field: rgba(149, 175, 208, 0.05);
+ --geo-spill-edge: rgba(255, 62, 0, 0.045);
+ --geo-hover-wash: rgba(230, 235, 245, 0.035);
+ --geo-reading-measure: 36ch;
+}
+html[lang='ja'] {
+ --bg-canvas: #0B0E14;
+ --bg-surface: #151923;
+ --bg-subtle: #191D27;
+ --text-primary: #F1F0EB;
+ --text-secondary: #A5A5AA;
+ --accent-laser: #C84B31;
+ --accent-brass: #C5A059;
+ --geo-canvas-rgb: 11, 14, 20;
+ --geo-chapter: #151A24;
+ --light-cyan: rgba(72, 99, 141, 0.12);
+ --light-vermilion: rgba(197, 160, 89, 0.08);
+ --geo-key-light: rgba(57, 84, 128, 0.15);
+ --geo-counter-light: rgba(197, 160, 89, 0.08);
+ --geo-dossier-light: rgba(197, 160, 89, 0.075);
+ --geo-screen-light: rgba(178, 186, 212, 0.055);
+ --geo-contact-light: rgba(197, 160, 89, 0.075);
+ --geo-spill-core: rgba(161, 178, 214, 0.06);
+ --geo-spill-field: rgba(61, 86, 132, 0.065);
+ --geo-spill-edge: rgba(197, 160, 89, 0.08);
+ --geo-hover-wash: rgba(197, 160, 89, 0.04);
+ --geo-works-top: 140px;
+ --geo-works-bottom: 170px;
+ --geo-about-top: 145px;
+ --geo-about-bottom: 165px;
+ --geo-contact-top: 145px;
+ --geo-contact-bottom: 150px;
+ --geo-reading-measure: 27em;
+ --geo-statement-gap: 125px;
+ --gutter: clamp(24px, 4.8vw, 96px);
+ --section-gap: clamp(120px, 14vw, 210px);
+}
+html[lang='ko'] {
+ --bg-canvas: #0C0F16;
+ --bg-surface: #171C27;
+ --bg-subtle: #1A202D;
+ --text-primary: #FCFCFF;
+ --text-secondary: #ACB4C4;
+ --accent-laser: #FF4A45;
+ --geo-canvas-rgb: 12, 15, 22;
+ --geo-chapter: #171D29;
+ --light-cyan: rgba(78, 182, 202, 0.14);
+ --light-vermilion: rgba(125, 104, 210, 0.09);
+ --geo-key-light: rgba(72, 162, 183, 0.18);
+ --geo-counter-light: rgba(124, 96, 205, 0.10);
+ --geo-dossier-light: rgba(89, 156, 184, 0.16);
+ --geo-screen-light: rgba(145, 217, 229, 0.085);
+ --geo-contact-light: rgba(123, 106, 204, 0.12);
+ --geo-spill-core: rgba(148, 222, 236, 0.09);
+ --geo-spill-field: rgba(73, 156, 185, 0.075);
+ --geo-spill-edge: rgba(149, 111, 220, 0.07);
+ --geo-hover-wash: rgba(131, 198, 221, 0.05);
+ --geo-works-top: 95px;
+ --geo-works-bottom: 125px;
+ --geo-about-top: 100px;
+ --geo-about-bottom: 115px;
+ --geo-contact-top: 95px;
+ --geo-contact-bottom: 110px;
+ --geo-reading-measure: 30em;
+ --geo-statement-gap: 80px;
+ --gutter: clamp(22px, 3.9vw, 80px);
+ --section-gap: clamp(90px, 10vw, 165px);
 }
 @font-face { font-family: 'Shippori Mincho'; src: url('/fonts/shippori-mincho-regular.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
