@@ -4,6 +4,7 @@ import type { Award, Client, DirectorProfile, MediaAsset, Project, ProjectEntry,
 export type { ProjectCredits, ProjectEntry, RegionalWeight } from '../types/portfolio';
 import { dictionaries, type Language } from '../i18n/dictionaries';
 import { scrubFrameSources } from './scrubFrames';
+import { heroMediaPaths, heroMediaSources } from './heroMedia';
 
 const stock = {
   tide: [101645, 'model-in-western-fashion-seen-through-acrylic', '冷暗光线中，人物轮廓穿过朱红色光学折射'],
@@ -161,3 +162,12 @@ export const representativesByLanguage = Object.fromEntries((['zh', 'en', 'ko', 
 })) as Record<Language, Representative[]>;
 export const clientsByLanguage: Record<Language, Client[]> = { zh: clients, en: clients, ko: clients, ja: clients };
 export const showreelsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, translateAsset(showreel, language, dictionaries[language].reelDisclaimer)])) as Record<Language, MediaAsset>;
+/** Hero backgrounds are independent of both the regional film ordering and the full showreel. */
+export const heroBackgroundsByLanguage = Object.fromEntries(catalogLanguages.map(language => {
+  const paths = heroMediaPaths[language], source = heroMediaSources[language];
+  return [language, {
+    isPlaceholder: source.isPlaceholder, src: paths.video, remoteSrc: paths.video, poster: paths.poster,
+    fallback: '/media/fallback.svg', hasAudio: source.hasAudio,
+    sourceUrl: source.sourceUrl, licenseUrl: source.licenseUrl, author: source.author, alt: dictionaries[language].heroVideo,
+  }];
+})) as Record<Language, MediaAsset>;

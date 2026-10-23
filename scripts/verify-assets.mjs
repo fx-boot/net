@@ -16,7 +16,7 @@ for (const asset of published) {
   if (asset.local.endsWith('.woff2')) assert.equal(bytes.subarray(0, 4).toString(), 'wOF2', asset.local);
 }
 const { createServer } = await import('vite');
-const server = await createServer({ server: { middlewareMode: true }, appType: 'custom' });
+const server = await createServer({ server: { middlewareMode: true, hmr: false, ws: false }, appType: 'custom' });
 try {
   const { dictionaries } = await server.ssrLoadModule('/src/i18n/dictionaries.ts');
   const { editorial } = await server.ssrLoadModule('/src/i18n/editorial.ts');

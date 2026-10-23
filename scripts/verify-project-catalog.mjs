@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { createServer } from 'vite';
 
-const server = await createServer({ server: { middlewareMode: true }, appType: 'custom' });
+const server = await createServer({ server: { middlewareMode: true, hmr: false, ws: false }, appType: 'custom' });
 try {
   const { createProjectCatalog, curateProjectEntries, expandDemoEntries, durationInSeconds, validateProjectEntries } = await server.ssrLoadModule('/src/data/projectCatalog.ts');
   const { projectEntries, projectsByLanguage } = await server.ssrLoadModule('/src/data/mockData.ts');

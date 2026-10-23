@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-10-23",
+  "purpose": "Four independent licensed local Hero background loops; full showreel and portfolio sources are separate.",
+  "publicationScope": "Only the eight edited public/media/hero assets are added to the published registry; originals remain ignored locally.",
+  "baselinePublishedAssetsCount": 198,
+  "baselinePublishedRecordsSha256": "89430d18d2059b033a0c2621b0f124ff8b4d7f4bd4e2aa7098b13950b65a34fc",
+  "sources": [
+    {
+      "language": "zh",
+      "sourceId": "mixkit-42342",
+      "sourceTitle": "Aerial shot of a city at night",
+      "sourceUrl": "https://mixkit.co/free-stock-video/aerial-shot-of-a-city-at-night-42342/",
+      "author": "Mixkit",
+      "authorUrl": "https://mixkit.co/@mixkit/",
+      "originalDownloadUrl": "https://assets.mixkit.co/videos/42342/42342-1080.mp4",
+      "visualDescription": "Blue-hour/night aerial motion through high-rise architecture and traffic lights. The official source does not identify a city; do not describe this footage as Chongqing.",
+      "isPlaceholder": true,
+      "master": {
+        "ignoredLocal": ".tools/hero-sources/zh-master.mp4",
+        "bytes": 49469878,
+        "sha256": "77a4c812d8b4dc877c169556a9a3ec2bb994182ea2c43824fb502b5c9dff443c",
+        "width": 1920,
+        "height": 1080,
+        "durationSeconds": 14.639625,
+        "frameRate": 23.976023976023974,
+        "frames": 351,
+        "codec": "avc1",
+        "publication": "Ignored local original; never registered as a published asset"
+      },
+      "edit": {
+        "sourceStartSeconds": 3,
+        "description": "Trim an 8-second segment; retain native 1920x1080 without upscaling; resample cadence to 24fps; strip audio and metadata; H.264 CRF20, maxrate3600k, bufsize7200k, faststart. Poster extracted at segment start at native resolution, JPEG q2."
+      },
+      "license": {
+        "name": "Mixkit Stock Video Free License",
+        "url": "https://mixkit.co/license/#videoFree",
+        "evidenceUrl": "https://mixkit.co/license/modal/videoFree/",
+        "termsUrl": "https://mixkit.co/terms/",
+        "commercialUse": true,
+        "modification": true,
+        "attributionRequired": false,
+        "verifiedOn": "2026-10-23"
+      },
+      "provenanceRecord": "upstream/media/hero-zh-en.json",
+      "outputs": [
+        {
+          "local": "public/media/hero/zh.mp4",
+          "bytes": 2969856,
+          "sha256": "15905e4e2df405ecb4f8b901a6e257da2c352efc869eec9e4faef2253ee9b52b",
+          "src": "/media/hero/zh.mp4",
+          "kind": "hero-motion-loop",
+          "width": 1920,
+          "height": 1080,
+          "durationSeconds": 8,
+          "frameRate": 24,
+          "frames": 192,
+          "codec": "avc1",
+          "profile": 100,
+          "audioTracks": 0,
+          "fastStart": true
+        },
+        {
+          "local": "public/media/hero/zh.jpg",
+          "bytes": 349452,
+          "sha256": "4c08f3e7d85db14f21c9b5f323a668093789e81117bbfc1f7723daeab7e1758f",
+          "src": "/media/hero/zh.jpg",
+          "kind": "hero-poster",
+          "width": 1920,
+          "height": 1080,
+          "derivedFrom": "/media/hero/zh.mp4",
+          "frame": 0,
+          "codec": "jpeg"
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "sourceId": "mixkit-101699",
+      "sourceTitle": "Abstract Lights Shifting From Blue to Green",
+      "sourceUrl": "https://mixkit.co/free-stock-video/abstract-lights-shifting-from-blue-to-green-101699/",
+      "author": "Mixkit",
+      "authorUrl": "https://mixkit.co/@mixkit/",
+      "originalDownloadUrl": "https://assets.mixkit.co/u7u2lhfyns2qe8qwrdwiv2wt3ddv",
+      "visualDescription": "Real optical light shifting through acrylic, with cool blue/green vertical refractions. This is licensed abstract stock footage, not a LANCHUAN CGI claim.",
+      "isPlaceholder": true,
+      "master": {
+        "ignoredLocal": ".tools/hero-sources/en-master.mp4",
+        "bytes": 50021355,
+        "sha256": "249c56d07950d14c50f2f8b9ba8596f14d528e7e23cdcb6a009957c48312de8d",
+        "width": 1920,
+        "height": 1080,
+        "durationSeconds": 13.179833333333333,
+        "frameRate": 23.976023976023978,
+        "frames": 316,
+        "codec": "avc1",
+        "publication": "Ignored local original; never registered as a published asset"
+      },
+      "edit": {
+        "sourceStartSeconds": 2,
+        "description": "Trim an 8-second segment; retain native 1920x1080 without upscaling; resample cadence to 24fps; strip audio and metadata; H.264 CRF20, maxrate3600k, bufsize7200k, faststart. Poster extracted at segment start at native resolution, JPEG q2."
+      },
+      "license": {
+        "name": "Mixkit Stock Video Free License",
+        "url": "https://mixkit.co/license/#videoFree",
+        "evidenceUrl": "https://mixkit.co/license/modal/videoFree/",
+        "termsUrl": "https://mixkit.co/terms/",
+        "commercialUse": true,
+        "modification": true,
+        "attributionRequired": false,
+        "verifiedOn": "2026-10-23"
+      },
+      "provenanceRecord": "upstream/media/hero-zh-en.json",
+      "outputs": [
+        {
+          "local": "public/media/hero/en.mp4",
+          "bytes": 3250373,
+          "sha256": "4df81f657e81abc1f8948d64d5bc4c0f30260407ff560de988a70afc843b4f30",
+          "src": "/media/hero/en.mp4",
+          "kind": "hero-motion-loop",
+          "width": 1920,
+          "height": 1080,
+          "durationSeconds": 8,
+          "frameRate": 24,
+          "frames": 192,
+          "codec": "avc1",
+          "profile": 100,
+          "audioTracks": 0,
+          "fastStart": true
+        },
+        {
+          "local": "public/media/hero/en.jpg",
+          "bytes": 230135,
+          "sha256": "18e951c8923244ce09535fc992b9dbc1b7925d221af55993c19d1e2534a5a8b2",
+          "src": "/media/hero/en.jpg",
+          "kind": "hero-poster",
+          "width": 1920,
+          "height": 1080,
+          "derivedFrom": "/media/hero/en.mp4",
+          "frame": 0,
+          "codec": "jpeg"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "sourceId": "mixkit-3977",
+      "sourceTitle": "View of a window with a curtain",
+      "sourceUrl": "https://mixkit.co/free-stock-video/view-of-a-window-with-a-curtain-3977/",
+      "author": "edgarfernandez",
+      "authorUrl": "https://mixkit.co/@edgarfernandez/",
+      "originalDownloadUrl": "https://assets.mixkit.co/videos/3977/3977-1080.mp4",
+      "visualDescription": "A still observing position, a moving translucent curtain, tree silhouettes and soft daylight; an independent-film visual pause rather than an urban production showcase.",
+      "isPlaceholder": true,
+      "master": {
+        "ignoredLocal": ".tools/hero-sources/ja-3977-1080.mp4",
+        "bytes": 36577129,
+        "sha256": "64971c02fdb91db12801c8b23a5429f81682ebe1a47516e57d6f022257ed1af4",
+        "width": 1920,
+        "height": 1080,
+        "durationSeconds": 11.011,
+        "frameRate": 23.976023976023978,
+        "frames": 264,
+        "codec": "avc1",
+        "publication": "Ignored local original; never registered as a published asset"
+      },
+      "edit": {
+        "sourceStartSeconds": 1,
+        "description": "trim; slight contrast and saturation grade; silent H.264 encode; fast-start MP4; first decoded frame poster"
+      },
+      "license": {
+        "name": "Mixkit Stock Video Free License",
+        "url": "https://mixkit.co/license/#videoFree",
+        "evidenceUrl": "https://mixkit.co/license/modal/videoFree/",
+        "termsUrl": "https://mixkit.co/terms/",
+        "commercialUse": true,
+        "modification": true,
+        "attributionRequired": false,
+        "verifiedOn": "2026-10-23"
+      },
+      "provenanceRecord": "upstream/media/hero-ja.json",
+      "outputs": [
+        {
+          "local": "public/media/hero/ja.mp4",
+          "bytes": 3534030,
+          "sha256": "cf62177f3989338c55caf2e5f50d2fbee9c0eff13a94c29d6f0fc18feb8f895f",
+          "src": "/media/hero/ja.mp4",
+          "kind": "hero-motion-loop",
+          "width": 1920,
+          "height": 1080,
+          "durationSeconds": 8.008,
+          "frameRate": 23.976023976023978,
+          "frames": 192,
+          "codec": "avc1",
+          "profile": 100,
+          "audioTracks": 0,
+          "fastStart": true
+        },
+        {
+          "local": "public/media/hero/ja.jpg",
+          "bytes": 116763,
+          "sha256": "e738a949b7de395ac17a2bfdb7c29c53477063ec91dea20535568a7bb89af99a",
+          "src": "/media/hero/ja.jpg",
+          "kind": "hero-poster",
+          "width": 1920,
+          "height": 1080,
+          "derivedFrom": "/media/hero/ja.mp4",
+          "frame": 0,
+          "codec": "jpeg"
+        }
+      ]
+    },
+    {
+      "language": "ko",
+      "sourceId": "mixkit-50429",
+      "sourceTitle": "Woman dancing under a neon spotlight",
+      "sourceUrl": "https://mixkit.co/free-stock-video/woman-dancing-under-a-neon-spotlight-50429/",
+      "author": "Mixkit",
+      "authorUrl": "https://mixkit.co/@mixkit/",
+      "originalDownloadUrl": "https://assets.mixkit.co/videos/50429/50429-1080.mp4",
+      "authorCreditNote": "Mixkit (individual creator not named on the source page)",
+      "visualDescription": "Original full-colour neon blue/green and dramatic stage lighting; no grayscale, sepia or desaturation",
+      "isPlaceholder": true,
+      "master": {
+        "ignoredLocal": ".tools/hero-sources/ko-50429-1080p-source.mp4",
+        "bytes": 63027232,
+        "sha256": "38f5f61bee2ffb47a1e3cc6f4116016b81966d092da6903ae3808ef692a0e8d7",
+        "width": 1920,
+        "height": 1080,
+        "durationSeconds": 16.099416666666666,
+        "frameRate": 23.976023976023978,
+        "frames": 386,
+        "codec": "avc1",
+        "publication": "Ignored local original; never registered as a published asset"
+      },
+      "edit": {
+        "sourceStartSeconds": 1.5,
+        "description": "FFmpeg 7.1 / libx264, two-pass 2800 kbps, medium preset, 24fps, GOP48, faststart"
+      },
+      "license": {
+        "name": "Mixkit Stock Video Free License",
+        "url": "https://mixkit.co/license/#videoFree",
+        "evidenceUrl": "https://mixkit.co/license/modal/videoFree/",
+        "termsUrl": "https://mixkit.co/terms/",
+        "commercialUse": true,
+        "modification": true,
+        "attributionRequired": false,
+        "verifiedOn": "2026-10-23"
+      },
+      "provenanceRecord": "upstream/media/hero-ko.json",
+      "outputs": [
+        {
+          "local": "public/media/hero/ko.mp4",
+          "bytes": 2859304,
+          "sha256": "fd75edc98957338f8dd2570312ed7cec99ffc5d46782b928f48a472e954e124c",
+          "src": "/media/hero/ko.mp4",
+          "kind": "hero-motion-loop",
+          "width": 1920,
+          "height": 1080,
+          "durationSeconds": 8,
+          "frameRate": 24,
+          "frames": 192,
+          "codec": "avc1",
+          "profile": 100,
+          "audioTracks": 0,
+          "fastStart": true
+        },
+        {
+          "local": "public/media/hero/ko.jpg",
+          "bytes": 60559,
+          "sha256": "4a74df111ea503be9c4673b39dabe5897b04dbada3e62032991c8c627f2813de",
+          "src": "/media/hero/ko.jpg",
+          "kind": "hero-poster",
+          "width": 1920,
+          "height": 1080,
+          "derivedFrom": "/media/hero/ko.mp4",
+          "frame": 0,
+          "codec": "jpeg"
+        }
+      ]
+    }
+  ]
+}

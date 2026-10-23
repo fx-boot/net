@@ -58,6 +58,7 @@ html[lang='ko'] .contact h2 { margin-bottom: 62px; }
  html[lang='zh'] .hero-regional-message { max-inline-size: 20em; font-size: 14px; }
  html[lang='en'] .hero-regional-message { max-inline-size: 27ch; font-size: 19px; }
  html[lang='ja'] .hero-regional-message { max-inline-size: 19em; font-size: 15px; }
+ html[lang='ja'] .hero-media > img,html[lang='ja'] .hero-media > video { object-position: 18% center; }
  html[lang='ko'] .hero-regional-message { max-inline-size: 23em; font-size: 15px; }
  .hero[data-brand-focus='studio'] .hero-director-credit { flex-wrap: wrap; gap: 10px 16px; }
  .hero[data-brand-focus='studio'] .hero-director-credit > span:first-child { font-size: 21px; }

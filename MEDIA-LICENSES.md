@@ -70,15 +70,15 @@ The new comparison reuses the registered `public/media/stills/refraction-2.jpg` 
 
 `src/lib/cinemaAudio.ts` generates an opt-in 50Hz sine and a short mechanical click through the Web Audio API. It contains no sampled third-party recording or music track and creates no AudioContext before an explicit visitor sound-button gesture. Consent is never persisted. The sine's -36dBFS figure describes its **digital peak amplitude**, `10 ** (-36 / 20)`, not speaker sound pressure, measured room volume or a perceived-loudness guarantee. The click is an original 15ms decaying pseudorandom noise impulse passed through an 1800Hz low-pass filter, not a recording of a proprietary camera shutter. Hidden pages, focus loss and film dialogs silence the graph; returning does not automatically restart audio. The silent MP4s are unchanged.
 
-## Active projection replacement — 2026-10-23
+## Active projection replacement — historical stage, 2026-10-23
 
-The active Hero and first catalogue entry no longer use the daylight rocks/sea clip. Eight new derivatives, **1,947,314 bytes total**, are generated only from the existing licensed refraction, heat and night masters. The original source files and historical six-source reel are retained for traceability. No new shoot, authored CGI delivery or new stock acquisition is implied.
+At this historical stage, the Hero and first catalogue entry stopped using the daylight rocks/sea clip. Eight derivatives, **1,947,314 bytes total**, were generated from the licensed refraction, heat and night masters. The edited twelve-second reel is now retained only as the full Showreel; all active Hero backgrounds use the independent sources documented below. Original sources remain available for traceability. No authored CGI delivery or new shoot is implied.
 
 | Publication | Exact source treatment |
 | --- | --- |
 | `public/media/video/cinema-showreel.mp4` | Twelve-second silent edit: refraction source 3–7s, spotlit contemporary dancer source 5–9s, then city-night source 8–12s. Each chapter is normalized to 96 frames, 24fps, with a short final-frame hold when required, producing exactly 288 output frames. |
 | `public/media/video/cinema-refraction-loop.mp4` | Ten-second silent excerpt from the acrylic/refraction source, source time 3–13s, 240 output frames. |
-| `public/media/posters/cinema-showreel.jpg` | True refraction-source frame at 3s, matching the new Hero's opening. |
+| `public/media/posters/cinema-showreel.jpg` | True refraction-source frame at 3s, matching the edited full Showreel's opening. |
 | `public/media/posters/cinema-refraction.jpg` | True refraction-source frame at 7s. |
 | `public/media/stills/cinema-refraction-{1,2,3,4}.jpg` | True refraction-source frames at 3s, 7s, 11s and 15s. |
 
@@ -104,4 +104,45 @@ reproduces the local delivery. No large variable TTF is shipped. This supersedes
 the historical system-only Korean serif fallback described earlier. Chinese
 fonts and locale sans faces remain platform fallbacks; existing local Japanese
 Shippori Mincho and Latin fonts retain their original licenses.
+
+## Independent four-language Hero backgrounds — 2026-10-23
+
+All four active Hero backgrounds are newly downloaded sources, separate from
+the film catalogue and from each other. None reuses catalogue sources 101645,
+5011, 41412, 44605, 41409 or 2181, or the retired sea source 1932. The full
+Showreel remains the separate twelve-second edit documented above; it is not
+used as a background. Every stock record retains `isPlaceholder: true`.
+
+| Language / publication | Official source and creator | Content | MP4 bytes / duration |
+| --- | --- | --- | --- |
+| ZH — `public/media/hero/zh.mp4` and `zh.jpg` | [Mixkit 42342](https://mixkit.co/free-stock-video/aerial-shot-of-a-city-at-night-42342/), Mixkit | City-night aerial, high-rise architecture and traffic light. The source does not name the city; it is not represented as Chongqing. | 2,969,856 / 8.000s |
+| EN — `public/media/hero/en.mp4` and `en.jpg` | [Mixkit 101699](https://mixkit.co/free-stock-video/abstract-lights-shifting-from-blue-to-green-101699/), Mixkit | Blue-to-green light passing through acrylic; a real optical abstraction, not an authored CGI delivery. | 3,250,373 / 8.000s |
+| JA — `public/media/hero/ja.mp4` and `ja.jpg` | [Mixkit 3977](https://mixkit.co/free-stock-video/view-of-a-window-with-a-curtain-3977/), edgarfernandez | Quiet window, moving curtain, tree silhouettes and daylight. Soft foreground focus is part of the original photography. | 3,534,030 / 8.008s |
+| KO — `public/media/hero/ko.mp4` and `ko.jpg` | [Mixkit 50429](https://mixkit.co/free-stock-video/woman-dancing-under-a-neon-spotlight-50429/), Mixkit; individual creator not named | Contemporary dancer under a blue/green neon spotlight and circular stage light. | 2,859,304 / 8.000s |
+
+The four individual official pages explicitly offer personal and commercial use
+under the [Mixkit Stock Video Free License](https://mixkit.co/license/modal/videoFree/),
+rechecked on 2026-10-23. It permits editing and website use without mandatory
+attribution, subject to the [Mixkit terms](https://mixkit.co/terms/). Credits
+retains the active regional source link. No footage is claimed as an actual
+Dong Hao directing credit, and no watermark has been added.
+
+All four masters and outputs are native **1920×1080**, with no upscaling or
+stretching. The delivered files use H.264 High / yuv420p, MP4 fast-start,
+approximately 24fps, and **zero audio tracks**. Each is 2–5 MB. The browser uses
+`object-fit: cover` to crop the frame proportionally. Four 1920×1080 JPEG posters
+are extracted from the first decoded output frame (ZH/EN are sampled at their
+corresponding source start); they are local weak-network fallbacks. Ordinary
+edit boundaries are looped; a mathematically seamless join is not claimed.
+
+`upstream/media/hero-assets.json` is the normalized provenance index, including
+source/master metadata, official licence URLs, source excerpt positions, output
+byte counts, codec details and SHA-256. The per-source records are
+`hero-zh-en.json`, `hero-ja.json` and `hero-ko.json` in the same folder. Only the
+eight edited runtime files are added to `published-assets.json` (206 total);
+large masters and downloaded source HTML stay in ignored `.tools/hero-sources/`.
+`npm run verify:hero` reads actual MP4 boxes and JPEG headers, checks hashes,
+native dimensions, video-only H.264, timing, fast-start, delivery size, source
+separation, and the four-language runtime bindings. The original 198 published
+asset records are preserved byte-for-byte as normalized records.
 

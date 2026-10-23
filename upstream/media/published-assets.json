@@ -988,5 +988,45 @@
     "local": "public/fonts/noto-serif-kr/noto-serif-kr-vietnamese-400-normal.woff2",
     "bytes": 6000,
     "sha256": "8510a51d0f08800b31894730448c2e86eac3a13e70669a18ddb62b943a25026c"
+  },
+  {
+    "local": "public/media/hero/zh.mp4",
+    "bytes": 2969856,
+    "sha256": "15905e4e2df405ecb4f8b901a6e257da2c352efc869eec9e4faef2253ee9b52b"
+  },
+  {
+    "local": "public/media/hero/zh.jpg",
+    "bytes": 349452,
+    "sha256": "4c08f3e7d85db14f21c9b5f323a668093789e81117bbfc1f7723daeab7e1758f"
+  },
+  {
+    "local": "public/media/hero/en.mp4",
+    "bytes": 3250373,
+    "sha256": "4df81f657e81abc1f8948d64d5bc4c0f30260407ff560de988a70afc843b4f30"
+  },
+  {
+    "local": "public/media/hero/en.jpg",
+    "bytes": 230135,
+    "sha256": "18e951c8923244ce09535fc992b9dbc1b7925d221af55993c19d1e2534a5a8b2"
+  },
+  {
+    "local": "public/media/hero/ja.mp4",
+    "bytes": 3534030,
+    "sha256": "cf62177f3989338c55caf2e5f50d2fbee9c0eff13a94c29d6f0fc18feb8f895f"
+  },
+  {
+    "local": "public/media/hero/ja.jpg",
+    "bytes": 116763,
+    "sha256": "e738a949b7de395ac17a2bfdb7c29c53477063ec91dea20535568a7bb89af99a"
+  },
+  {
+    "local": "public/media/hero/ko.mp4",
+    "bytes": 2859304,
+    "sha256": "fd75edc98957338f8dd2570312ed7cec99ffc5d46782b928f48a472e954e124c"
+  },
+  {
+    "local": "public/media/hero/ko.jpg",
+    "bytes": 60559,
+    "sha256": "4a74df111ea503be9c4673b39dabe5897b04dbada3e62032991c8c627f2813de"
   }
 ]

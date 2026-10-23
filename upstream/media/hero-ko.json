@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "language": "ko",
+  "isPlaceholder": true,
+  "sourceId": "mixkit-50429",
+  "title": "Woman dancing under a neon spotlight",
+  "sourceUrl": "https://mixkit.co/free-stock-video/woman-dancing-under-a-neon-spotlight-50429/",
+  "downloadUrl": "https://assets.mixkit.co/videos/50429/50429-1080.mp4",
+  "downloadResolvedFrom": "https://mixkit.co/free-stock-video/download/50429/?context=sidebar&type=1080p",
+  "licenseUrl": "https://mixkit.co/license/#videoFree",
+  "licenseEvidenceUrl": "https://mixkit.co/license/modal/videoFree/",
+  "licenseName": "Mixkit Stock Video Free License",
+  "licenseScope": {
+    "commercialUse": true,
+    "modification": true,
+    "attributionRequired": false,
+    "restrictedLicense": false,
+    "termsUrl": "https://mixkit.co/terms/"
+  },
+  "author": "Mixkit (individual creator not named on the source page)",
+  "publisher": "Mixkit",
+  "downloadedOn": "2026-10-23",
+  "source": {
+    "path": ".tools/hero-sources/ko-50429-1080p-source.mp4",
+    "bytes": 63027232,
+    "sha256": "38f5f61bee2ffb47a1e3cc6f4116016b81966d092da6903ae3808ef692a0e8d7",
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 16.098333333333333,
+    "frameRate": 23.976023976023978,
+    "frameRateRational": "24000/1001",
+    "videoCodec": "h264",
+    "audioTracks": 0,
+    "publication": "Ignored local original; not part of published assets"
+  },
+  "video": {
+    "path": "public/media/hero/ko.mp4",
+    "bytes": 2859304,
+    "sha256": "fd75edc98957338f8dd2570312ed7cec99ffc5d46782b928f48a472e954e124c",
+    "src": "/media/hero/ko.mp4",
+    "width": 1920,
+    "height": 1080,
+    "durationSeconds": 8,
+    "frameRate": 24,
+    "frameRateRational": "24/1",
+    "frameCount": 192,
+    "videoCodec": "h264",
+    "profile": "High",
+    "pixelFormat": "yuv420p",
+    "audioTracks": 0,
+    "faststart": true,
+    "topLevelBoxes": [
+      "ftyp",
+      "moov",
+      "free",
+      "mdat"
+    ]
+  },
+  "poster": {
+    "path": "public/media/hero/ko.jpg",
+    "bytes": 60559,
+    "sha256": "4a74df111ea503be9c4673b39dabe5897b04dbada3e62032991c8c627f2813de",
+    "src": "/media/hero/ko.jpg",
+    "width": 1920,
+    "height": 1080,
+    "derivedFrom": "First decoded frame of public/media/hero/ko.mp4"
+  },
+  "edit": {
+    "sourceStartSeconds": 1.5,
+    "durationSeconds": 8,
+    "purpose": "Independent Korean-edition hero loop; never sourced from portfolio clips",
+    "scale": "No resize or upscaling; source and output both genuine 1920x1080",
+    "color": "Original full-colour neon blue/green and dramatic stage lighting; no grayscale, sepia or desaturation",
+    "encoder": "FFmpeg 7.1 / libx264, two-pass 2800 kbps, medium preset, 24fps, GOP48, faststart",
+    "audio": "Video-only export using -an",
+    "loop": "Continuous 8-second motion excerpt; no embedded sound, text, watermark or black fade"
+  },
+  "verification": {
+    "officialItemStatesCommercialOrPersonalFreeLicense": true,
+    "officialDownloadResolution": "Full HD 1920x1080",
+    "fullDecodePassed": true,
+    "firstFrameVisuallyReviewed": true,
+    "viewImagePath": "public/media/hero/ko.jpg",
+    "loopBytesInRequestedRange": true,
+    "oldPortfolioSourceIdReused": false,
+    "publicationAssertion": "Licensed stock placeholder, not footage produced by LANCHUAN or Dong Hao"
+  }
+}

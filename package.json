@@ -14,7 +14,8 @@
     "verify:assets": "node scripts/verify-assets.mjs",
     "verify:catalog": "node scripts/verify-project-catalog.mjs",
     "verify:preview": "node scripts/verify-preview.mjs",
-    "verify:geo": "node scripts/verify-geo.mjs"
+    "verify:geo": "node scripts/verify-geo.mjs",
+    "verify:hero": "node scripts/verify-hero.mjs"
   },
   "dependencies": {
     "animejs": "^4.5.0",
