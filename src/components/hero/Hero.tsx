@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { Pause, Play } from 'lucide-react';
 import { ShowreelButton } from './ShowreelButton';
-import { heroBackgroundsByLanguage, reelConfig } from '../../data/mockData';
+import { heroBackgroundsByLanguage } from '../../data/mockData';
 import { useLanguage } from '../../i18n/LanguageContext';
 import { usePreviewPlayback } from '../../hooks/usePreviewPlayback';
 import { useCinemaMotion } from '../../hooks/useCinemaMotion';
@@ -32,6 +32,7 @@ export function Hero({ onReel, blocked, entered }: { onReel: () => void; blocked
  const root = useRef<HTMLElement>(null), video = useRef<HTMLVideoElement>(null);
  const [paused, setPaused] = useState(false), [playing, setPlaying] = useState(false);
  const [manualPlay, setManualPlay] = useState(false);
+ const [readySource, setReadySource] = useState<string | null>(null);
  const playback = usePreviewPlayback(video, media.src, !paused && !blocked, 10, manualPlay);
  const failed = playback.failed;
  useCinemaMotion(root, entered);
@@ -43,15 +44,25 @@ export function Hero({ onReel, blocked, entered }: { onReel: () => void; blocked
   if (shouldPlay) { playback.retry(); setManualPlay(true); }
   else setPlaying(false);
  };
- return <section ref={root} className="hero" data-brand-focus={geo.brandFocus} aria-labelledby="director-name">
-  <div className="hero-media"><MediaImage key={media.poster} src={media.poster} alt="" fetchPriority="high" /><video ref={video} data-preview="hero" muted loop playsInline preload="none" poster={media.poster} className={failed ? 'media-unavailable' : ''} aria-hidden="true" onPlaying={() => setPlaying(true)} onPause={() => setPlaying(false)} onEmptied={() => setPlaying(false)} onError={playback.onError} /></div>
+ return <section ref={root} className="hero" data-media-purpose="ambient" data-brand-focus={geo.brandFocus} aria-labelledby="director-name">
+  <div className="hero-media">
+   <MediaImage key={media.poster} src={media.poster} alt="" fetchPriority="high" />
+   <video ref={video} data-preview="hero" data-ready={readySource === media.src && !failed} muted loop playsInline preload="none" poster={media.poster} className={failed ? 'media-unavailable' : ''} aria-hidden="true"
+    onPlaying={event => {
+     if (event.currentTarget.getAttribute('src') !== media.src) return;
+     setPlaying(true); setReadySource(media.src);
+    }}
+    onPause={() => setPlaying(false)}
+    onEmptied={() => { setPlaying(false); setReadySource(null); }}
+    onError={playback.onError} />
+  </div>
   <div className="hero-shade" />
   <AnamorphicLightSpill variant="hero" />
-  <p className="hero-presents"><span lang="en">{geo.heroPresents[0]}</span><span>{geo.heroPresents[1]}</span></p>
+  <p className="hero-identity"><span lang="en">{geo.heroIdentity[0]}</span><span>{geo.heroIdentity[1]}</span></p>
   <p className="hero-regional-message">{geo.heroNarrative}</p>
   <p className="hero-optics" aria-hidden="true">{geo.heroCue[0]}<br/>{geo.heroCue[1]}</p>
   <span className="hero-gate hero-gate-left" aria-hidden="true"/><span className="hero-gate hero-gate-right" aria-hidden="true"/>
-  <div className="hero-reel"><ShowreelButton onClick={onReel} duration={reelConfig.expectedDuration} frameRate={reelConfig.frameRate} /></div>
+  <div className="hero-reel"><ShowreelButton onClick={onReel} /></div>
   <h1 id="director-name" className="hero-name" aria-label={geo.heroAccessibleTitle}><span className="hero-name-ink" lang="en"><span className="optical-sharp">{geo.heroTitle}</span><span className="optical-ghost" aria-hidden="true">{geo.heroTitle}</span></span></h1>
   <p className="hero-director-credit"><span>{geo.heroCredit[0]}</span><span>{geo.heroCredit[1]}</span><span className="hero-studio-credit">{geo.heroCredit[2]}</span></p>
   <div className="hero-controls"><button className="play-control" onClick={togglePlay} aria-label={active ? t('pauseBackground') : t('playBackground')}>{active ? <Pause size={13}/> : <Play size={13}/>}</button></div>

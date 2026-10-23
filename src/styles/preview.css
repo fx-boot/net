@@ -1,5 +1,8 @@
 .preview-video { transition: opacity .35s var(--gate-ease); }
+/* Reveal decoded ambient frames over their poster, without a second decoder. */
+.hero-media > video { opacity: 0; transition: opacity .6s var(--gate-ease); }
+.hero-media > video[data-ready='true'] { opacity: 1; }
 .preview-video.is-ready.is-exiting { opacity: 0; }
 .preview-playback-control { display: block; min-height: 44px; margin: 4px auto 0; padding: 8px 14px; color: var(--text-secondary); font: 10px/1.6 var(--font-sans); letter-spacing: .12em; text-transform: uppercase; }
 .preview-playback-control:hover,.preview-playback-control:focus-visible { color: var(--text-primary); }
-@media(prefers-reduced-motion:reduce) { .preview-video { transition: none; } }
+@media(prefers-reduced-motion:reduce) { .preview-video,.hero-media > video { transition: none; } }

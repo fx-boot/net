@@ -1,4 +1,4 @@
-/* LANCHUAN: a film title, a projection room, then an author's working plate.
+/* LANCHUAN: a brand atmosphere, a projection room, then an author's working plate.
    Composition lives here; cinema.css retains the fixed hit targets and frame rig. */
 body { background: var(--bg-canvas); }
 html { scrollbar-color: #555b63 var(--bg-canvas); }
@@ -18,8 +18,8 @@ h1,h2,h3 { text-wrap: balance; }
 .hero { background: var(--bg-canvas); }
 .hero-shade { background: radial-gradient(ellipse at 50% 40%,transparent 20%,rgba(var(--geo-canvas-rgb),.35) 100%),linear-gradient(180deg,rgba(var(--geo-canvas-rgb),.8) 0%,rgba(var(--geo-canvas-rgb),.5) 18%,transparent 44%,rgba(var(--geo-canvas-rgb),.25) 67%,rgba(var(--geo-canvas-rgb),.83) 91%,var(--bg-canvas) 100%); }
 .hero-shade::after { background: radial-gradient(ellipse at 68% 34%,var(--geo-screen-light),transparent 60%); }
-.hero-presents { top: 140px; display: flex; flex-direction: column; gap: 5px; font-size: 9px; line-height: 1.65; letter-spacing: .25em; }
-.hero-presents > span:last-child { color: #c5c9cf; font-size: 8px; letter-spacing: .18em; }
+.hero-identity { top: 140px; display: flex; flex-direction: column; gap: 5px; font-size: 9px; line-height: 1.65; letter-spacing: .25em; }
+.hero-identity > span:last-child { color: #c5c9cf; font-size: 8px; letter-spacing: .18em; }
 .hero-optics { position: absolute; right: var(--gutter); top: 140px; font: 9px/1.9 var(--font-mono); letter-spacing: .25em; color: var(--text-primary); text-align: right; }
 .hero-optics > span { color: #c5cbd2; }
 .hero-gate { position: absolute; top: 36%; width: 8px; height: 80px; border-top: 1px solid #f8f9fa35; border-bottom: 1px solid #f8f9fa35; opacity: .6; }
@@ -30,7 +30,6 @@ h1,h2,h3 { text-wrap: balance; }
 .hero-reel { left: auto; right: var(--gutter); top: auto; bottom: 318px; }
 .reel-link { min-height: 52px; padding-bottom: 13px; gap: 32px; font-size: 12px; border-bottom-color: #f8f9fa70; }
 .reel-link > .magnetic-ink { gap: 22px; }
-.reel-length { font-size: 9px; letter-spacing: .12em; color: #d3d7dc; }
 .hero-director-credit { left: var(--gutter); right: var(--gutter); bottom: 57px; gap: 26px; }
 .hero-director-credit > span:first-child { font-size: 26px; }
 .hero-director-credit > span:nth-child(2) { font: 9px var(--font-mono); letter-spacing: .18em; }
@@ -194,8 +193,8 @@ h1,h2,h3 { text-wrap: balance; }
 @media(max-width:700px) {
  .navigation { padding-top: 18px; padding-bottom: 18px; }
  .brand-home { width: 198px; }
- .hero-presents { top: 112px; font-size: 8px; letter-spacing: .18em; }
- .hero-presents > span:last-child { font-size: 7px; letter-spacing: .12em; }
+ .hero-identity { top: 112px; font-size: 8px; letter-spacing: .18em; }
+ .hero-identity > span:last-child { font-size: 7px; letter-spacing: .12em; }
  .hero-optics { top: 194px; left: var(--gutter); right: auto; text-align: left; font-size: 7px; letter-spacing: .18em; }
  .hero-gate { display: none; }
  .hero-name { font-size: 15.9vw; left: calc(var(--gutter) - .025em); bottom: 128px; line-height: .85; }
@@ -205,7 +204,7 @@ h1,h2,h3 { text-wrap: balance; }
  .hero-reel { left: var(--gutter); right: auto; bottom: 245px; max-width: calc(100% - 2*var(--gutter)); }
  .reel-link { gap: 20px; font-size: 11px; }
  .reel-link > .magnetic-ink { gap: 12px; }
- .reel-length { font-size: 8px; letter-spacing: .06em; }
+
  .hero-controls { bottom: 14px; }
  .works.section-space { padding-top: 75px; padding-bottom: 85px; }
  .works .section-heading { margin-bottom: 28px; }

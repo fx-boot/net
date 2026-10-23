@@ -5,7 +5,7 @@ export interface GeoNarrative {
   brandFocus: 'studio' | 'director';
   heroTitle: 'LANCHUAN' | 'DONG HAO';
   heroAccessibleTitle: string;
-  heroPresents: readonly [string, string];
+  heroIdentity: readonly [string, string];
   heroNarrative: string;
   heroCue: readonly [string, string];
   heroCredit: readonly [string, string, string];
@@ -19,7 +19,7 @@ export const geoCopy: Record<Language, GeoNarrative> = {
     brandFocus: 'studio',
     heroTitle: 'LANCHUAN',
     heroAccessibleTitle: '澜川科技 / 重庆澜川科技有限公司 / 导演 東浩',
-    heroPresents: ['LANCHUAN PRESENTS', '重庆澜川科技有限公司 · 東浩 导演作品'],
+    heroIdentity: ['LANCHUAN / STUDIO & TECH', '重庆澜川科技有限公司 · 東浩 / 视觉艺术家'],
     heroNarrative: '立足重庆，以光影记录时代情绪。',
     heroCue: ['虚拟制片 / 数字视效', '8K RAW // 2.39:1'],
     heroCredit: ['澜川科技', '東浩 / DONG HAO', '重庆澜川科技有限公司'],
@@ -31,7 +31,7 @@ export const geoCopy: Record<Language, GeoNarrative> = {
     brandFocus: 'studio',
     heroTitle: 'LANCHUAN',
     heroAccessibleTitle: 'LANCHUAN / Global production service / Director Dong Hao',
-    heroPresents: ['LANCHUAN PRESENTS', 'GLOBAL PRODUCTION / FILMS BY DONG HAO'],
+    heroIdentity: ['LANCHUAN / STUDIO & TECH', 'GLOBAL PRODUCTION / DONG HAO · VISUAL ARTIST'],
     heroNarrative: 'Independent vision. Global production.',
     heroCue: ['8K RAW // VIRTUAL PRODUCTION', '2.39:1 ANAMORPHIC'],
     heroCredit: ['LANCHUAN', 'DONG HAO / DIRECTOR', 'GLOBAL PRODUCTION SERVICE'],
@@ -43,7 +43,7 @@ export const geoCopy: Record<Language, GeoNarrative> = {
     brandFocus: 'director',
     heroTitle: 'DONG HAO',
     heroAccessibleTitle: '映画監督・東浩 / LANCHUAN',
-    heroPresents: ['LANCHUAN PRESENTS', '映画監督・東浩'],
+    heroIdentity: ['LANCHUAN / STUDIO & TECH', '映画監督・東浩'],
     heroNarrative: '画面のなかに、言葉にならない静けさを。',
     heroCue: ['光と余白、そのあいだに', 'DONG HAO // LANCHUAN'],
     heroCredit: ['東浩', '映画監督・映像作家', 'LANCHUAN / CHONGQING'],
@@ -55,7 +55,7 @@ export const geoCopy: Record<Language, GeoNarrative> = {
     brandFocus: 'director',
     heroTitle: 'DONG HAO',
     heroAccessibleTitle: '감독 동하오 / LANCHUAN',
-    heroPresents: ['LANCHUAN PRESENTS', '동하오 감독 · 영화와 비주얼 아트'],
+    heroIdentity: ['LANCHUAN / STUDIO & TECH', '동하오 · 감독 / 비주얼 아티스트'],
     heroNarrative: '시선이 멈추고 감각이 깨어나는 순간',
     heroCue: ['감정의 밀도 / 이미지의 리듬', 'DONG HAO // LANCHUAN'],
     heroCredit: ['동하오', '감독 · 비주얼 아티스트', 'LANCHUAN / CHONGQING'],

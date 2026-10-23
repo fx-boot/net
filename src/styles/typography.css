@@ -38,7 +38,7 @@ body { font-family: var(--font-sans); font-kerning: normal; }
  text-wrap: pretty;
 }
 .monologue { max-inline-size: 65ch; }
-:is(.project-meta,.reel-length,.console-readout,.film-counter,.film-scrub-readout,.camera-readout,.studio-specs,.breakdown-pass-labels,.breakdown-film-code) {
+:is(.project-meta,.console-readout,.film-counter,.film-scrub-readout,.camera-readout,.studio-specs,.breakdown-pass-labels,.breakdown-film-code) {
  font-family: var(--font-sans);
  font-variant-numeric: lining-nums tabular-nums;
 }
@@ -54,7 +54,7 @@ body { font-family: var(--font-sans); font-kerning: normal; }
 .email-confirmation { font-family: var(--font-sans); }
 .language-picker button[lang] { font-family: var(--font-brand); }
 
-html[lang='en'] :is(.navigation nav a,.filter-tabs button,.view-switcher button,.project-meta,.hero-presents,.hero-optics,.reel-length,.console-readout,.film-counter,.film-scrub-readout,.camera-readout,.director-position,.director-caption-index,.capacity-registration,.capacity-code,.studio-specs,.representation-region,.breakdown-pass-labels,.breakdown-film-code,.breakdown-study,.footer-bottom) {
+html[lang='en'] :is(.navigation nav a,.filter-tabs button,.view-switcher button,.project-meta,.hero-identity,.hero-optics,.console-readout,.film-counter,.film-scrub-readout,.camera-readout,.director-position,.director-caption-index,.capacity-registration,.capacity-code,.studio-specs,.representation-region,.breakdown-pass-labels,.breakdown-film-code,.breakdown-study,.footer-bottom) {
  letter-spacing: .18em;
 }
 

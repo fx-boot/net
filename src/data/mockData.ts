@@ -161,7 +161,7 @@ export const representativesByLanguage = Object.fromEntries((['zh', 'en', 'ko', 
   ]];
 })) as Record<Language, Representative[]>;
 export const clientsByLanguage: Record<Language, Client[]> = { zh: clients, en: clients, ko: clients, ja: clients };
-export const showreelsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, translateAsset(showreel, language, dictionaries[language].reelDisclaimer)])) as Record<Language, MediaAsset>;
+export const showreelsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, translateAsset(showreel, language, dictionaries[language].reelTitle)])) as Record<Language, MediaAsset>;
 /** Hero backgrounds are independent of both the regional film ordering and the full showreel. */
 export const heroBackgroundsByLanguage = Object.fromEntries(catalogLanguages.map(language => {
   const paths = heroMediaPaths[language], source = heroMediaSources[language];
