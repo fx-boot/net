@@ -1,0 +1,327 @@
+[
+  {
+    "local": "public/media/video/between-full.mp4",
+    "bytes": 3678339,
+    "sha256": "89b5543205e484cf39f573a25350629df7417e0fa62f9f56949a05857fc4edcf"
+  },
+  {
+    "local": "public/media/video/between-preview.mp4",
+    "bytes": 546598,
+    "sha256": "0cc801d913e2648353c6e828ca5e5fdd0571abc140b2568f14826f9ad3dda07a"
+  },
+  {
+    "local": "public/media/video/heat-full.mp4",
+    "bytes": 4834142,
+    "sha256": "d3e7a674df5422b34eb9389efe9b112e24378c72bb30e01f053e6d3dc4d0c93d"
+  },
+  {
+    "local": "public/media/video/heat-preview.mp4",
+    "bytes": 760272,
+    "sha256": "8ca8ccc2a145d686b2001e55be9dde6b766144947681657e68b4a08a7bab0eae"
+  },
+  {
+    "local": "public/media/video/night-full.mp4",
+    "bytes": 8715025,
+    "sha256": "56b242f3a6d0c112604de492fc5dfb59c6df19c89f612e565b860149a89e75b3"
+  },
+  {
+    "local": "public/media/video/night-preview.mp4",
+    "bytes": 1008655,
+    "sha256": "2e368541f1a9bf44f68702476754eb94ceb22f7b42c09de5b7bfb0be9b228a69"
+  },
+  {
+    "local": "public/media/video/portrait-full.mp4",
+    "bytes": 1621843,
+    "sha256": "2bfe47af7cf4ae7f90b2719babf7afbc774820450d8f56be1d886e41c85a657e"
+  },
+  {
+    "local": "public/media/video/portrait-preview.mp4",
+    "bytes": 276075,
+    "sha256": "589fb72f89d4bb2ac9aa62e71d1839f08e18de6b52ab2969ccb0965d0d5788e1"
+  },
+  {
+    "local": "public/media/video/refraction-full.mp4",
+    "bytes": 3696925,
+    "sha256": "a44639b712d5ca63899a1d44748d96e58384cdb25bedce5c79429877bd84c0fe"
+  },
+  {
+    "local": "public/media/video/refraction-preview.mp4",
+    "bytes": 487461,
+    "sha256": "4822a7324cd4515764917564152e5d94aa407619373d08a81ef9ffeea06f777b"
+  },
+  {
+    "local": "public/media/video/showreel-silent.mp4",
+    "bytes": 4481651,
+    "sha256": "79a189903a1d84df9291b54b7d789899533c6fc28eab71234e0a66484a3041a1"
+  },
+  {
+    "local": "public/media/video/tide-full.mp4",
+    "bytes": 7178675,
+    "sha256": "6017e485a2a9d05b92fe3a59bf8fba5811bb367c0f2d7295921d01b3d65821e7"
+  },
+  {
+    "local": "public/media/video/tide-preview.mp4",
+    "bytes": 1407750,
+    "sha256": "58f1d12296215608a37fc4c39c67f24409253b32b0ab4bb09eed2d6cb17aafd2"
+  },
+  {
+    "local": "public/media/video/wild-full.mp4",
+    "bytes": 27822105,
+    "sha256": "25bab05786c3d068b0faff4c0de9723d1e11359bc9845787a85a9623ce49010e"
+  },
+  {
+    "local": "public/media/video/wild-preview.mp4",
+    "bytes": 2324235,
+    "sha256": "3977be36e2ae2d06a632b16f82896d87431e49435e1ae2442bc41a8b680400f3"
+  },
+  {
+    "local": "public/media/posters/between.jpg",
+    "bytes": 72296,
+    "sha256": "00a95800b7c5baa40648db8659f3e644339821a290050cd32ec0a2c89fcbd189"
+  },
+  {
+    "local": "public/media/posters/heat.jpg",
+    "bytes": 77763,
+    "sha256": "2c6fbbd3255a6d0b47aca9bdaba2e4ccfbedec743c6702727de9bb62da709fed"
+  },
+  {
+    "local": "public/media/posters/night.jpg",
+    "bytes": 278804,
+    "sha256": "0b4c0b46fd9fbbe65759d3d26f6475124f54839db4eea70ad65e2ea6990bbccb"
+  },
+  {
+    "local": "public/media/posters/portrait.jpg",
+    "bytes": 523288,
+    "sha256": "31094a95345dfaaa2c63be8cd12acdd289f54e4106b8e38a847a91b18dbf2df5"
+  },
+  {
+    "local": "public/media/posters/refraction.jpg",
+    "bytes": 171102,
+    "sha256": "340f6c347dad4708d96feb054b4346f4a2b38114582cd0fd0575e180386a55e6"
+  },
+  {
+    "local": "public/media/posters/tide.jpg",
+    "bytes": 183051,
+    "sha256": "be8e2f1ffb1cb4d4ff6c9c95ba523bf177e5a0192cf4c94fa8414aa3368af81f"
+  },
+  {
+    "local": "public/media/posters/wild.jpg",
+    "bytes": 446001,
+    "sha256": "6013a02d787bbf9ff4719d9b6c5f7357118fea7394f937b6da9743cdaba3065a"
+  },
+  {
+    "local": "public/media/stills/between-2.jpg",
+    "bytes": 79813,
+    "sha256": "b5ea512dc02e2c8e61d1e26a5dba2a3ee7bf24ee65518843f82bc93d2a852338"
+  },
+  {
+    "local": "public/media/stills/heat-2.jpg",
+    "bytes": 85609,
+    "sha256": "5675a051ee35ffde79caeed722047606521d644825a8d6d99219dee13438a1b7"
+  },
+  {
+    "local": "public/media/stills/night-2.jpg",
+    "bytes": 292422,
+    "sha256": "5cdc1a3d819e28ebb621e2d94fcce3a2e40783a71856d1e06da74acec55a072c"
+  },
+  {
+    "local": "public/media/stills/portrait-2.jpg",
+    "bytes": 521282,
+    "sha256": "fd7fb37094f89b04c2504a95f9bbed358b4c0e056a2d6a714729abd18ff6484a"
+  },
+  {
+    "local": "public/media/stills/refraction-2.jpg",
+    "bytes": 172073,
+    "sha256": "a8321e002f8d55b1b3e29bc3f93e66fbb5c5debe419cc31301e23379d1880c1a"
+  },
+  {
+    "local": "public/media/stills/tide-2.jpg",
+    "bytes": 192047,
+    "sha256": "68f2cc8060401ede4ea27b4bf5fdb912f61a4460ccfa013be84363accfa901b9"
+  },
+  {
+    "local": "public/media/stills/wild-2.jpg",
+    "bytes": 416590,
+    "sha256": "b3a78297b52a17103c97993186b494a3aee2c3c03fc0001b23c7c7243fc6213d"
+  },
+  {
+    "local": "public/fonts/bodoni-moda-latin-variable.woff2",
+    "bytes": 46260,
+    "sha256": "c032219ef636f7b4932f7d1dc91bdab602c970f090770b546bea4effaab3463c"
+  },
+  {
+    "local": "public/fonts/Bodoni-Moda-OFL.txt",
+    "bytes": 4526,
+    "sha256": "6c64f717433eadd29b058d6254fe25c1ee2d249ce3772f843bb21f73285779c2"
+  },
+  {
+    "local": "public/fonts/instrument-sans-latin-variable.woff2",
+    "bytes": 30092,
+    "sha256": "2ee17598a98d8a59e4df8152d015bec9ab8e4d5672cc0ab42bef806b568e3971"
+  },
+  {
+    "local": "public/fonts/Instrument-Sans-OFL.txt",
+    "bytes": 4538,
+    "sha256": "c27a3c53c3beed7f5c26853afa15991478ff7145d3754a36b0382f84e10c0d03"
+  },
+  {
+    "local": "public/fonts/bodoni-moda-latin-italic.woff2",
+    "bytes": 16552,
+    "sha256": "783fd966b8ebb26034e892767b877c475d375d9227f5f5476d05ad5529d18232"
+  },
+  {
+    "local": "public/media/director/darkroom-placeholder.svg",
+    "bytes": 833,
+    "sha256": "f7d1820958adaf6f064d8544db7e95e2cf9b321c18ddbedeb7ec76d784175a37"
+  },
+  {
+    "local": "public/media/director/README.md",
+    "bytes": 756,
+    "sha256": "058c00ef3d0ba751c21da82d363614b543affe1eda12696d0a32b5c55a80fa23"
+  },
+  {
+    "local": "public/favicon.svg",
+    "bytes": 313,
+    "sha256": "0989ff05f5ad68074573d18b8b1f91370c75f441b9aa1c74e8dbf6726e67a43e"
+  },
+  {
+    "local": "public/fonts/shippori-mincho-regular.woff2",
+    "bytes": 3164464,
+    "sha256": "e0dd071664ed6a698d1b21e074cd91ca117603153606b6db89f29c4a15d3a2b8"
+  },
+  {
+    "local": "public/fonts/Shippori-Mincho-OFL.txt",
+    "bytes": 4399,
+    "sha256": "41fba056279be5f45ff9a99e44b7b53897b42732f5806d8e666e0ab49ac6bd38"
+  },
+  {
+    "local": "public/media/fallback.svg",
+    "bytes": 609,
+    "sha256": "b5ee4dc7a4110beb88b13ec73f3603066b333346f8dc4a14e46351a16b8b8c3f"
+  },
+  {
+    "local": "public/media/director/negative-holder.svg",
+    "bytes": 1393,
+    "sha256": "29d684dddacd33ab23f0da46d8337acae9437ad05fcbb0b7705e8035fc9ecfe2"
+  },
+  {
+    "local": "public/media/stills/tide-scrub-1.jpg",
+    "bytes": 66136,
+    "sha256": "ebd7241e76ee4d926fadfcdeda294a65d55cd68588ad93057df4420b673c255e"
+  },
+  {
+    "local": "public/media/stills/tide-scrub-2.jpg",
+    "bytes": 69134,
+    "sha256": "ec4dc1dd87849b764cbefa6e998db22783f4493f0eca796673feffd2ee659af9"
+  },
+  {
+    "local": "public/media/stills/tide-scrub-3.jpg",
+    "bytes": 67988,
+    "sha256": "e3bf8bd0404e170029f438955a2337f38ddb65c842433c254a2f71e2bfaa4b58"
+  },
+  {
+    "local": "public/media/stills/tide-scrub-4.jpg",
+    "bytes": 76880,
+    "sha256": "16d55667e1c1bdbf670525ee910662097d99f382a91e2d7e6deebe539b09a9cb"
+  },
+  {
+    "local": "public/media/stills/night-scrub-1.jpg",
+    "bytes": 121257,
+    "sha256": "9208cc408118845c7c96e6e775c18bbf9450ef36d05ff7bf3639a5748f13b1e4"
+  },
+  {
+    "local": "public/media/stills/night-scrub-2.jpg",
+    "bytes": 115390,
+    "sha256": "30a64f9bf4aef4ec6e773eb9bfe577a9a92db2f17f70161c5b272fa8b5d1789a"
+  },
+  {
+    "local": "public/media/stills/night-scrub-3.jpg",
+    "bytes": 105840,
+    "sha256": "d114180b046b9a86bf6e00b50abfad5548c2a08746edb11d7842409869064ffb"
+  },
+  {
+    "local": "public/media/stills/night-scrub-4.jpg",
+    "bytes": 95240,
+    "sha256": "5b65acbdd06db891ce90f682648f14eeccae3e92b4029ccfdafe2e5665f303e9"
+  },
+  {
+    "local": "public/media/stills/between-scrub-1.jpg",
+    "bytes": 15056,
+    "sha256": "27e935132b50e10cc4c2593d7975dc415fc6e66fff1b0218481581128832fe15"
+  },
+  {
+    "local": "public/media/stills/between-scrub-2.jpg",
+    "bytes": 30188,
+    "sha256": "5b7438332d6f1ab2471f13439bed1d99bc729e94af4e71fdcf37d4e3fdee1ea1"
+  },
+  {
+    "local": "public/media/stills/between-scrub-3.jpg",
+    "bytes": 16992,
+    "sha256": "9fdb644ab5154f06ac8b742222799ec311a40781bc8bb2abad9ab6477bbbb62b"
+  },
+  {
+    "local": "public/media/stills/between-scrub-4.jpg",
+    "bytes": 20103,
+    "sha256": "80cf247dd716265580cf542732e9506d847a797b3f3ba542d005526fb66e4532"
+  },
+  {
+    "local": "public/media/stills/wild-scrub-1.jpg",
+    "bytes": 155612,
+    "sha256": "7e559f950072f036819e6d56391300a0e559b37cf088e9d6c67ce08f8f48929d"
+  },
+  {
+    "local": "public/media/stills/wild-scrub-2.jpg",
+    "bytes": 145920,
+    "sha256": "090eff56497f49149e249ddc4b7290f58835fa0d1c035d0c276ee8855b104297"
+  },
+  {
+    "local": "public/media/stills/wild-scrub-3.jpg",
+    "bytes": 144974,
+    "sha256": "8b2625f707146d782814447862ad65d45fae23e695e6547a54212292d193bf80"
+  },
+  {
+    "local": "public/media/stills/wild-scrub-4.jpg",
+    "bytes": 130534,
+    "sha256": "770f04b6b7e5975e2702deb28001c55dca68e458e1472c0a3dd8f65ad93cac4c"
+  },
+  {
+    "local": "public/media/stills/heat-scrub-1.jpg",
+    "bytes": 29254,
+    "sha256": "c20f6030d484ca744ef090a6357e0a5f7f1a4819ef7e8f0e35e76ae47e23f548"
+  },
+  {
+    "local": "public/media/stills/heat-scrub-2.jpg",
+    "bytes": 29933,
+    "sha256": "63a96dbdd3c3a8d13d1e506577a63c14628153bf2c7a740da35e1fa84516ff5b"
+  },
+  {
+    "local": "public/media/stills/heat-scrub-3.jpg",
+    "bytes": 27911,
+    "sha256": "24a7825d1f9a6aacc88d146e00123815bb0961c1c1a1baf8b655b2e61699478e"
+  },
+  {
+    "local": "public/media/stills/heat-scrub-4.jpg",
+    "bytes": 27641,
+    "sha256": "02361ee820169851e9c667a48f56fdc5c7fc97277eccf25cf52cb11bfe11bbc1"
+  },
+  {
+    "local": "public/media/stills/refraction-scrub-1.jpg",
+    "bytes": 62102,
+    "sha256": "f47bf5e7bae5069e2c621a962fdff7d11d59574d4fb9fbf079f39f87ab79996c"
+  },
+  {
+    "local": "public/media/stills/refraction-scrub-2.jpg",
+    "bytes": 68937,
+    "sha256": "ab0a39d4a8757a831a024eb69b2dcefc50df40c445ff5c3a896ae682d7d8753c"
+  },
+  {
+    "local": "public/media/stills/refraction-scrub-3.jpg",
+    "bytes": 79459,
+    "sha256": "d712d8d379ef7c34ff5e358d52c6ce57488a6a723413d4da21b8454df6b75b80"
+  },
+  {
+    "local": "public/media/stills/refraction-scrub-4.jpg",
+    "bytes": 80130,
+    "sha256": "347cad58fc4aefdd2daf3748f745b0161642059f4d391ada106d01841dd93642"
+  }
+]

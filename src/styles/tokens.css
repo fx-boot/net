@@ -1,0 +1,45 @@
+@font-face { font-family: 'Instrument Sans'; src: url('/fonts/instrument-sans-latin-variable.woff2') format('woff2'); font-style: normal; font-weight: 400 700; font-display: swap; }
+@font-face { font-family: 'Bodoni Moda'; src: url('/fonts/bodoni-moda-latin-variable.woff2') format('woff2'); font-style: normal; font-weight: 400 900; font-display: swap; }
+@font-face { font-family: 'Bodoni Moda'; src: url('/fonts/bodoni-moda-latin-italic.woff2') format('woff2'); font-style: italic; font-weight: 400; font-display: swap; }
+:root {
+ --bg-canvas: #0A0B0D;
+ --bg-surface: #13151A;
+ --bg-subtle: #181A20;
+ --text-primary: #F8F9FA;
+ --text-secondary: #9499A3;
+ --accent-laser: #FF3E00;
+ --border-hairline: rgba(255, 255, 255, 0.08);
+ --border-projection: rgba(248, 249, 250, 0.15);
+ --light-cyan: rgba(72, 125, 156, 0.10);
+ --light-vermilion: rgba(255, 62, 0, 0.035);
+ --type-monolith: clamp(5rem, 15vw, 16rem);
+ /* Compatibility aliases keep the existing component and dictionary contracts. */
+ --bg-obsidian: var(--bg-canvas);
+ --bg-elevated: var(--bg-surface);
+ --bg-gallery: var(--bg-canvas);
+ --bg-editorial-warm: var(--bg-subtle);
+ --bg-credits: var(--bg-surface);
+ --bg-contact: var(--bg-subtle);
+ --text-parchment: var(--text-primary);
+ --text-warm-muted: var(--text-secondary);
+ --accent-vermilion: var(--accent-laser);
+ --accent-brass: var(--text-primary);
+ --film-grade-rest: contrast(1.06) saturate(0.86) brightness(0.96);
+ --film-grade-active: contrast(1.04) saturate(1.02) brightness(1);
+ --film-ease: cubic-bezier(0.22, 1, 0.36, 1);
+ --gate-ease: cubic-bezier(0.16, 1, 0.3, 1);
+ --text-reading-dim: var(--text-secondary);
+ --font-sans: 'Instrument Sans', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+ --font-serif: 'Bodoni Moda', 'Noto Serif CJK SC', 'Source Han Serif SC', 'Songti SC', 'STSong', 'SimSun', serif;
+ --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+ --gutter: clamp(22px, 4.2vw, 88px);
+ --section-gap: clamp(100px, 12vw, 190px); color-scheme: dark;
+}
+html:lang(ko) { --font-sans: 'Instrument Sans', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; --font-serif: 'Bodoni Moda', 'Noto Serif CJK KR', 'Source Han Serif K', 'Batang', serif; }
+@font-face { font-family: 'Shippori Mincho'; src: url('/fonts/shippori-mincho-regular.woff2') format('woff2'); font-style: normal; font-weight: 400; font-display: swap; }
+html[lang='ja'], [lang='ja'] {
+ --font-sans: 'Instrument Sans', 'Hiragino Sans', 'Yu Gothic', 'YuGothic', 'Noto Sans JP', sans-serif;
+ --font-serif: 'Bodoni Moda', 'Shippori Mincho', 'Yu Mincho', 'YuMincho', 'Hiragino Mincho ProN', 'HiraMinProN-W3', 'Noto Serif JP', serif;
+ font-feature-settings: 'palt' 1;
+ line-break: strict;
+}

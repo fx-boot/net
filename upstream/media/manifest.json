@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1932,
+    "slug": "tide",
+    "page": "https://mixkit.co/free-stock-video/sea-waves-and-big-rocks-1932/",
+    "sourceUrl": "https://assets.mixkit.co/videos/1932/1932-1080.mp4",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "author": "Mixkit contributor (see source page)",
+    "local": "public/media/video/tide-full.mp4",
+    "bytes": 47914640,
+    "sha256": "7a3aa98982a565b3e87fc8ea99c46b4127c7eb3e5bc635b50f4b3d5efcbb471f",
+    "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/media/video/tide-full.mp4':\r\n  Metadata:\r\n    major_brand     : M4V \r\n    minor_version   : 1\r\n    compatible_brands: isomavc1mp42\r\n    creation_time   : 2019-10-31T01:45:40.000000Z\r\n  Duration: 00:00:16.02, start: 0.000000, bitrate: 23933 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 23930 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2019-10-31T01:45:40.000000Z\r\n        handler_name    : ETI ISO Video Media Handler\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : Elemental H.264\r\nAt least one output file must be specified\r\n",
+    "rawArchive": ".tools/media-originals/tide-full.mp4",
+    "published": {
+      "local": "public/media/video/tide-full.mp4",
+      "bytes": 7178675,
+      "sha256": "6017e485a2a9d05b92fe3a59bf8fba5811bb367c0f2d7295921d01b3d65821e7",
+      "transform": "Full duration and 1080p preserved; H.264 CRF25, AAC if source audio exists, faststart"
+    }
+  },
+  {
+    "id": 5011,
+    "slug": "night",
+    "page": "https://mixkit.co/free-stock-video/city-seen-from-the-heights-at-night-5011/",
+    "sourceUrl": "https://assets.mixkit.co/videos/5011/5011-1080.mp4",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "author": "Mixkit contributor (see source page)",
+    "local": "public/media/video/night-full.mp4",
+    "bytes": 76296673,
+    "sha256": "9060ebbbfcc88fad856a511730f9fb907e93140840c082b834be6aa7c61cc457",
+    "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/media/video/night-full.mp4':\r\n  Metadata:\r\n    major_brand     : M4V \r\n    minor_version   : 1\r\n    compatible_brands: isomavc1mp42\r\n    creation_time   : 2020-05-14T05:11:52.000000Z\r\n  Duration: 00:00:25.48, start: 0.000000, bitrate: 23954 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 23952 kb/s, 25 fps, 25 tbr, 25k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2020-05-14T05:11:52.000000Z\r\n        handler_name    : ETI ISO Video Media Handler\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : Elemental H.264\r\nAt least one output file must be specified\r\n",
+    "rawArchive": ".tools/media-originals/night-full.mp4",
+    "published": {
+      "local": "public/media/video/night-full.mp4",
+      "bytes": 8715025,
+      "sha256": "56b242f3a6d0c112604de492fc5dfb59c6df19c89f612e565b860149a89e75b3",
+      "transform": "Full duration and 1080p preserved; H.264 CRF25, AAC if source audio exists, faststart"
+    }
+  },
+  {
+    "id": 41412,
+    "slug": "between",
+    "page": "https://mixkit.co/free-stock-video/artistic-performance-of-a-pair-of-dancers-41412/",
+    "sourceUrl": "https://assets.mixkit.co/videos/41412/41412-1080.mp4",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "author": "Mixkit contributor (see source page)",
+    "local": "public/media/video/between-full.mp4",
+    "bytes": 83271319,
+    "sha256": "921877c9deaa882bc937e088431cc9db2340efabaa34976bebbfeecd415ff984",
+    "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/media/video/between-full.mp4':\r\n  Metadata:\r\n    major_brand     : M4V \r\n    minor_version   : 1\r\n    compatible_brands: isomavc1mp42\r\n    creation_time   : 2021-07-28T19:16:36.000000Z\r\n  Duration: 00:00:22.02, start: 0.000000, bitrate: 30250 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 30247 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2021-07-28T19:16:36.000000Z\r\n        handler_name    : ETI ISO Video Media Handler\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : Elemental H.264\r\nAt least one output file must be specified\r\n",
+    "rawArchive": ".tools/media-originals/between-full.mp4",
+    "published": {
+      "local": "public/media/video/between-full.mp4",
+      "bytes": 3678339,
+      "sha256": "89b5543205e484cf39f573a25350629df7417e0fa62f9f56949a05857fc4edcf",
+      "transform": "Full duration and 1080p preserved; H.264 CRF25, AAC if source audio exists, faststart"
+    }
+  },
+  {
+    "id": 44605,
+    "slug": "wild",
+    "page": "https://mixkit.co/free-stock-video/take-area-over-a-considerable-forest-44605/",
+    "sourceUrl": "https://assets.mixkit.co/videos/44605/44605-1080.mp4",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "author": "Mixkit contributor (see source page)",
+    "local": "public/media/video/wild-full.mp4",
+    "bytes": 139279185,
+    "sha256": "6cf6f588ebb161913dac24c433051651a36811e962db560d33f9c15ca55b577c",
+    "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/media/video/wild-full.mp4':\r\n  Metadata:\r\n    major_brand     : M4V \r\n    minor_version   : 1\r\n    compatible_brands: isomavc1mp42\r\n    creation_time   : 2022-12-13T20:14:03.000000Z\r\n  Duration: 00:00:42.58, start: 0.000000, bitrate: 26165 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 26162 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2022-12-13T20:14:03.000000Z\r\n        handler_name    : ETI ISO Video Media Handler\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : Elemental H.264\r\nAt least one output file must be specified\r\n",
+    "rawArchive": ".tools/media-originals/wild-full.mp4",
+    "published": {
+      "local": "public/media/video/wild-full.mp4",
+      "bytes": 27822105,
+      "sha256": "25bab05786c3d068b0faff4c0de9723d1e11359bc9845787a85a9623ce49010e",
+      "transform": "Full duration and 1080p preserved; H.264 CRF25, AAC if source audio exists, faststart"
+    }
+  },
+  {
+    "id": 41409,
+    "slug": "heat",
+    "page": "https://mixkit.co/free-stock-video/performance-of-a-contemporary-dancer-41409/",
+    "sourceUrl": "https://assets.mixkit.co/videos/41409/41409-1080.mp4",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "author": "Mixkit contributor (see source page)",
+    "local": "public/media/video/heat-full.mp4",
+    "bytes": 69197438,
+    "sha256": "c55975633d7766b567c44d360ea858a14cfe939b334441543030918cd3bc8366",
+    "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/media/video/heat-full.mp4':\r\n  Metadata:\r\n    major_brand     : M4V \r\n    minor_version   : 1\r\n    compatible_brands: isomavc1mp42\r\n    creation_time   : 2021-07-28T19:12:24.000000Z\r\n  Duration: 00:00:19.02, start: 0.000000, bitrate: 29106 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 29103 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2021-07-28T19:12:24.000000Z\r\n        handler_name    : ETI ISO Video Media Handler\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : Elemental H.264\r\nAt least one output file must be specified\r\n",
+    "rawArchive": ".tools/media-originals/heat-full.mp4",
+    "published": {
+      "local": "public/media/video/heat-full.mp4",
+      "bytes": 4834142,
+      "sha256": "d3e7a674df5422b34eb9389efe9b112e24378c72bb30e01f053e6d3dc4d0c93d",
+      "transform": "Full duration and 1080p preserved; H.264 CRF25, AAC if source audio exists, faststart"
+    }
+  },
+  {
+    "id": 101645,
+    "slug": "refraction",
+    "page": "https://mixkit.co/free-stock-video/model-in-western-fashion-seen-through-acrylic-101645/",
+    "sourceUrl": "https://assets.mixkit.co/nie07c56ybs0w2m4zhfolf4gcg8u",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "author": "Mixkit contributor (see source page)",
+    "local": "public/media/video/refraction-full.mp4",
+    "bytes": 69952936,
+    "sha256": "9b08d2d8486b8f7c24f232261aef6945dc71fb4c50ab557cf2a3553152f84a07",
+    "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/media/video/refraction-full.mp4':\r\n  Metadata:\r\n    major_brand     : isom\r\n    minor_version   : 512\r\n    compatible_brands: isomiso2avc1mp41\r\n    encoder         : Lavf61.7.100\r\n  Duration: 00:00:18.44, start: 0.000000, bitrate: 30356 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 30353 kb/s, 23.98 fps, 23.98 tbr, 24k tbn (default)\r\n      Metadata:\r\n        handler_name    : VideoHandler\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : Lavc61.19.101 libx264\r\nAt least one output file must be specified\r\n",
+    "rawArchive": ".tools/media-originals/refraction-full.mp4",
+    "published": {
+      "local": "public/media/video/refraction-full.mp4",
+      "bytes": 3696925,
+      "sha256": "a44639b712d5ca63899a1d44748d96e58384cdb25bedce5c79429877bd84c0fe",
+      "transform": "Full duration and 1080p preserved; H.264 CRF25, AAC if source audio exists, faststart"
+    }
+  },
+  {
+    "id": 2181,
+    "slug": "portrait",
+    "page": "https://mixkit.co/free-stock-video/photographer-in-a-forest-2181/",
+    "sourceUrl": "https://assets.mixkit.co/videos/2181/2181-1080.mp4",
+    "licenseUrl": "https://mixkit.co/license/#videoFree",
+    "author": "Mixkit contributor (see source page)",
+    "local": "public/media/video/portrait-full.mp4",
+    "bytes": 38612989,
+    "sha256": "c404a529d10a5b13a6dab74e0b74b7bd23764b62cac551200434f171ad0984c8",
+    "probe": "Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'public/media/video/portrait-full.mp4':\r\n  Metadata:\r\n    major_brand     : M4V \r\n    minor_version   : 1\r\n    compatible_brands: isomavc1mp42\r\n    creation_time   : 2019-10-14T22:11:23.000000Z\r\n  Duration: 00:00:12.24, start: 0.000000, bitrate: 25237 kb/s\r\n  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 25234 kb/s, 25 fps, 25 tbr, 25k tbn (default)\r\n      Metadata:\r\n        creation_time   : 2019-10-14T22:11:23.000000Z\r\n        handler_name    : ETI ISO Video Media Handler\r\n        vendor_id       : [0][0][0][0]\r\n        encoder         : Elemental H.264\r\nAt least one output file must be specified\r\n",
+    "rawArchive": ".tools/media-originals/portrait-full.mp4",
+    "published": {
+      "local": "public/media/video/portrait-full.mp4",
+      "bytes": 1621843,
+      "sha256": "2bfe47af7cf4ae7f90b2719babf7afbc774820450d8f56be1d886e41c85a657e",
+      "transform": "Full duration and 1080p preserved; H.264 CRF25, AAC if source audio exists, faststart"
+    }
+  }
+]

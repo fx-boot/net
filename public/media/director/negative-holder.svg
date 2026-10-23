@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+  <defs>
+    <linearGradient id="plate" x1="80" y1="80" x2="740" y2="940" gradientUnits="userSpaceOnUse"><stop stop-color="#272b30"/><stop offset=".48" stop-color="#13171c"/><stop offset="1" stop-color="#0a0b0d"/></linearGradient>
+    <radialGradient id="exposure" cx="0" cy="0" r="1" gradientTransform="translate(670 340) rotate(138) scale(530 680)" gradientUnits="userSpaceOnUse"><stop stop-color="#98aeb4" stop-opacity=".16"/><stop offset="1" stop-color="#98aeb4" stop-opacity="0"/></radialGradient>
+    <linearGradient id="slit" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#bfcad1" stop-opacity="0"/><stop offset=".5" stop-color="#bfcad1" stop-opacity=".32"/><stop offset="1" stop-color="#bfcad1" stop-opacity="0"/></linearGradient>
+  </defs>
+  <path fill="url(#plate)" d="M0 0h800v1000H0z"/>
+  <path fill="url(#exposure)" d="M0 0h800v1000H0z"/>
+  <path stroke="#c5cfd7" stroke-opacity=".08" d="M42 38h716v924H42z"/>
+  <path fill="#050608" fill-opacity=".55" d="M0 716 800 340v94L0 810z"/>
+  <path stroke="url(#slit)" stroke-width="1.2" d="M0 716 800 340"/>
+  <g stroke="#d3dde3" stroke-opacity=".3" stroke-width="1">
+    <path d="M69 80h30M84 65v30M701 80h30M716 65v30M69 920h30M84 905v30M701 920h30M716 905v30"/>
+  </g>
+  <g stroke="#ff3e00" stroke-opacity=".65"><path d="M668 856h44M690 834v44"/></g>
+</svg>

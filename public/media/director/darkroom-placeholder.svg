@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+  <defs>
+    <radialGradient id="room"><stop stop-color="#262b35"/><stop offset=".6" stop-color="#14171d"/><stop offset="1" stop-color="#0a0b0d"/></radialGradient>
+    <linearGradient id="light" x1="150" y1="100" x2="650" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#a9b3c2" stop-opacity=".08"/><stop offset=".5" stop-color="#f8f9fa" stop-opacity=".2"/><stop offset="1" stop-color="#a9b3c2" stop-opacity="0"/></linearGradient>
+  </defs>
+  <path fill="url(#room)" d="M0 0h800v1000H0z"/>
+  <g stroke="url(#light)" stroke-width="1">
+    <path d="M190 120v760M400 100v800M610 120v760M70 500h660M120 500l280-118 280 118-280 118z"/>
+    <ellipse cx="400" cy="500" rx="238" ry="300"/>
+    <ellipse cx="400" cy="500" rx="245" ry="309"/>
+  </g>
+</svg>

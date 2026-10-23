@@ -1,0 +1,43 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/shipporimincho/ShipporiMincho-Regular.ttf",
+    "destination": "upstream/fonts/ShipporiMincho-Regular.ttf",
+    "bytes": 8677284,
+    "sha256": "769b5269f0f9bc6534b352c0e6bd856a566e03ff788f107191c2d835863570b2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/shipporimincho/OFL.txt",
+    "destination": "public/fonts/Shippori-Mincho-OFL.txt",
+    "bytes": 4399,
+    "sha256": "41fba056279be5f45ff9a99e44b7b53897b42732f5806d8e666e0ab49ac6bd38"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4/src/ts-tailwind/TextAnimations/DecryptedText/DecryptedText.tsx",
+    "destination": "upstream/spatial/DecryptedText.tsx",
+    "bytes": 20297,
+    "sha256": "6fc26c92b5ef1b4215ea53519b437765bdf8141035761d97f918c127d06af11c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/codrops/MagneticButtons/master/src/js/button.js",
+    "status": 404
+  },
+  {
+    "url": "https://raw.githubusercontent.com/codrops/MagneticButtons/master/LICENSE",
+    "destination": "upstream/spatial/codrops-LICENSE",
+    "bytes": 1103,
+    "sha256": "a4552773ea59e8272be04873aa1bcd617d9d31a03ddd7599c915b803b7cc8413"
+  },
+  {
+    "url": "https://ui.aceternity.com/registry/3d-card.json",
+    "destination": "upstream/spatial/aceternity-3d-card.json",
+    "bytes": 4374,
+    "sha256": "c2916dc70428da48e40ece3907b25ab028a7351c8da4410e3bf3a40688b24082"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/codrops/MagneticButtons/b2ee8ac9cd561e13198335cca5684fe1c31d543c/src/js/demo1/buttonCtrl.js",
+    "destination": "upstream/spatial/codrops-button.js",
+    "commit": "b2ee8ac9cd561e13198335cca5684fe1c31d543c",
+    "bytes": 4262,
+    "sha256": "5e8056bb9037a060479444265ac3646564906c658a2ee7a57f508160355792a5"
+  }
+]

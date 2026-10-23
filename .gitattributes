@@ -14,3 +14,7 @@
 *.ttf binary
 .gitignore text eol=lf
 .gitattributes text eol=lf
+# Preserve published/provenance hashes and the approved Step 1 bytes on every OS.
+public/** -text
+upstream/** -text
+docs/01-research-architecture.md -text

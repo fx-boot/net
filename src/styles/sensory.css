@@ -1,0 +1,25 @@
+/* One quarter-pixel-count surface. Soft light preserves white endpoints and sharp text edges. */
+.film-grain-canvas { position:fixed; inset:0; width:100%; height:100%; pointer-events:none; z-index:3; opacity:.032; mix-blend-mode:soft-light; image-rendering:auto; }
+.film-grain-canvas[data-paused] { visibility:hidden; }
+.cinema-audio-panel { position:fixed; right:var(--gutter); bottom:10px; z-index:20; }
+.cinema-audio-panel .sound-control { min-height:44px; min-width:112px; justify-content:flex-end; text-shadow:0 1px 3px #000; }
+.hero-controls { right:calc(var(--gutter) + 130px); }
+.footer { padding-bottom:76px; }
+.footer-bottom button { scroll-margin-bottom:86px; }
+.anamorphic-spill { position:absolute; inset:0; overflow:hidden; pointer-events:none; transform:translate3d(var(--spill-drift,0px),0,0) rotate(var(--spill-angle,0deg)); backface-visibility:hidden; }
+.anamorphic-spill-hero { z-index:-1; }
+.anamorphic-spill-theatre { z-index:0; }
+.anamorphic-spill i { position:absolute; inset:0 -10%; background:radial-gradient(ellipse 64% 2% at 52% 44%,rgba(144,199,235,.075),transparent 85%),radial-gradient(ellipse 80% 13% at 48% 44%,rgba(62,105,152,.055),transparent 80%); }
+.anamorphic-spill i+i { background:radial-gradient(ellipse 45% 5% at 79% 58%,rgba(255,62,0,.04),transparent 85%); }
+.anamorphic-spill-hero i { opacity:.8; }
+.counter-ruler { touch-action:pan-y; }
+.counter-ruler i { transform:translate3d(calc(var(--transport-position,var(--progress))*100%),0,0); transition:none; pointer-events:none; }
+.counter-ruler[data-transport-active] i { will-change:transform; }
+.transport-range { position:absolute; inset:-12px -7px; width:calc(100% + 14px); height:44px; margin:0; opacity:0; cursor:ew-resize; touch-action:pan-y; }
+.counter-ruler:has(.transport-range:focus-visible) { outline:1px solid var(--text-primary); outline-offset:7px; }
+.cinema-controls > button .magnetic-ink { border-top:1px solid transparent; border-bottom:1px solid transparent; transition:transform .2s var(--gate-ease),border-color .2s,color .2s; }
+.cinema-controls > button:is(:hover,:focus-visible) .magnetic-ink { border-top-color:rgba(248,249,250,.15); border-bottom-color:rgba(0,0,0,.6); color:var(--text-primary); }
+.cinema-controls > button:active .magnetic-ink { transform:translate3d(0,1px,0) scaleY(.97); }
+@media(max-width:700px) { .film-grain-canvas { opacity:.028; } .transport-range { inset:-15px -6px; width:calc(100% + 12px); } }
+@media(prefers-reduced-motion:reduce) { .anamorphic-spill { transform:none; } .cinema-controls > button .magnetic-ink { transition:none; } }
+@media(forced-colors:active) { .film-grain-canvas,.anamorphic-spill { display:none; } .counter-ruler:has(.transport-range:focus-visible) { outline:2px solid Highlight; } }

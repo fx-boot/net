@@ -1,0 +1,90 @@
+[
+  {
+    "repo": "DavidHDev/react-bits",
+    "commit": "7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4",
+    "file": "src/ts-tailwind/TextAnimations/BlurText/BlurText.tsx",
+    "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4/src/ts-tailwind/TextAnimations/BlurText/BlurText.tsx",
+    "destination": "upstream/react-bits/BlurText.tsx",
+    "sha256": "f59bfddeb51cb56df86498a55ae395d3bd4297b1de869310b38b290b9eef7116"
+  },
+  {
+    "repo": "DavidHDev/react-bits",
+    "commit": "7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4",
+    "file": "src/ts-tailwind/Animations/Crosshair/Crosshair.tsx",
+    "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4/src/ts-tailwind/Animations/Crosshair/Crosshair.tsx",
+    "destination": "upstream/react-bits/Crosshair.tsx",
+    "sha256": "b9d209b4368229c313dc263b392bf9977fe09dfb6d1415ce57a9c502ddaf0922"
+  },
+  {
+    "repo": "DavidHDev/react-bits",
+    "commit": "7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4",
+    "file": "src/ts-tailwind/Animations/Noise/Noise.tsx",
+    "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4/src/ts-tailwind/Animations/Noise/Noise.tsx",
+    "destination": "upstream/react-bits/Noise.tsx",
+    "sha256": "bb913f2b9d28c87d3f56fb071c70f929de3678f2bb98c12dd7449f9de66ea9d1"
+  },
+  {
+    "repo": "DavidHDev/react-bits",
+    "commit": "7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4",
+    "file": "LICENSE.md",
+    "url": "https://raw.githubusercontent.com/DavidHDev/react-bits/7381f14b15e8f9e00b01ce5b6ac4416f7ee360c4/LICENSE.md",
+    "destination": "upstream/react-bits/LICENSE.md",
+    "sha256": "f4c33af6739191537738662d223b68d77bc226f4b57ea883e16481d8cc5c73c9"
+  },
+  {
+    "repo": "uiverse-io/galaxy",
+    "commit": "adbd2adde0a299a3956ea288fb444ec01891ca41",
+    "file": "Buttons/Spacious74_helpless-tiger-55.html",
+    "url": "https://raw.githubusercontent.com/uiverse-io/galaxy/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Spacious74_helpless-tiger-55.html",
+    "destination": "upstream/uiverse/Buttons/Spacious74_helpless-tiger-55.html",
+    "sha256": "4c8d2d87e86bb6c81d495edddf17db0aef050a51cc6375bbe12144de2334ecf5"
+  },
+  {
+    "repo": "uiverse-io/galaxy",
+    "commit": "adbd2adde0a299a3956ea288fb444ec01891ca41",
+    "file": "Buttons/Spacious74_horrible-horse-4.html",
+    "url": "https://raw.githubusercontent.com/uiverse-io/galaxy/adbd2adde0a299a3956ea288fb444ec01891ca41/Buttons/Spacious74_horrible-horse-4.html",
+    "destination": "upstream/uiverse/Buttons/Spacious74_horrible-horse-4.html",
+    "sha256": "53963c4c1424d8174f315afd863e85a787d4828e801e773bb8c31d049d4e01d8"
+  },
+  {
+    "repo": "uiverse-io/galaxy",
+    "commit": "adbd2adde0a299a3956ea288fb444ec01891ca41",
+    "file": "Radio-buttons/Galahhad_perfect-cheetah-72.html",
+    "url": "https://raw.githubusercontent.com/uiverse-io/galaxy/adbd2adde0a299a3956ea288fb444ec01891ca41/Radio-buttons/Galahhad_perfect-cheetah-72.html",
+    "destination": "upstream/uiverse/Radio-buttons/Galahhad_perfect-cheetah-72.html",
+    "sha256": "f891ece9262a2523d3e5bbea2c4d4911d7e0d0fadb31010113164c42997afe04"
+  },
+  {
+    "repo": "uiverse-io/galaxy",
+    "commit": "adbd2adde0a299a3956ea288fb444ec01891ca41",
+    "file": "Radio-buttons/Spacious74_lovely-goose-53.html",
+    "url": "https://raw.githubusercontent.com/uiverse-io/galaxy/adbd2adde0a299a3956ea288fb444ec01891ca41/Radio-buttons/Spacious74_lovely-goose-53.html",
+    "destination": "upstream/uiverse/Radio-buttons/Spacious74_lovely-goose-53.html",
+    "sha256": "70ed2f4628a318981f982358908b997c31a44ffc3849057a252606581b46b2fa"
+  },
+  {
+    "repo": "uiverse-io/galaxy",
+    "commit": "adbd2adde0a299a3956ea288fb444ec01891ca41",
+    "file": "loaders/EmmaxPlay_polite-husky-37.html",
+    "url": "https://raw.githubusercontent.com/uiverse-io/galaxy/adbd2adde0a299a3956ea288fb444ec01891ca41/loaders/EmmaxPlay_polite-husky-37.html",
+    "destination": "upstream/uiverse/loaders/EmmaxPlay_polite-husky-37.html",
+    "sha256": "33b19ece69678c1e073e6ed0a833b3d7fd9db9f65f411ed5f1393a44476b76be"
+  },
+  {
+    "repo": "uiverse-io/galaxy",
+    "commit": "adbd2adde0a299a3956ea288fb444ec01891ca41",
+    "file": "Cards/Smit-Prajapati_smart-liger-5.html",
+    "url": "https://raw.githubusercontent.com/uiverse-io/galaxy/adbd2adde0a299a3956ea288fb444ec01891ca41/Cards/Smit-Prajapati_smart-liger-5.html",
+    "destination": "upstream/uiverse/Cards/Smit-Prajapati_smart-liger-5.html",
+    "sha256": "03eb61545cc14ca2d9d78ddc00ee3fbb4405c9d5492ad2f904819c633d31978f"
+  },
+  {
+    "repo": "uiverse-io/galaxy",
+    "commit": "adbd2adde0a299a3956ea288fb444ec01891ca41",
+    "file": "LICENSE",
+    "url": "https://raw.githubusercontent.com/uiverse-io/galaxy/adbd2adde0a299a3956ea288fb444ec01891ca41/LICENSE",
+    "destination": "upstream/uiverse/LICENSE",
+    "sha256": "7feadcd7a611d37a4546c99f63a162bdf65656137828ebcba92e57dccfa368a4"
+  }
+]
