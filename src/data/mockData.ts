@@ -1,5 +1,5 @@
 import { catalogLanguages, createProjectCatalog, expandDemoEntries } from './projectCatalog';
-import { brandCopy, studioBrand } from '../i18n/brand';
+import { brandCopy, artistBrand } from '../i18n/brand';
 import type { Award, Client, DirectorProfile, MediaAsset, Project, ProjectEntry, RegionalWeight, Representative, ReelConfig } from '../types/portfolio';
 export type { ProjectCredits, ProjectEntry, RegionalWeight } from '../types/portfolio';
 import { dictionaries, type Language } from '../i18n/dictionaries';
@@ -25,12 +25,12 @@ function asset(slug: keyof typeof stock, kind: 'poster' | 'preview' | 'full' | '
   return { isPlaceholder: true, src, remoteSrc: kind === 'preview' || kind === 'full' ? videoUrl : src, poster, fallback: '/media/fallback.svg', sourceUrl: `https://mixkit.co/free-stock-video/${path}-${id}/`, licenseUrl: 'https://mixkit.co/license/#videoFree', author: 'Mixkit contributor · 详见素材原始页', alt };
 }
 const concepts: Array<{ id: keyof typeof stock; title: string; englishTitle: string; category: Project['category']; regionalWeight: RegionalWeight; format: string; year: number; duration: string; description: string; note: string }> = [
-  { id: 'tide', title: '潮汐之后', englishTitle: 'After the Tide', regionalWeight: { zh: 90, en: 80, ja: 70, ko: 75 }, category: 'Narrative', format: '短片概念', year: 2026, duration: '00:18', description: '光线退去，人物在折射的边界重新显影。', note: '把记忆看作一种光学现象。朱红色反光掠过人物，透明介质改变距离；每一次清晰与失焦，都是情绪的潮汐。这个影像研究关注材质、轮廓和暗部的留白。' },
-  { id: 'night', title: '夜行者', englishTitle: 'Night Passage', regionalWeight: { zh: 100, en: 90, ja: 40, ko: 70 }, category: 'Commercials', format: '品牌影像概念', year: 2026, duration: '00:25', description: '越过城市的表面，寻找夜色里仍未熄灭的温度。', note: '车灯是一句没有写完的话。以高处的凝视代替快速剪辑，让城市的呼吸成为画面的节拍；冷暖交界处，是这部品牌影像的情感起点。' },
-  { id: 'between', title: '无声之间', englishTitle: 'In Between', regionalWeight: { zh: 60, en: 75, ja: 100, ko: 80 }, category: 'Visual Tech', format: '舞蹈影像概念', year: 2025, duration: '00:22', description: '语言停下来，身体继续说话。', note: '身体之间的距离比动作本身更动人。黑白不是怀旧，而是去掉多余的解释，让视线停在呼吸、肌理和一次未完成的靠近上。' },
-  { id: 'wild', title: '旷野来信', englishTitle: 'Letters from the Wild', regionalWeight: { zh: 55, en: 60, ja: 90, ko: 60 }, category: 'Narrative', format: '实验短片概念', year: 2025, duration: '00:43', description: '离开熟悉的坐标，让一封没有地址的信抵达。', note: '把镜头交给风，给未知留出时间。俯瞰的视角慢慢消解边界，树木不再是背景，而是一整片正在缓慢书写的生命。' },
-  { id: 'heat', title: '余温', englishTitle: 'Residual Heat', regionalWeight: { zh: 65, en: 95, ja: 65, ko: 100 }, category: 'Visual Tech', format: '音乐短片概念', year: 2025, duration: '00:19', description: '光离开之后，动作还留在空气里。', note: '让一个动作走到尽头，再多停留一秒。聚光灯将身体从黑暗中剥离，影子则保留它的另一半。这个片段研究克制与释放之间的临界点。' },
-  { id: 'refraction', title: '折光', englishTitle: 'Refraction', regionalWeight: { zh: 80, en: 100, ja: 60, ko: 90 }, category: 'Commercials', format: '时装影像概念', year: 2024, duration: '00:18', description: '真实不止一种形状。', note: '透明材质既是窗口也是阻隔。人物在光的折射中不断改变轮廓，服装、皮肤和空间成为同一种质地。这是一封写给不确定性的影像短笺。' },
+  { id: 'tide', title: '潮汐之后', englishTitle: 'After the Tide', regionalWeight: { zh: 90, en: 80, ja: 70, ko: 75 }, category: 'Live-action & Drama', format: '短片概念', year: 2026, duration: '00:18', description: '光线退去，人物在折射的边界重新显影。', note: '把记忆看作一种光学现象。朱红色反光掠过人物，透明介质改变距离；每一次清晰与失焦，都是情绪的潮汐。这个影像研究关注材质、轮廓和暗部的留白。' },
+  { id: 'night', title: '夜行者', englishTitle: 'Night Passage', regionalWeight: { zh: 100, en: 90, ja: 40, ko: 70 }, category: 'Commercials & PV', format: '品牌影像概念', year: 2026, duration: '00:25', description: '越过城市的表面，寻找夜色里仍未熄灭的温度。', note: '车灯是一句没有写完的话。以高处的凝视代替快速剪辑，让城市的呼吸成为画面的节拍；冷暖交界处，是这部品牌影像的情感起点。' },
+  { id: 'between', title: '无声之间', englishTitle: 'In Between', regionalWeight: { zh: 60, en: 75, ja: 100, ko: 80 }, category: 'AI & Hybrid', format: '舞蹈影像概念', year: 2025, duration: '00:22', description: '语言停下来，身体继续说话。', note: '身体之间的距离比动作本身更动人。黑白不是怀旧，而是去掉多余的解释，让视线停在呼吸、肌理和一次未完成的靠近上。' },
+  { id: 'wild', title: '旷野来信', englishTitle: 'Letters from the Wild', regionalWeight: { zh: 55, en: 60, ja: 90, ko: 60 }, category: 'Live-action & Drama', format: '实验短片概念', year: 2025, duration: '00:43', description: '离开熟悉的坐标，让一封没有地址的信抵达。', note: '把镜头交给风，给未知留出时间。俯瞰的视角慢慢消解边界，树木不再是背景，而是一整片正在缓慢书写的生命。' },
+  { id: 'heat', title: '余温', englishTitle: 'Residual Heat', regionalWeight: { zh: 65, en: 95, ja: 65, ko: 100 }, category: 'AI & Hybrid', format: '音乐短片概念', year: 2025, duration: '00:19', description: '光离开之后，动作还留在空气里。', note: '让一个动作走到尽头，再多停留一秒。聚光灯将身体从黑暗中剥离，影子则保留它的另一半。这个片段研究克制与释放之间的临界点。' },
+  { id: 'refraction', title: '折光', englishTitle: 'Refraction', regionalWeight: { zh: 80, en: 100, ja: 60, ko: 90 }, category: 'Commercials & PV', format: '时装影像概念', year: 2024, duration: '00:18', description: '真实不止一种形状。', note: '透明材质既是窗口也是阻隔。人物在光的折射中不断改变轮廓，服装、皮肤和空间成为同一种质地。这是一封写给不确定性的影像短笺。' },
 ];
 const baseProjects: Project[] = concepts.map((p) => ({
   ...p, isPlaceholder: true, cover: asset(p.id), preview: asset(p.id, 'preview'), fullFilm: asset(p.id, 'full'), stills: [asset(p.id), asset(p.id, 'still')],
@@ -44,7 +44,7 @@ const baseProjects: Project[] = concepts.map((p) => ({
     frames: scrubFrameSources[p.id].frames.map(frame => ({ ...asset(p.id, 'still'), src: frame.src, remoteSrc: frame.src, sourceTime: frame.sourceTime })),
   },
   credits: [
-    { role: 'Client / 客户', name: p.category === 'Commercials' ? 'Morrow Studio（演示品牌）' : 'Independent study（演示项目）', isPlaceholder: true },
+    { role: 'Client / 客户', name: p.category === 'Commercials & PV' ? 'Morrow Studio（演示品牌）' : 'Independent study（演示项目）', isPlaceholder: true },
     { role: 'Agency / 代理商', name: 'North Window（虚构）', isPlaceholder: true },
     { role: 'DOP / 摄影指导', name: '林屿 Lin Yu（虚构）', isPlaceholder: true },
     { role: 'Production / 制作', name: 'Still Room Pictures（虚构）', isPlaceholder: true },
@@ -54,12 +54,12 @@ const baseProjects: Project[] = concepts.map((p) => ({
 }));
 const portraitAsset: MediaAsset = {
   isPlaceholder: true,
-  src: typeof __DIRECTOR_PORTRAIT_SRC__ === 'string' ? __DIRECTOR_PORTRAIT_SRC__ : studioBrand.portraitFallback,
-  remoteSrc: studioBrand.portrait, poster: studioBrand.portraitFallback, fallback: studioBrand.portraitFallback,
+  src: typeof __DIRECTOR_PORTRAIT_SRC__ === 'string' ? __DIRECTOR_PORTRAIT_SRC__ : artistBrand.portraitFallback,
+  remoteSrc: artistBrand.portrait, poster: artistBrand.portraitFallback, fallback: artistBrand.portraitFallback,
   sourceUrl: '/media/director/README.md', licenseUrl: '/media/director/README.md',
-  author: 'LANCHUAN · Director asset reservation', alt: brandCopy.zh.portraitAlt,
+  author: 'ACRO HAT · Director asset reservation', alt: brandCopy.zh.portraitAlt,
 };
-export const director: DirectorProfile = { isPlaceholder: true, name: brandCopy.zh.directorName, englishName: studioBrand.directorDisplayName, role: 'Founder & Chief Director', statement: '让那些未被说出的，留在画面里。', portrait: portraitAsset };
+export const director: DirectorProfile = { isPlaceholder: true, name: brandCopy.zh.directorName, englishName: artistBrand.directorDisplayName, role: 'Director & Hybrid Artist', statement: '让那些未被说出的，留在画面里。', portrait: portraitAsset };
 export const showreel: MediaAsset = { ...asset('refraction', 'full'), src: '/media/video/cinema-showreel.mp4', remoteSrc: '/media/video/cinema-showreel.mp4', poster: '/media/posters/cinema-showreel.jpg', hasAudio: false, alt: '光学折射、聚光舞者与夜间城市组成的 12 秒静音混剪' };
 export const reelConfig: ReelConfig = {
   frameRate: 24, expectedDuration: 12,
@@ -76,8 +76,7 @@ export const awards: Award[] = [
 ];
 export const clients: Client[] = ['Morrow', 'FORME', 'North Window', 'ATELIER 09', 'Still Room'].map(name => ({ name, isPlaceholder: true }));
 export const representatives: Representative[] = [
-  { region: brandCopy.zh.productionChannel, name: brandCopy.zh.company, title: brandCopy.zh.productionRole, company: brandCopy.zh.productionAudience, email: studioBrand.emails[0], isPlaceholder: true },
-  { region: brandCopy.zh.directorChannel, name: brandCopy.zh.directorName, title: brandCopy.zh.directorAgency, company: brandCopy.zh.directorAudience, email: studioBrand.emails[1], isPlaceholder: true },
+  { region: brandCopy.zh.contactChannel, name: brandCopy.zh.directorName, title: brandCopy.zh.contactRole, audience: brandCopy.zh.contactAudience, email: artistBrand.email, isPlaceholder: true },
 ];
 export const socials = [{ label: 'Vimeo', href: 'https://vimeo.com/' }, { label: 'IMDb', href: 'https://www.imdb.com/' }, { label: 'Instagram', href: 'https://www.instagram.com/' }];
 
@@ -121,14 +120,14 @@ const mediaAuthor: Record<Language, string> = { zh: 'Mixkit 作者，详见原�
 function translateAsset(media: MediaAsset, language: Language, alt: string): MediaAsset { return { ...media, alt, author: mediaAuthor[language] }; }
 const baseProjectsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, baseProjects.map((project, index): Project => {
   const text = language === 'zh' ? { title: project.title, format: project.format, description: project.description, note: project.note, alt: project.cover.alt } : translatedProjects[language][index];
-  const names = [`${project.category === 'Commercials' ? 'Morrow Studio' : 'Independent Study'} (${fictitious[language]})`, `North Window (${fictitious[language]})`, `${language === 'zh' ? '林屿' : 'Lin Yu'} (${fictitious[language]})`, `Still Room Pictures (${fictitious[language]})`, String(project.year), stockNotice[language]];
+  const names = [`${project.category === 'Commercials & PV' ? 'Morrow Studio' : 'Independent Study'} (${fictitious[language]})`, `North Window (${fictitious[language]})`, `${language === 'zh' ? '林屿' : 'Lin Yu'} (${fictitious[language]})`, `Still Room Pictures (${fictitious[language]})`, String(project.year), stockNotice[language]];
   return { ...project, ...text, cover: translateAsset(project.cover, language, text.alt), preview: translateAsset(project.preview, language, text.alt), fullFilm: translateAsset(project.fullFilm, language, text.alt), stills: project.stills.map(media => translateAsset(media, language, text.alt)), scrub: project.scrub ? { ...project.scrub, frames: project.scrub.frames.map(frame => ({ ...translateAsset(frame, language, text.alt), sourceTime: frame.sourceTime })) } : undefined, credits: creditLabels[language].map((role, i) => ({ role, name: names[i], isPlaceholder: true })) };
 })])) as Record<Language, Project[]>;
 const demoEntries: ProjectEntry[] = baseProjects.map((project, index) => {
   const field = (select: (value: Project) => string) => Object.fromEntries(catalogLanguages.map(language => [language, select(baseProjectsByLanguage[language][index])])) as Record<Language, string>;
   return {
     id: project.id, title: field(value => value.title), regionalWeight: { ...concepts[index].regionalWeight },
-    category: project.category === 'Commercials' ? 'commercials' : project.category === 'Narrative' ? 'narrative' : 'visual-tech',
+    category: project.category === 'Commercials & PV' ? 'commercials-pv' : project.category === 'Live-action & Drama' ? 'live-action' : 'ai-hybrid',
     year: String(project.year), duration: project.duration, isPlaceholder: true,
     coverPoster: project.cover.src, motionLoopSrc: project.preview.src, fullFilmSrc: project.fullFilm.src,
     stills: project.scrub!.frames.map(frame => frame.src),
@@ -144,8 +143,11 @@ const demoEntries: ProjectEntry[] = baseProjects.map((project, index) => {
   };
 });
 /** BRAND HANDOFF: replace this list with production ProjectEntry records. */
-export const projectEntries: ProjectEntry[] = expandDemoEntries(demoEntries, 12);
-export const createDemoCatalog = (count = 12) => createProjectCatalog(expandDemoEntries(demoEntries, count));
+/** These animation slots use licensed reference frames, not claimed animation credits. */
+const demoCategoryOverrides: Partial<Record<string, ProjectEntry['category']>> = { 'tide-study-1': 'animation', 'wild-study-1': 'animation' };
+const buildDemoEntries = (count: number) => expandDemoEntries(demoEntries, count).map(entry => ({ ...entry, category: demoCategoryOverrides[entry.id] ?? entry.category }));
+export const projectEntries: ProjectEntry[] = buildDemoEntries(12);
+export const createDemoCatalog = (count = 12) => createProjectCatalog(buildDemoEntries(count));
 export const projectsByLanguage = createProjectCatalog(projectEntries);
 export const projects = projectsByLanguage.zh;
 const portraitAlt: Record<Language, string> = { zh: brandCopy.zh.portraitAlt, en: brandCopy.en.portraitAlt, ko: brandCopy.ko.portraitAlt, ja: brandCopy.ja.portraitAlt };
@@ -155,10 +157,7 @@ const festivalNames: Record<Language, string[]> = { zh: ['戛纳狮', '圣丹斯
 export const awardsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, awards.map((award, index) => ({ ...award, festival: festivalNames[language][index], honor: awardHonors[language][index], film: baseProjectsByLanguage[language][[1, 0, 3][index]].title }))])) as Record<Language, Award[]>;
 export const representativesByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => {
   const copy = brandCopy[language];
-  return [language, [
-    { ...representatives[0], region: copy.productionChannel, name: copy.company, title: copy.productionRole, company: copy.productionAudience },
-    { ...representatives[1], region: copy.directorChannel, name: copy.directorName, title: copy.directorAgency, company: copy.directorAudience },
-  ]];
+  return [language, [{ ...representatives[0], region: copy.contactChannel, name: copy.directorName, title: copy.contactRole, audience: copy.contactAudience }]];
 })) as Record<Language, Representative[]>;
 export const clientsByLanguage: Record<Language, Client[]> = { zh: clients, en: clients, ko: clients, ja: clients };
 export const showreelsByLanguage = Object.fromEntries((['zh', 'en', 'ko', 'ja'] as const).map(language => [language, translateAsset(showreel, language, dictionaries[language].reelTitle)])) as Record<Language, MediaAsset>;

@@ -19,5 +19,5 @@ export function Preloader({ onComplete, onReveal }: { onComplete: () => void; on
     });
     return () => scope.revert();
   }, [reduced, onComplete, onReveal]);
-  return <div ref={root} className="preloader" aria-hidden="true"><div className="curtain curtain-top" /><div className="curtain curtain-bottom" /><div className="clapper"><div className="clapper-stripe" /><span>Azuma Hiroshi</span><small>{t('intro')}</small><div className="exposure-line" /></div></div>;
+  return <div ref={root} className="preloader" aria-hidden="true"><div className="curtain curtain-top" /><div className="curtain curtain-bottom" /><div className="clapper"><div className="clapper-stripe" /><span>ACRO HAT</span><small>{t('intro')}</small><div className="exposure-line" /></div></div>;
 }

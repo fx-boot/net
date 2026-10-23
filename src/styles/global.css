@@ -252,9 +252,9 @@ img,video { display: block; max-width: 100%; }
  .language-shutter { display: none; }
 }
 
-/* LANCHUAN — the studio mark and the creator's dossier. */
+/* ACRO HAT — the studio mark and the creator's dossier. */
 .brand-home { display: block; width: clamp(210px,18vw,270px); flex-shrink: 0; color: var(--text-parchment); }
-.lanchuan-logo { display: block; width: 100%; height: auto; overflow: visible; }
+.acro-hat-logo { display: block; width: 100%; height: auto; overflow: visible; }
 .logo-prism { opacity: .5; transition: opacity .5s var(--film-ease); }
 .brand-home:is(:hover,:focus-visible) .logo-prism { opacity: 1; }
 .brand-home:is(:hover,:focus-visible) .logo-optics { filter: drop-shadow(0 0 4px rgba(248,249,250,.2)); }
@@ -280,15 +280,15 @@ img,video { display: block; max-width: 100%; }
 .signature-reservation { margin-top: 28px; color: var(--text-warm-muted); }
 .signature-reservation svg { width: 190px; height: 42px; opacity: .5; }
 .signature-reservation > span { display: block; font: 8px/1.8 var(--font-mono); letter-spacing: .14em; }
-.studio-capacity { margin-top: 120px; border-top: 1px solid var(--border-hairline); padding-top: 36px; scroll-margin-top: 50px; }
+.creative-practice { margin-top: 120px; border-top: 1px solid var(--border-hairline); padding-top: 36px; scroll-margin-top: 50px; }
 .studio-caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 10px; color: var(--text-warm-muted); }
 .studio-caption > span:last-child { font-family: var(--font-mono); letter-spacing: .18em; }
-.studio-capacity h2 { margin-top: 42px; font: 500 clamp(36px,4.4vw,68px)/1.1 var(--font-sans); letter-spacing: -.03em; }
-.studio-capacity h2 > span { display: block; font: 22px/1.5 var(--font-serif); margin-top: 18px; letter-spacing: .04em; }
-.studio-ethos { margin-top: 42px; font: clamp(24px,2.3vw,36px)/1.8 var(--font-serif); }
-.studio-focus { margin-top: 26px; max-width: 44em; font-size: 13px; line-height: 1.9; color: var(--text-warm-muted); }
-.studio-specs { list-style: none; display: flex; gap: 12px 30px; flex-wrap: wrap; padding: 28px 0; margin: 38px 0 0; border-top: 1px solid var(--border-hairline); border-bottom: 1px solid var(--border-hairline); font: 10px/1.8 var(--font-mono); letter-spacing: .05em; }
-.studio-legal { margin-top: 24px; font-size: 11px; color: var(--text-warm-muted); overflow-wrap: anywhere; }
+.creative-practice h2 { margin-top: 42px; font: 500 clamp(36px,4.4vw,68px)/1.1 var(--font-sans); letter-spacing: -.03em; }
+.creative-practice h2 > span { display: block; font: 22px/1.5 var(--font-serif); margin-top: 18px; letter-spacing: .04em; }
+.creative-ethos { margin-top: 42px; font: clamp(24px,2.3vw,36px)/1.8 var(--font-serif); }
+.practice-focus { margin-top: 26px; max-width: 44em; font-size: 13px; line-height: 1.9; color: var(--text-warm-muted); }
+.practice-specs { list-style: none; display: flex; gap: 12px 30px; flex-wrap: wrap; padding: 28px 0; margin: 38px 0 0; border-top: 1px solid var(--border-hairline); border-bottom: 1px solid var(--border-hairline); font: 10px/1.8 var(--font-mono); letter-spacing: .05em; }
+.practice-note { margin-top: 24px; font-size: 11px; color: var(--text-warm-muted); overflow-wrap: anywhere; }
 .representation h3 { overflow-wrap: anywhere; }
 .footer-director { font-family: var(--font-serif); font-size: .42em; letter-spacing: .02em; }
 @media(max-width:1000px) {
@@ -310,9 +310,9 @@ img,video { display: block; max-width: 100%; }
  .director-track { grid-column: 1; padding-bottom: 0; }
  .director-card { width: 100%; }
  .director-statement h2 { font-size: 11px; }
- .studio-capacity { margin-top: 75px; }
- .studio-capacity h2 { font-size: 42px; }
- .studio-ethos { font-size: 26px; }
+ .creative-practice { margin-top: 75px; }
+ .creative-practice h2 { font-size: 42px; }
+ .creative-ethos { font-size: 26px; }
  .camera-readout { font-size: 7px; }
  .footer-name { flex-wrap: wrap; gap: 20px; font-size: 14vw; }
  .footer-director { margin-left: auto; font-size: .5em; }

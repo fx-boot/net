@@ -58,7 +58,7 @@ try {
       assert.ok(leaves(group[language]).every(value=>typeof value==='string'&&value.length>0));
     }
     assert.deepEqual(Object.keys(atelierCopy[language]).sort(), Object.keys(atelierCopy.zh).sort(), language + ' atelier');
-    assert.equal(atelierCopy[language].disciplines.length, 3);
+    assert.equal(atelierCopy[language].disciplines.length, 4);
     assert.ok(Object.values(atelierCopy[language]).flatMap(value => typeof value === 'string' ? [value] : value.flatMap(row => Object.values(row))).every(value => typeof value === 'string' && value.length > 0));
     assert.deepEqual(Object.keys(dictionaries[language]).sort(), keys, language);
     assert.deepEqual(Object.keys(cinemaCopy[language]).sort(), Object.keys(cinemaCopy.zh).sort());
@@ -70,7 +70,7 @@ try {
     assert.deepEqual(Object.keys(brandCopy[language]).sort(), Object.keys(brandCopy.zh).sort(), language + ' brand');
     assert.ok(Object.values(brandCopy[language]).every(value => typeof value === 'string' && value.length > 0));
     await fs.access('public' + data.directorsByLanguage[language].portrait.src);
-    assert.deepEqual([...new Set(data.projectsByLanguage[language].map(project => project.category))].sort(), ['Commercials', 'Narrative', 'Visual Tech']);
+    assert.deepEqual([...new Set(data.projectsByLanguage[language].map(project => project.category))].sort(), ['AI & Hybrid', 'Animation', 'Commercials & PV', 'Live-action & Drama']);
     assert.equal(data.projectsByLanguage[language].length, catalogSize);
     for (const project of data.projectsByLanguage[language]) {
       assert.ok(project.scrub?.frames.length>=3);

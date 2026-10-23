@@ -1,3 +1,3 @@
 import type { Filter } from '../types/portfolio';
-export const filterKeys = { All: 'all', Commercials: 'commercials', Narrative: 'narrative', 'Visual Tech': 'visualTech' } as const;
-export const filters: Filter[] = ['All', 'Commercials', 'Narrative', 'Visual Tech'];
+export const filterKeys = { All: 'all', 'AI & Hybrid': 'aiHybrid', Animation: 'animation', 'Live-action & Drama': 'liveAction', 'Commercials & PV': 'commercialsPv' } as const;
+export const filters: Filter[] = ['All', 'AI & Hybrid', 'Animation', 'Live-action & Drama', 'Commercials & PV'];

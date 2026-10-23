@@ -21,7 +21,7 @@
 .director-portrait > img { transform: translate3d(0,calc(var(--spatial-scroll,0px)*.25),0) scale(1.025); backface-visibility: hidden; }
 .camera-readout,.frame-corner,.dossier-index { transform: translate3d(calc(var(--pointer-x,0)*-3px),calc(var(--pointer-y,0)*-3px + var(--spatial-scroll,0px)*.2),0); backface-visibility: hidden; }
 .morph-icon { flex-shrink: 0; overflow: visible; }
-.studio-capacity h2 > .optical-text { display: inline-block; font: inherit; letter-spacing: inherit; margin: 0; }
+.creative-practice h2 > .optical-text { display: inline-block; font: inherit; letter-spacing: inherit; margin: 0; }
 @media(max-width:700px),(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce) {
  .film-flow { display: none; }
  .brand-rec,.filter-tabs button[aria-pressed='true']::before { animation: none; }

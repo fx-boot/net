@@ -32,7 +32,7 @@
  --geo-reading-measure: 65ch;
  --geo-statement-gap: 100px;
  --type-monolith: clamp(5rem, 15vw, 16rem);
- --type-director-monolith: clamp(2rem, 11.1vw, 15rem);
+ --type-director-monolith: clamp(3rem, 16vw, 17rem);
  /* Compatibility aliases keep the existing component and dictionary contracts. */
  --bg-obsidian: var(--bg-canvas);
  --bg-elevated: var(--bg-surface);

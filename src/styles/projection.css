@@ -1,4 +1,4 @@
-/* LANCHUAN: a brand atmosphere, a projection room, then an author's working plate.
+/* ACRO HAT: a brand atmosphere, a projection room, then an author's working plate.
    Composition lives here; cinema.css retains the fixed hit targets and frame rig. */
 body { background: var(--bg-canvas); }
 html { scrollbar-color: #555b63 var(--bg-canvas); }
@@ -25,7 +25,7 @@ h1,h2,h3 { text-wrap: balance; }
 .hero-gate { position: absolute; top: 36%; width: 8px; height: 80px; border-top: 1px solid #f8f9fa35; border-bottom: 1px solid #f8f9fa35; opacity: .6; }
 .hero-gate-left { left: 22px; border-left: 1px solid #f8f9fa35; }
 .hero-gate-right { right: 22px; border-right: 1px solid #f8f9fa35; }
-.hero-name { left: calc(var(--gutter) - .035em); bottom: 114px; font-size: var(--type-monolith); font-weight: 600; line-height: .79; letter-spacing: -.04em; }
+.hero-name { left: calc(var(--gutter) - .035em); bottom: 114px; font-size: var(--type-monolith); font-weight: 600; line-height: .79; letter-spacing: -.03em; }
 .hero-name-ink { background: none; color: var(--text-primary); }
 .hero-reel { left: auto; right: var(--gutter); top: auto; bottom: 318px; }
 .reel-link { min-height: 52px; padding-bottom: 13px; gap: 32px; font-size: 12px; border-bottom-color: #f8f9fa70; }
@@ -122,14 +122,14 @@ h1,h2,h3 { text-wrap: balance; }
 .monologue-lead { display: block; margin-bottom: 25px; font-size: 1.35em; line-height: 1.65; text-wrap: balance; }
 .monologue-body { display: inline; }
 .reading-ending { white-space: nowrap; }
-.studio-capacity { margin-top: var(--geo-statement-gap); padding-top: 32px; }
-.studio-capacity .studio-caption { font-size: 9px; }
-.studio-capacity h2 { margin-top: 26px; font-size: clamp(40px,5.4vw,78px); font-weight: 500; letter-spacing: -.04em; }
-.studio-capacity h2 > span:not(.optical-text) { font-size: 17px; margin-top: 12px; letter-spacing: .06em; }
+.creative-practice { margin-top: var(--geo-statement-gap); padding-top: 32px; }
+.creative-practice .studio-caption { font-size: 9px; }
+.creative-practice h2 { margin-top: 26px; font-size: clamp(40px,5.4vw,78px); font-weight: 500; letter-spacing: -.04em; }
+.creative-practice h2 > span:not(.optical-text) { font-size: 17px; margin-top: 12px; letter-spacing: .06em; }
 .capacity-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; }
 .capacity-registration { padding-bottom: 4px; font: 7px/1.7 var(--font-mono); letter-spacing: .2em; color: var(--text-secondary); }
-.studio-ethos { margin-top: 30px; font-size: clamp(25px,2vw,32px); line-height: 1.8; text-wrap: balance; }
-.studio-focus { font-size: 12px; line-height: 1.9; margin-top: 22px; }
+.creative-ethos { margin-top: 30px; font-size: clamp(25px,2vw,32px); line-height: 1.8; text-wrap: balance; }
+.practice-focus { font-size: 12px; line-height: 1.9; margin-top: 22px; }
 .capacity-matrix { margin: 38px 0 0; padding: 0; list-style: none; }
 .capacity-row { display: grid; grid-template-columns: 32px minmax(0,1fr); gap: 7px 18px; border-top: 1px solid var(--border-projection); padding: 25px 0; }
 .capacity-row:last-child { border-bottom: 1px solid var(--border-hairline); }
@@ -139,11 +139,11 @@ h1,h2,h3 { text-wrap: balance; }
 .capacity-name { font: 400 clamp(23px,2.2vw,33px)/1.2 var(--font-sans); letter-spacing: -.02em; }
 .capacity-label { display: block; margin-top: 7px; color: #c3cad2; font-size: 10px; letter-spacing: .04em; }
 .capacity-description { grid-column: 2; max-width: 50ch; color: var(--text-secondary); font-size: 12px; line-height: 1.9; }
-.studio-specs { margin-top: 27px; padding: 0; border: 0; gap: 12px 24px; font-size: 9px; }
+.practice-specs { margin-top: 27px; padding: 0; border: 0; gap: 12px 24px; font-size: 9px; }
 .capacity-format-label { color: var(--text-secondary); }
 .capacity-formats { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-top: 25px; font-size: 8px; }
-.capacity-formats .studio-specs { margin: 0; }
-.studio-legal { font-size: 9px; margin-top: 25px; max-width: 48ch; line-height: 1.8; }
+.capacity-formats .practice-specs { margin: 0; }
+.practice-note { font-size: 9px; margin-top: 25px; max-width: 48ch; line-height: 1.8; }
 
 /* End titles: the density falls away, the studio mark closes the film. */
 .recognition { padding-top: 55px; padding-bottom: 115px; background: var(--bg-canvas); }
@@ -257,14 +257,14 @@ h1,h2,h3 { text-wrap: balance; }
  .statement-caption { font-size: 9px; }
  .monologue { font-size: 22px; line-height: 1.95; }
  .monologue-lead { font-size: 1.25em; line-height: 1.8; margin-bottom: 22px; }
- .studio-capacity { margin-top: 65px; padding-top: 25px; }
- .studio-capacity h2 { margin-top: 28px; font-size: 42px; }
- .studio-ethos { font-size: 25px; margin-top: 25px; }
- .studio-focus { font-size: 12px; }
+ .creative-practice { margin-top: 65px; padding-top: 25px; }
+ .creative-practice h2 { margin-top: 28px; font-size: 42px; }
+ .creative-ethos { font-size: 25px; margin-top: 25px; }
+ .practice-focus { font-size: 12px; }
  .capacity-row { grid-template-columns: 23px minmax(0,1fr); gap: 7px 13px; padding: 23px 0; }
  .capacity-name { font-size: 26px; }
  .capacity-description { font-size: 12px; }
- .studio-specs { gap: 10px 18px; font-size: 8px; }
+ .practice-specs { gap: 10px 18px; font-size: 8px; }
  .recognition { padding-top: 25px; padding-bottom: 75px; }
  .recognition h2 { font-size: 21px; }
  .awards-table td,.awards-table th { padding-top: 0; padding-bottom: 0; }

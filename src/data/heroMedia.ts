@@ -19,7 +19,7 @@ interface HeroMediaSource {
   hasAudio: false;
 }
 
-/** Source records describe licensed stock, never assert a LANCHUAN directing credit or a specific unverified filming location. */
+/** Source records describe licensed stock, never assert a ACRO HAT directing credit or a specific unverified filming location. */
 export const heroMediaSources: Record<Language, HeroMediaSource> = {
   zh: {
     sourceId: 'mixkit-42342', sourceUrl: 'https://mixkit.co/free-stock-video/aerial-shot-of-a-city-at-night-42342/',

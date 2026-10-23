@@ -1,5 +1,5 @@
 ---
-name: "LANCHUAN × 東浩"
+name: "ACRO HAT / 東浩"
 description: "A cinematic portfolio with regional editorial editions, a projection theatre and a director's working plate."
 colors:
   canvas: "#0A0B0D"
@@ -29,7 +29,7 @@ typography:
     fontWeight: 400
     lineHeight: 0.98
     letterSpacing: "-0.04em"
-  studio-title:
+  practice-title:
     fontFamily: "var(--font-sans)"
     fontSize: "clamp(40px, 5.4vw, 78px)"
     fontWeight: 500
@@ -175,13 +175,13 @@ components:
     padding: "0"
 ---
 
-# Design System: LANCHUAN × 東浩
+# Design System: ACRO HAT / 東浩
 
 ## Overview
 
 **Creative North Star: "A film title, a projection room, an author's working plate."**
 
-The portfolio is contemporary, cold and cinematic. Obsidian supports illuminated moving images; monolithic sans type establishes the studio, while restrained serif text gives the director's voice a separate register. Fine optical readouts and frame geometry provide scale without competing with the films.
+The portfolio is contemporary, cold and cinematic. Obsidian supports illuminated moving images; monolithic sans type establishes the artist, while restrained serif text carries the director's voice. Fine optical readouts and frame geometry provide scale without competing with the films.
 
 The material character comes from a projection gate and a medium-format negative holder. The reserved portrait is an intentional typographic plate until a real portrait is supplied. Surfaces stay open and square, with changes in light and content density carrying the transition from viewing to reading.
 
@@ -234,9 +234,9 @@ Instrument Sans is dense and direct; Bodoni provides the contrasting editorial v
 
 ### Hierarchy
 
-- **Display:** The frontmatter display role is the hero's studio name. At widths up to (700px), it becomes (15.9vw), with line-height (.85); its weight and tight tracking remain.
+- **Display:** ACRO HAT is the Hero wordmark in every language, at clamp(3rem, 16vw, 17rem) with -0.03em tracking; below 700px it uses 17.1vw to remain one line.
 - **Headline:** The serif works heading uses the headline role. On mobile it becomes (57px), line-height (1.1). Contact uses a larger serif treatment, `clamp(70px, 10vw, 144px)`, line-height (1), becoming (63px) on mobile.
-- **Studio title:** Instrument Sans identifies the studio inside the reading section. On mobile its size is (42px).
+- **Practice title:** Instrument Sans introduces BEYOND MEDIA and the four creative disciplines. On mobile its size is 36px.
 - **Title:** The frontmatter title role is the current theatre film caption. Mobile captions are (23px); archive titles are (23px) on desktop and (21px) on mobile.
 - **Monologue:** The director's serif text uses the monologue role; it becomes (22px) at widths up to (1100px). The lead is (1.35em), line-height (1.65), and uses balanced wrapping; mobile uses (1.25em), line-height (1.8).
 - **Body:** The default body is compact. Technique descriptions use (12px), line-height (1.9), with a maximum measure of (50ch); project descriptions use (14px), line-height (1.9), and a maximum measure of (60em).
@@ -340,7 +340,7 @@ The text input is a manual-copy fallback, not a general lead form. It is a read-
 
 ### Navigation
 
-The studio logo anchors the left side; small uppercase section links sit to the right on desktop. Hover underlines the links. The four-language control uses individual ZH / EN / KO / JA buttons and a moving underline, with localized accessible names. On narrower layouts the navigation becomes a dark menu with a (44px) toggle; Escape closes it and restores toggle focus. Do not substitute a native language select.
+The single-line artist wordmark anchors the left side; small uppercase section links sit to the right on desktop. Hover underlines the links. The four-language control uses individual ZH / EN / KO / JA buttons and a moving underline, with localized accessible names. On narrower layouts the navigation becomes a dark menu with a (44px) toggle; Escape closes it and restores toggle focus. Do not substitute a native language select.
 
 ### Director dossier
 
@@ -348,7 +348,7 @@ A cool square shell surrounds the reserved portrait aperture. Perforation rails,
 
 ### Technique matrix
 
-Three semantic definition-list rows describe the studio's creative disciplines. Each row pairs a small mono code with a larger Instrument Sans English title, a localized label when applicable, and a titanium description below. The row rules use the projection-edge tone; the final bottom rule uses the hairline tone. Desktop rows use columns (32px) and remaining space; mobile uses (23px) and remaining space.
+Four semantic definition-list rows describe AI cinema, 2D/3D animation, live-action drama and commercial/music PV. Each row pairs a small mono code with a larger Instrument Sans English title, a localized label when applicable, and a titanium description below. The row rules use the projection-edge tone; the final bottom rule uses the hairline tone. Desktop rows use columns (32px) and remaining space; mobile uses (23px) and remaining space.
 
 ### Cine-Breakdown gate
 
@@ -379,15 +379,13 @@ The ambient layer, theatre surround, About chapter, Contact and anamorphic
 spill consume these tokens. Four registered color properties settle for
 (450ms) on a locale change; there is no autonomous background animation,
 blur, new RAF or extra media decoder. Reduced motion applies themes directly.
-`geo-aesthetics.css` adjusts reading measure, section pauses and studio-first
+`geo-aesthetics.css` adjusts reading measure, section pauses and director-first
 content spacing, never the fixed trigger, 72% aperture or 2.39:1 film ratio.
 `typography.css` remains the sole owner of all four isolated glyph stacks.
 
-Chinese and English show LANCHUAN as the hero wordmark and lead with studio
-capacity; Japanese and Korean lead with AZUMA HIROSHI and the director's voice.
-These are editorial priorities, not visitor-location detection or claims
-about every reader in a country. All work and both contact channels remain
-available in every edition.
+Every language uses the ACRO HAT wordmark and leads with the director's voice.
+Regional editions adjust atmosphere, typography and film order, not the artist's
+identity or contact channel. Curation follows a language choice, not geolocation.
 
 ## Do's and Don'ts
 
@@ -411,16 +409,6 @@ available in every edition.
 - **Don't** replace the language buttons with a native select or give Japanese text Chinese font fallbacks.
 - **Don't** fabricate a portrait, signature, client endorsement, festival achievement or hardware-performance claim.
 
-### Official director lettering — 2026-10-23
+## Personal artist edition — 2026-10-24
 
-The international director identity is AZUMA HIROSHI (Azuma Hiroshi in prose).
-The author-led JA/KO Hero keeps one line with Instrument Sans, weight 600,
-tracking -0.04em and `--type-director-monolith: clamp(2rem, 11.1vw, 15rem)`.
-The ZH/EN factory-led Hero retains LANCHUAN. All four identity lines use the
-brand-approved `A FILM BY AZUMA HIROSHI`.
-The dossier's AZUMA / HIROSHI watermark is an intentional two-line lockup
-(`clamp(36px, 4vw, 64px)`; 49px at the existing mobile breakpoint), while the
-caption remains a compact single-line Roman name beside 東浩. The footer
-uses two rows: LANCHUAN above, `/ AZUMA HIROSHI` right aligned below at
-`clamp(1.5rem, 4.9vw, 5.8rem)` / 6.4vw on mobile. Existing cinematic microtype
-and the isolated ZH/EN/JA/KO reading stacks retain their approved roles.
+This edition supersedes earlier corporate composition rules. Every language opens with ACRO HAT (tracking -0.03em), and the personal statement precedes the four-domain practice matrix. Navigation is a plain single-line ACRO HAT wordmark: no stacked identity subtitle or decoration. Contact is a single director atelier channel; the Japanese heading is ACRO HAT へのご相談. Five filter buttons remain semantic pressed-state controls. Localized fonts, ambient colors, ordering weights, media arbitration and static pointer shells remain unchanged.

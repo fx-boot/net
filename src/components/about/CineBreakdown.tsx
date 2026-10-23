@@ -125,8 +125,8 @@ export function CineBreakdown() {
     <div className="breakdown-viewport" ref={viewportRef} onPointerMove={movePointer} onPointerDown={startDrag} onPointerUp={endDrag} onPointerCancel={endDrag}>
       <img className="breakdown-final" src={sourceFrame} alt={copy.imageAlt} loading="lazy" decoding="async" onError={() => setUnavailable(true)} />
       <img className="breakdown-raw" src={sourceFrame} alt="" aria-hidden="true" loading="lazy" decoding="async" />
-      <div className="breakdown-pass-labels" aria-hidden="true"><span>PASS 01: RAW UNGRADED</span><span>PASS 02: LANCHUAN VFX FINAL</span></div>
-      <span className="breakdown-film-code" aria-hidden="true">LC-COL // 2.39:1</span>
+      <div className="breakdown-pass-labels" aria-hidden="true"><span>PASS 01: RAW UNGRADED</span><span>PASS 02: ACRO HAT VFX FINAL</span></div>
+      <span className="breakdown-film-code" aria-hidden="true">AH-COL // 2.39:1</span>
       <span className="breakdown-corners" aria-hidden="true"><i/><i/><i/><i/></span>
       <span className="breakdown-divider" aria-hidden="true"><i/><span><svg width="28" height="12" viewBox="0 0 28 12" fill="none"><path d="M9 2 5 6l4 4M19 2l4 4-4 4M14 1v10" stroke="currentColor" strokeWidth="1"/></svg></span></span>
       <span className="breakdown-drag-target" aria-hidden="true"/>

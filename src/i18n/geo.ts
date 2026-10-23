@@ -1,67 +1,93 @@
 import type { Language } from './dictionaries';
-import { studioBrand } from './brand';
-
-/** Editorial direction follows the selected language, never an inferred location. */
-export interface GeoNarrative {
-  brandFocus: 'studio' | 'director';
-  heroTitle: 'LANCHUAN' | 'AZUMA HIROSHI';
-  heroAccessibleTitle: string;
-  heroIdentity: readonly [string, string];
-  heroNarrative: string;
-  heroCue: readonly [string, string];
-  heroCredit: readonly [string, string, string];
-  directorOpening: string;
-  studioEthos: string;
-  contactHeading: string;
-}
-
+/** Language tunes the atmosphere and curation; the artist remains the subject. */
+export interface GeoNarrative { brandFocus: 'director'; heroTitle: 'ACRO HAT'; heroAccessibleTitle: string; heroIdentity: readonly [string,string]; heroNarrative: string; heroCue: readonly [string,string]; heroCredit: readonly [string,string,string]; directorOpening: string; creativeEthos: string; contactHeading: string; }
 export const geoCopy: Record<Language, GeoNarrative> = {
-  zh: {
-    brandFocus: 'studio',
-    heroTitle: 'LANCHUAN',
-    heroAccessibleTitle: '澜川科技 / 重庆澜川科技有限公司 / 导演 東浩（Azuma Hiroshi）',
-    heroIdentity: ['LANCHUAN / STUDIO & TECH', studioBrand.directorCredit],
-    heroNarrative: '立足重庆，以光影记录时代情绪。',
-    heroCue: ['虚拟制片 / 数字视效', '8K RAW // 2.39:1'],
-    heroCredit: ['澜川科技', '東浩 / AZUMA HIROSHI', '重庆澜川科技有限公司'],
-    directorOpening: '我从城市的光与人的表情里，寻找时代的情绪。',
-    studioEthos: '立足重庆，面向全球。从前期创作、虚拟制片到数字视效，让技术与叙事在同一幅画面中相遇。',
-    contactHeading: '制作与合作',
+  "zh": {
+    "brandFocus": "director",
+    "heroTitle": "ACRO HAT",
+    "heroAccessibleTitle": "東浩 / ACRO HAT · 跨媒介影像导演",
+    "heroIdentity": [
+      "ANIME & CINEMA WORKS",
+      "DIRECTED BY ACRO HAT"
+    ],
+    "heroNarrative": "「跨越AI、动画与实拍之界，在算法与镜头的交错处重构视界。」",
+    "heroCue": [
+      "AI / ANIMATION / LIVE ACTION",
+      "24 FPS // 2.39:1"
+    ],
+    "heroCredit": [
+      "東浩",
+      "跨媒介 / AI影像导演",
+      "ACRO HAT / INDEPENDENT"
+    ],
+    "directorOpening": "对我而言，导演不是某种单一形式的守门人，而是打破虚实边界的造梦者。",
+    "creativeEthos": "算法、画笔与镜头，都是表达情感的画具。",
+    "contactHeading": "与 ACRO HAT 合作"
   },
-  en: {
-    brandFocus: 'studio',
-    heroTitle: 'LANCHUAN',
-    heroAccessibleTitle: 'LANCHUAN / Global production service / Director Azuma Hiroshi',
-    heroIdentity: ['LANCHUAN / STUDIO & TECH', studioBrand.directorCredit],
-    heroNarrative: 'Independent vision. Global production.',
-    heroCue: ['8K RAW // VIRTUAL PRODUCTION', '2.39:1 ANAMORPHIC'],
-    heroCredit: ['LANCHUAN', 'AZUMA HIROSHI / DIRECTOR', 'GLOBAL PRODUCTION SERVICE'],
-    directorOpening: 'I begin with a person, even when the frame opens onto an entire city. ',
-    studioEthos: 'A creative production studio in Chongqing, connecting direction, virtual production and visual effects for brands and filmmakers worldwide.',
-    contactHeading: 'Global production',
+  "en": {
+    "brandFocus": "director",
+    "heroTitle": "ACRO HAT",
+    "heroAccessibleTitle": "ACRO HAT / 東浩 · Director & Hybrid Artist",
+    "heroIdentity": [
+      "ANIME & CINEMA WORKS",
+      "DIRECTED BY ACRO HAT"
+    ],
+    "heroNarrative": "\"Transcending boundaries across AI, animation, and live-action cinema.\"",
+    "heroCue": [
+      "AI / ANIMATION / LIVE ACTION",
+      "24 FPS // 2.39:1"
+    ],
+    "heroCredit": [
+      "東浩",
+      "Director & Hybrid Artist",
+      "ACRO HAT / INDEPENDENT"
+    ],
+    "directorOpening": "To me, directing means creating worlds beyond the boundary between the real and the imagined, without being bound to a single medium.",
+    "creativeEthos": "Algorithms, pencils and cameras. Different tools for the same emotional instinct.",
+    "contactHeading": "Work with ACRO HAT"
   },
-  ja: {
-    brandFocus: 'director',
-    heroTitle: 'AZUMA HIROSHI',
-    heroAccessibleTitle: '映画監督・東浩（アズマ ヒロシ / Azuma Hiroshi） / LANCHUAN',
-    heroIdentity: ['LANCHUAN / STUDIO & TECH', studioBrand.directorCredit],
-    heroNarrative: '画面のなかに、言葉にならない静けさを。',
-    heroCue: ['光と余白、そのあいだに', 'AZUMA HIROSHI // LANCHUAN'],
-    heroCredit: ['東浩', '映画監督・映像作家', 'LANCHUAN / CHONGQING'],
-    directorOpening: '私にとって映画とは、まだ言葉にならない気配を、光のなかに残すことです。',
-    studioEthos: '監督のまなざしを、光と余白まで支える。LANCHUANは、撮影とデジタル技術をひとつの制作へと結びます。',
-    contactHeading: '東浩へのご相談',
+  "ko": {
+    "brandFocus": "director",
+    "heroTitle": "ACRO HAT",
+    "heroAccessibleTitle": "ACRO HAT / 東浩 · 감독 · 하이브리드 아티스트",
+    "heroIdentity": [
+      "ANIME & CINEMA WORKS",
+      "DIRECTED BY ACRO HAT"
+    ],
+    "heroNarrative": "\"AI, 애니메이션, 실사의 경계를 넘어 새로운 영상 세계를 구축하다.\"",
+    "heroCue": [
+      "AI / ANIMATION / LIVE ACTION",
+      "24 FPS // 2.39:1"
+    ],
+    "heroCredit": [
+      "東浩",
+      "감독 / 하이브리드 아티스트",
+      "ACRO HAT / INDEPENDENT"
+    ],
+    "directorOpening": "저에게 연출이란 하나의 방식에 머무르지 않고 현실과 상상의 경계를 넘어 새로운 세계를 만드는 일입니다.",
+    "creativeEthos": "알고리즘과 펜, 카메라. 감정을 그리는 서로 다른 도구입니다.",
+    "contactHeading": "ACRO HAT와의 협업"
   },
-  ko: {
-    brandFocus: 'director',
-    heroTitle: 'AZUMA HIROSHI',
-    heroAccessibleTitle: '감독 아즈마 히로시 (Azuma Hiroshi) / LANCHUAN',
-    heroIdentity: ['LANCHUAN / STUDIO & TECH', studioBrand.directorCredit],
-    heroNarrative: '시선이 멈추고 감각이 깨어나는 순간',
-    heroCue: ['감정의 밀도 / 이미지의 리듬', 'AZUMA HIROSHI // LANCHUAN'],
-    heroCredit: ['아즈마 히로시', '감독 · 비주얼 아티스트', 'LANCHUAN / CHONGQING'],
-    directorOpening: '빛과 움직임이 감정의 리듬을 바꾸는 순간을 기다립니다. ',
-    studioEthos: '아즈마 히로시의 감각을 제작의 언어로. LANCHUAN은 촬영과 비주얼 테크놀로지를 연결해 감정과 리듬이 살아 있는 이미지를 만듭니다.',
-    contactHeading: '아즈마 히로시와의 협업',
-  },
+  "ja": {
+    "brandFocus": "director",
+    "heroTitle": "ACRO HAT",
+    "heroAccessibleTitle": "東浩 / ACRO HAT · 監督・映像作家",
+    "heroIdentity": [
+      "ANIME & CINEMA WORKS",
+      "DIRECTED BY ACRO HAT"
+    ],
+    "heroNarrative": "「AI、アニメーション、実写の境界を越え、新たな映像の地平へ——。」",
+    "heroCue": [
+      "AI / ANIMATION / LIVE ACTION",
+      "24 FPS // 2.39:1"
+    ],
+    "heroCredit": [
+      "東浩",
+      "監督 / クロスメディア・アーティスト",
+      "ACRO HAT / INDEPENDENT"
+    ],
+    "directorOpening": "私にとって演出とは、単一の手法に縛られることなく、虚実の境界を超えて世界を創り出すことです。",
+    "creativeEthos": "アルゴリズムも、ペンも、カメラも。感情を描くための道具として。",
+    "contactHeading": "ACRO HAT へのご相談"
+  }
 };

@@ -4,7 +4,7 @@ export type { ProjectCredits, ProjectEntry, RegionalWeight } from '../types/port
 export type LocalizedCatalog = Record<Language, Project[]>;
 export const catalogLanguages: readonly Language[] = ['zh', 'en', 'ko', 'ja'];
 const categories: Record<ProjectEntry['category'], Category> = {
-  commercials: 'Commercials', narrative: 'Narrative', 'visual-tech': 'Visual Tech',
+  'ai-hybrid': 'AI & Hybrid', animation: 'Animation', 'live-action': 'Live-action & Drama', 'commercials-pv': 'Commercials & PV',
 };
 const creditLabels: Record<Language, string[]> = {
   zh: ['客户', '代理商', '摄影指导', '制作', '年份'],
@@ -82,7 +82,7 @@ export function createProjectCatalog(entries: readonly ProjectEntry[]): Localize
     const asset = (src: string, remoteSrc = src, hasAudio?: boolean): MediaAsset => ({
       isPlaceholder: entry.isPlaceholder, src, remoteSrc, hasAudio, poster: entry.coverPoster,
       fallback: '/media/fallback.svg', sourceUrl: entry.provenance?.sourceUrl ?? src,
-      licenseUrl: entry.provenance?.licenseUrl ?? '', author: entry.provenance ? localized(entry.provenance.author, language) : 'LANCHUAN', alt,
+      licenseUrl: entry.provenance?.licenseUrl ?? '', author: entry.provenance ? localized(entry.provenance.author, language) : 'ACRO HAT', alt,
     });
     const durationSeconds = entry.scrub?.durationSeconds ?? durationInSeconds(entry.duration);
     const stills = entry.stills.map(src => asset(src));

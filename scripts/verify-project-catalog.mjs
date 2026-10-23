@@ -37,17 +37,17 @@ try {
   const original = structuredClone(projectEntries[0]);
   const production = {
     id: 'brand-film-2027', title: { zh: '品牌成片', en: 'Brand Film', ko: '브랜드 영화', ja: 'ブランド映画' },
-    category: 'commercials', year: '2027', duration: '01:30', isPlaceholder: false,
+    category: 'commercials-pv', year: '2027', duration: '01:30', isPlaceholder: false,
     coverPoster: '/media/projects/brand-film/poster.jpg', motionLoopSrc: '/media/projects/brand-film/loop.mp4',
     fullFilmSrc: 'https://cdn.example.com/brand-film/full.mp4',
     stills: [1, 2, 3].map(index => `/media/projects/brand-film/still-${index}.jpg`),
-    credits: { client: 'Brand', agency: 'Agency', dop: 'Cinematographer', production: 'LANCHUAN' },
+    credits: { client: 'Brand', agency: 'Agency', dop: 'Cinematographer', production: 'ACRO HAT' },
     description: { en: 'A production film.' }, note: { zh: '导演手记。' },
   };
   const localized = createProjectCatalog([production]);
   for (const language of languages) {
     const project = localized[language][0];
-    assert.equal(project.category, 'Commercials');
+    assert.equal(project.category, 'Commercials & PV');
     assert.equal(project.year, 2027);
     assert.equal(project.description, 'A production film.');
     assert.equal(project.isPlaceholder, false);

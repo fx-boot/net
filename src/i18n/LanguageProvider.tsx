@@ -8,8 +8,17 @@ import { LanguageContext as Context } from './LanguageContext';
 import { selectLanguage, type LanguageSelection } from './languageSelection';
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [selection, updateSelection] = useState<LanguageSelection>(() => {
-    let language: Language = 'zh';
-    try { const stored = localStorage.getItem('lanchuan-language') || localStorage.getItem('mo-chen-language'); if(languages.includes(stored || ''))language=stored as Language; } catch { /* Use the document default when storage is unavailable. */ }
+    let language: Language = languages.includes(document.documentElement.lang) ? document.documentElement.lang as Language : 'zh';
+    try {
+      let stored = localStorage.getItem('portfolio-language');
+      // Migrate this origin's earlier brand-prefixed preference without retaining a brand in UI/data.
+      if (!stored) for (let index = 0; index < localStorage.length; index++) {
+        const key = localStorage.key(index);
+        const candidate = key?.endsWith('-language') ? localStorage.getItem(key) : null;
+        if (candidate && languages.includes(candidate)) { stored = candidate; break; }
+      }
+      if (languages.includes(stored || '')) language = stored as Language;
+    } catch { /* Use the document default when storage is unavailable. */ }
     return { language, revision: 0 };
   });
   const { language, revision: languageRevision } = selection;
@@ -21,9 +30,9 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const lastShutter = useRef(0);
   useEffect(() => {
     document.documentElement.lang = language;
-    document.title = `LANCHUAN · ${brandCopy[language].directorName} — ${dictionaries[language].directorRole}`;
+    document.title = `${brandCopy[language].directorName} — ${dictionaries[language].directorRole}`;
     document.querySelector('meta[name="description"]')?.setAttribute('content', brandCopy[language].metaDescription);
-    try { localStorage.setItem('lanchuan-language', language); localStorage.removeItem('mo-chen-language'); } catch { /* Preference remains usable for this session when storage is blocked. */ }
+    try { localStorage.setItem('portfolio-language', language); } catch { /* Preference remains usable for this session when storage is blocked. */ }
     const changed = lastLanguage.current !== language;
     lastLanguage.current = language;
     if (!changed || reduced || !desktop || !root.current) return;

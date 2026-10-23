@@ -176,13 +176,13 @@
   },
   {
     "local": "public/media/director/README.md",
-    "bytes": 772,
-    "sha256": "9d82feae8184604fc306dba271dfaf7877c69cb2f8337f7516070e97d6d5c8a2"
+    "bytes": 725,
+    "sha256": "6ff28013829e51b9379c88e089f3b51fdc4ee4c8a6c4bb8b7748cf1594cbb9bf"
   },
   {
     "local": "public/favicon.svg",
-    "bytes": 313,
-    "sha256": "0989ff05f5ad68074573d18b8b1f91370c75f441b9aa1c74e8dbf6726e67a43e"
+    "bytes": 227,
+    "sha256": "eca3e13caf861b696ac4c5be2f72c952f460d82bea1b800dfe90b789340db877"
   },
   {
     "local": "public/fonts/shippori-mincho-regular.woff2",
@@ -196,8 +196,8 @@
   },
   {
     "local": "public/media/fallback.svg",
-    "bytes": 614,
-    "sha256": "fec6353e63f2038862f9757871cbd44396ac0707264b704b94254ff3778b0d4b"
+    "bytes": 505,
+    "sha256": "9b929e0dcd99ca47d29600f0f93532120f010fbb771ee2e9a691f758ce9ed560"
   },
   {
     "local": "public/media/director/negative-holder.svg",

@@ -1,5 +1,5 @@
 {
-  "name": "lanchuan-director-atelier",
+  "name": "acro-hat-atelier",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -15,7 +15,8 @@
     "verify:catalog": "node scripts/verify-project-catalog.mjs",
     "verify:preview": "node scripts/verify-preview.mjs",
     "verify:geo": "node scripts/verify-geo.mjs",
-    "verify:hero": "node scripts/verify-hero.mjs"
+    "verify:hero": "node scripts/verify-hero.mjs",
+    "verify:brand": "node scripts/verify-artist-brand.mjs"
   },
   "dependencies": {
     "animejs": "^4.5.0",

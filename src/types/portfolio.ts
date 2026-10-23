@@ -1,7 +1,7 @@
 import type { Language } from '../i18n/dictionaries';
 
-export type Category = 'Commercials' | 'Narrative' | 'Visual Tech';
-export type ProjectCategory = 'commercials' | 'narrative' | 'visual-tech';
+export type Category = 'AI & Hybrid' | 'Animation' | 'Live-action & Drama' | 'Commercials & PV';
+export type ProjectCategory = 'ai-hybrid' | 'animation' | 'live-action' | 'commercials-pv';
 export type LocalizedProjectText = Record<Language, string>;
 export type RegionalWeight = Record<Language, number>;
 export type ProjectCreditValue = string | LocalizedProjectText;
@@ -87,4 +87,4 @@ export interface Project extends ContentRecord {
 export interface DirectorProfile extends ContentRecord { name: string; englishName: string; role: string; statement: string; portrait: MediaAsset }
 export interface Award extends ContentRecord { festival: string; honor: string; year: number; film: string }
 export interface Client extends ContentRecord { name: string }
-export interface Representative extends ContentRecord { region: string; name: string; title: string; company: string; email: string }
+export interface Representative extends ContentRecord { region: string; name: string; title: string; audience: string; email: string }

@@ -3,7 +3,7 @@ import { selectLanguage } from '../src/i18n/languageSelection.ts';
 import { curationKey, curationTarget } from '../src/lib/curationState.ts';
 
 let selection = { language: 'zh', revision: 0 };
-const original = { ...selection, filter: 'Narrative', view: 'archive' };
+const original = { ...selection, filter: 'Live-action & Drama', view: 'archive' };
 assert.equal(selectLanguage(selection, 'zh'), selection, 'current language is a no-op');
 selection = selectLanguage(selection, 'ja');
 const japanese = curationTarget(original, selection.language, selection.revision);
@@ -25,5 +25,5 @@ for (const language of ['en', 'ja', 'ko', 'zh', 'ja', 'en']) {
   previous = latest;
 }
 assert.equal(curationTarget(previous, selection.language, selection.revision), previous);
-assert.deepEqual(original, { language: 'zh', revision: 0, filter: 'Narrative', view: 'archive' });
+assert.deepEqual(original, { language: 'zh', revision: 0, filter: 'Live-action & Drama', view: 'archive' });
 console.log('PASS regional transitions: stable same-language selection, filter reset, retained view, rapid A-B-A revisions and latest-edition keys');
